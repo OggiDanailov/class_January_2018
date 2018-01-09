@@ -16,6 +16,7 @@ margin: 0;
 	 margin: 0;
     padding: 0;
     overflow: hidden;
+    /*The overflow property specifies what happens if content overflows an element's box.*/
     
 
 }
@@ -42,7 +43,7 @@ margin: 0;
 }
 
 .article {
-	/*border: 2px solid red;*/
+	border: 2px solid red;
 	margin: 0 auto 50px;
 	width: 70%;
 	padding: 10px;
