@@ -3,7 +3,7 @@
 	width: 800px;
 	border:1px solid red;
 	margin: 100px auto;
-	position: relative;
+	/*position: relative;*/
 	overflow: hidden;
 }
 
@@ -20,7 +20,7 @@
 
 @media all and (max-width: 480px){
 	body{
-		background-color: salmon;
+		/*background-color: salmon;*/
 	}
 	.wrapper {
 		width: 80%;
@@ -42,20 +42,40 @@
 
 @media all and (min-width: 481px) and (max-width:767px){
 	body{
-		background-color: teal;
+		/*background-color: teal;*/
+	}
+
+	.wrapper {
+	width: 460px;
+	border:1px solid red;
+	margin: 100px auto;
+	/*position: relative;*/
+	overflow: hidden;
+	}
+
+	.block {
+	width: 120px;
+	height: 100px;
+	background-color: pink;
+	margin: 5px 0 5px 25px;
+	
+	float: left;
+	/*position: relative;*/
 	}
 
 }
 
+
+
 @media all and (min-width: 768px) and (max-width:991px){
 	body{
-		background-color: blue;
+		/*background-color: blue;*/
 	}
 }
 
 @media all and (min-width: 992px){
 	body{
-		background-color: green;
+		/*background-color: green;*/
 	}
 
 }

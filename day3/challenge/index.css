@@ -1,0 +1,26 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 400px;
+	margin: 20px auto;
+	border: 2px solid black;
+	background-color: pink;
+}
+
+.second {
+	background-color: orange;
+	width: 300px;
+	margin: 50px auto;
+	border: 2px solid black;
+}
+
+.inter {
+	background-color: purple;
+	width: 225px;
+	height: 50px;
+	border: 2px solid black;
+	margin: 25px auto;
+}

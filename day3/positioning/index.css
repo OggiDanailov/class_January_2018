@@ -12,25 +12,43 @@
 	background-color: lightgreen;
 }
 
+#one {
+	/*position: fixed;*/
+	/*position:absolute;*/
+	/*top: 120px;*/
+	/*left: 1px;*/
+}
+
+#two {
+
+}
+
+#three {
+	position: absolute;
+	left: 20px;
+	top: 40px;
+	background-color: green;
+}
+
+#four {
+
+}
+
+
+
 .box {
 	background-color: red;
 	/*float: left;*/
 	width: 100px;
-	height: 100px;	
-	/*position: fixed;*/
-	position:absolute;
-	/*top: 120px;*/
-	left: 1px;
+	height: 20px;
+	margin-bottom: 25px;	
+
 }
 
 
-.box2 {
-	background-color: blue;
-	/*float: left;*/
-	width: 100px;
-	height: 100px;
-	position: relative;
-	top: 100px;
-	left: 1px;
-	
-}
+
+
+
+
+
+

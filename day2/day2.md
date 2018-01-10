@@ -69,13 +69,7 @@ https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/
 -   Also put an `<img>` element on the page above the `<p>` elements
 -   Give all of the elements different classes and try floating the `<img>` first, than the `<p>` elements to get an idea of how floats impact page layout
 
-###Positioning
-https://www.thoughtco.com/absolute-vs-relative-3466208
 
-- position: static (this is the default one; top, left, right, bottom will not affect an element if it is static)
-- position: relative (relative to its own position); Relative positioning uses the same four positioning properties as absolute positioning, but instead of basing the position of the element upon its closest non-staticly positioned ancestor, it starts from where the element would be if it were still in the normal flow.
-- position: abolute (is positioned relative to the nearest positioned ancestor); This value tells the browser that whatever is going to be positioned should be removed from the normal flow of the document and instead placed in an exact location on the page. This is calculated based on that element's closest non-staticly positioned ancestor.
-- position:fixed - it will stick to the given position no matters if you scroll up and down.
 
 ##Exercise 3: 
 Create a fake website for a newspaper, "The New York Code + Design Academy Times"
