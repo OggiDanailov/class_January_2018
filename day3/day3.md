@@ -38,11 +38,19 @@ https://www.thoughtco.com/absolute-vs-relative-3466208
 	}  
 }
 
+- min-width; max-with - it prevents an element to become smaller/bigger than given width.
+
 ####Exercise 1
 Build an image gallery using floats and the CSS background-image property on `<div>s` instead of `<img>` tags that:  
 -  also looks good when the browser is resized to 400px  
 -    uses a different, smaller background-image for each image when the browser is resized  
 -       has a frame around each image in full-size width and no frame at 400px
+
+- examples of animation with css and responsive design:
+- http://onesharedhouse.com/thestory/
+- https://www.supremo.tv/typeterms/
+- https://open.spotify.com/view/2016-page
+- https://chekhov.withgoogle.com/alive
 
 ###Animation Key Frames/Transitions
 - transition - it has to have duration; otherwise it won't kick in
