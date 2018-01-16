@@ -22,14 +22,27 @@ Commands:
 merging through the terminal:
 - git checkout master  
 - git merge <name of branch>  
-- git branch -d <name of branch>  
+
+
+- git branch -d <name of branch>  - this command delete a branch from the terminal
 
 when I have a conflict I have to resolve it and then do 
 -git commit (have to save the changes in the vim)
 
 -git stash  - temporarly store all modified files  
-git stash pop  - 
+git stash pop  - restore the most recently stashed files  
 
 GitHub:
 - add to your repo:
 - git remote add origin ....url
+
+###Exercise1
+Create a new project folder with at least two files, perhaps index.html and style.css  
+-   Initialize a new git repository in this folder     -  Make your initial commit  
+-     Make a change to one or both of the files, then make another commit  
+-  Repeat this process starting from scratch a few times to make sure you have it down
+
+###Exercise2
+Make 2 new branches for the git repo you're in called new-menu-bar and 215-fix-responsiveness  
+ - Make commits on the branches and push both of these branches to GitHub  
+ - Visually examine the GitHub page. Notice the "Branches" drop down and try looking at one of your branches - note the differences

@@ -1,9 +1,6 @@
 Day 1  
 **Welcome to class**  
-1. Attendance/Lateness  
-2. Homework/Canvas - expectations  
-3. Coding challenges  
-4. Scope of the class  
+ 
 
 	a) Month 1 - Front End
 	1. HTML/CSS

@@ -1,0 +1,11 @@
+button{
+	background-color: red;
+	font-size: 23px;
+	border: 2px solid;
+	border-radius: 10px;
+}
+
+#result {
+	font-size: 20px;
+	margin-left: 10px;
+}
