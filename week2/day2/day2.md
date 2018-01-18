@@ -63,7 +63,13 @@ console.log(c);
  •  Create a page with multiple elements, some nested inside of each other; 
  •   Practice selecting items and changing their contents from the JavaScript Console  
  •   Once you have the hang of it, write a script to change the content in at least 5 elements  
- • Use onclick and addEventListener to fire some changes on the DOM;
+ • Use onclick and addEventListener to fire some changes on the DOM; 
+ 
+ Check different events here: 
+  https://developer.mozilla.org/en-US/docs/Web/Events
+  Check different options for changing CSS through JS here:
+  https://www.w3schools.com/js/js_htmldom_css.asp
+  
  
  
 

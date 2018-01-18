@@ -1,5 +1,6 @@
 var text = document.getElementById('writer')
 
-window.addEventListener('keypress', function(e){
+document.addEventListener('keypress', function(e){
+	// console.log(e)
 	text.innerHTML = e.key
 })
