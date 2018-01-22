@@ -1,6 +1,20 @@
 COding challenge;
 write a function that takes an array as an argument and gives you the sum of this array ([1,2,3] -> 6)
 
+var sum;  
+for(i=0;i< 1000;i++){  
+	if(i% 2 === 0  || i % 4 === 0){  
+		sum += i;  
+	}   
+}console.log(sum)  
+
+////////////////////
+var a = [1,2,3,4]  
+
+var sum = a.reduce(function(a, b){  
+	return a + b;  
+}, 0)  
+
 ##Review:
  - varabiles - var, const and let
  - string;  
