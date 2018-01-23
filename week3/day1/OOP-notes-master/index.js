@@ -10,30 +10,30 @@
 
 // object constructor
 
-function Person(name, nationality, yearBirth){
-	this.name = name;
-	this.nationality = nationality;
-	this.yearBirth = yearBirth
-}
+// function Person(name, nationality, yearBirth){
+// 	this.name = name;
+// 	this.nationality = nationality;
+// 	this.yearBirth = yearBirth
+// }
 
-var bulgarian = new Person('Ivan', 'bulgarian', 1978);
-var serbian = new Person('Uros', 'serbian', 1980)
+// var bulgarian = new Person('Ivan', 'bulgarian', 1978);
+// var serbian = new Person('Uros', 'serbian', 1980)
 
-// prototype inheritance
+// // prototype inheritance
 
-Person.prototype.age = function(){
-	return 2017 - this.yearBirth
-}
+// Person.prototype.age = function(){
+// 	return 2017 - this.yearBirth
+// }
 
-// object extends
-function Bike(wheels, color){
-this.wheels = wheels;
-this.color = color
-}
+// // object extends
+// function Bike(wheels, color){
+// this.wheels = wheels;
+// this.color = color
+// }
 
-function Car(){
-Bike.apply(this, arguments)
-}
+// function Car(){
+// Bike.apply(this, arguments)
+// }
 
 //The apply() method calls a function with a given this value, 
 // and arguments provided as an array
@@ -41,9 +41,9 @@ Bike.apply(this, arguments)
 // The call() method calls a function with a given this value
  // and arguments provided individually. I will get an array
 
-var newBike = new Bike(2, 'sivler')
+// var newBike = new Bike(2, 'sivler')
 
-var newCar = new Car(4, 'green')
+// var newCar = new Car(4, 'green')
 
 
 
@@ -54,23 +54,51 @@ var newCar = new Car(4, 'green')
 // 		this.wheels = wheels;
 // 		this.color = color;
 // 	}
+// 	beep(){
+// 		console.log('beeeeeep')
+// 	}
 // }
 
 
 // class extends
 
-class Instrument{
-	constructor(name, type){
-		this.name = name;
-		this.type = type;
-	}
-}
+// class Instrument{
+// 	constructor(name, type){
+// 		this.name = name;
+// 		this.type = type;
+// 	}
+// }
 
-class Piano extends Instrument{
+// class Piano extends Instrument{
 
-}
+// }
+// var p = new Piano('wahlstein', 'string')
 
-var p = new Instrument('wahlstein', 'string')
+//So if we’re making a constructor of our own, then we must call super,
+ // because otherwise the object with this reference to it won’t be created. 
+ // And we’ll get an error.
+
+
+ // class Tv{
+ // 	constructor(name, year){
+ // 		this.name = name;
+ // 		this.year = year;
+ // 	}
+ // 	sounding(){
+ // 		console.log('beeeeeeep')
+ // 	}
+
+ // }
+
+ // class Radio extends Tv{
+ // 	constructor(name, year, waves){
+ // 		super(name, year)
+ // 		this.waves = waves
+ // 	}
+
+ // }
+
+
 
 // real example of Calculator
 
@@ -90,19 +118,40 @@ var p = new Instrument('wahlstein', 'string')
 // }
 
 
+var plus = document.getElementById('plus')
+var minus = document.getElementById('minus')
+var multi = document.getElementById('multi')
+var subtract = document.getElementById('subtract')
+
+
+
 class Calculator{
-	constructor(x, y){
-		this.adding = function(){
-			return x + y
+	constructor(){
+		var i1 = document.getElementById('i1')
+		var i2 = document.getElementById('i2')
+		var result = document.getElementById('result')
+		this.adding = function(){	
+			result.innerHTML = parseInt(i1.value) + parseInt(i2.value)
 		}
 		this.subtracting = function(){
-			return x-y
+			result.innerHTML = parseInt(i1.value) - parseInt(i2.value)
+		}
+		this.multiplying = function(){
+			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
+		}
+
+		this.dividing = function(){
+			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
 		}
 	}
-	
+
 }
 
-var a = new Calculator(12,3)
+var calc = new Calculator()
+plus.addEventListener('click', calc.adding)
+minus.addEventListener('click', calc.subtracting)
+
+
 
 
 
