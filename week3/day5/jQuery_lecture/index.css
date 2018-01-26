@@ -1,0 +1,14 @@
+.whatever {
+	width: 200px;
+	height: 200px;
+	background-color: red;
+	margin: 100px;
+	display: none;
+}
+
+.something {
+	width: 100px;
+	height: 100px;
+	background-color: green;
+	margin: 50px;
+}
