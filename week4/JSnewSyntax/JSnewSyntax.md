@@ -16,13 +16,14 @@ var firstCheck = false,
     secondCheck = false,  
     access = firstCheck ? 'Access denied' : secondCheck ? 'Access denied' : 'Access granted';  
     
-    if(access = firstCheck){    
-    		'access denied'  
-    	}else if(secondCheck){  
-    		'access denied'  
+    if(a > 0){    
+    		'positive'  
+    	}else if( a < 0){  
+    		'negative'  
     	}else {  
-    		'access granted'  
+    		'zero'  
     	}
+    a>0 ? 'positive' : a<0 ? 'negative' : 'zero'
     	
     	
  4. map()  
@@ -32,6 +33,17 @@ var firstCheck = false,
  If i already have an array but i only want to have items in the array that match certain criteria, use the filter. 
  
  6. reduce()  
- If i already have an array, but i want to use the values in that array to create something completely new, use the reduce.   
+ If i already have an array, but i want to use the values in that array to create something completely new, use the reduce.
+ 
+6a. forEach()   
 
 
+7. Closures
+
+8. Callbacks - a function passed as an argument to another function and executed within the first function;
+
+9. CreateElement way of creating HTML elements through JS
+
+10. IIFE - immediately ivoking function expression
+
+11. recursive function
