@@ -6,15 +6,17 @@ body {
   height: 70px;
   border: 2px solid;
   margin: 0 auto;
-  box-shadow: 5px 5px 3px 3px purple; }
+  box-shadow: 3px 3px 3px 3px maroon; }
 
 ul {
-  box-shadow: 5px 5px 3px 3px purple; }
+  box-shadow: 3px 3px 3px 3px maroon; }
   ul li {
-    background-color: teal;
+    background-color: red;
     display: inline-block;
     margin-right: 40px;
-    box-shadow: 5px 5px 3px 3px purple;
+    box-shadow: 3px 3px 3px 3px maroon;
     font-size: 24px; }
+  ul li:hover {
+    background-color: purple; }
 
 /*# sourceMappingURL=main.css.map */

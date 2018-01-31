@@ -1,23 +1,31 @@
+$box-shadow: 3px 3px 3px 3px maroon;
+$background-color: red;
+
+
 .navbar {
 	width: 400px;
 	height: 70px;
 	border: 2px solid;
 	margin: 0 auto;
-	box-shadow: 5px 5px 3px 3px purple;
+	box-shadow: $box-shadow;
 }
 
 ul{
 	// border: 2px solid red;
 	// background-color: salmon;
-	box-shadow: 5px 5px 3px 3px purple;
+	box-shadow: $box-shadow;
 
 
 
 	li{
-		background-color: teal;
+		background-color: $background-color;
 		display: inline-block;
 		margin-right: 40px;
-		box-shadow: 5px 5px 3px 3px purple;
+		box-shadow: $box-shadow;
 		font-size: 24px
+	}
+
+	li:hover {
+		background-color: purple;
 	}
 }
