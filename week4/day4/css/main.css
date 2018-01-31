@@ -1,0 +1,20 @@
+body {
+  background-color: orange; }
+
+.navbar {
+  width: 400px;
+  height: 70px;
+  border: 2px solid;
+  margin: 0 auto;
+  box-shadow: 5px 5px 3px 3px purple; }
+
+ul {
+  box-shadow: 5px 5px 3px 3px purple; }
+  ul li {
+    background-color: teal;
+    display: inline-block;
+    margin-right: 40px;
+    box-shadow: 5px 5px 3px 3px purple;
+    font-size: 24px; }
+
+/*# sourceMappingURL=main.css.map */

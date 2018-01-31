@@ -1,0 +1,23 @@
+.navbar {
+	width: 400px;
+	height: 70px;
+	border: 2px solid;
+	margin: 0 auto;
+	box-shadow: 5px 5px 3px 3px purple;
+}
+
+ul{
+	// border: 2px solid red;
+	// background-color: salmon;
+	box-shadow: 5px 5px 3px 3px purple;
+
+
+
+	li{
+		background-color: teal;
+		display: inline-block;
+		margin-right: 40px;
+		box-shadow: 5px 5px 3px 3px purple;
+		font-size: 24px
+	}
+}
