@@ -1,5 +1,10 @@
-$box-shadow: 3px 3px 3px 3px maroon;
-$background-color: red;
+* {
+	font-family: $main-font;
+}
+
+body {
+	background-color: $main-background-color;
+}
 
 
 .navbar {
@@ -8,6 +13,7 @@ $background-color: red;
 	border: 2px solid;
 	margin: 0 auto;
 	box-shadow: $box-shadow;
+	
 }
 
 ul{
@@ -18,7 +24,7 @@ ul{
 
 
 	li{
-		background-color: $background-color;
+		background-color: $main-color;
 		display: inline-block;
 		margin-right: 40px;
 		box-shadow: $box-shadow;

@@ -1,0 +1,17 @@
+@mixin box {
+  	width: 70%;
+  	height: 100px;
+  	border: 2px solid red;
+  	margin: 30px auto;
+ 
+  }
+
+@mixin box-size ($width, $height){
+	width: $width;
+	height: $height;
+}
+
+@mixin headline ($color, $size) {
+  color: $color;
+  font-size: $size;
+}
