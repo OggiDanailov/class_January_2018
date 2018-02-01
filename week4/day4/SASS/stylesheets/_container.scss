@@ -1,19 +1,43 @@
-// $box-width: "70%";
-// $box-height: '100px';
-// $mixin border-radius($border){
-// 	border-radius: $border;
-// }
+
+h1 {
+  @include headline($secondary-color, 42px);
+  text-align: center;
+  @include border-style(dashed null solid);
+}
+
+.button {
+	background-color: black;
+	@include box-size(50px, 50px);
+	// bourbon
+		// @include margin(null auto)
+		// ; 
+		// background-color: shade(green, 80%);
+		
+		// &::before {
+	 //    @include triangle("up", 12rem, 1rem, #b25c9c);
+	 //    content: "";
+	 //  }
+}
 
 
+#box1{
+	@include box;
+	// @include box-size(200px, 100px);
+	background-color: $main-color;
+	box-shadow: $box-shadow;
+	
+}
 
-// #box1{
-// 	@include border:(3%)
-// }
+#box2{
+	@include box;
+	// @include box-size(400px, 100px);
+	background-color: $secondary-color;
+	box-shadow: $box-shadow;
+}
 
-// #box2{
+#box3{
+	// @include box-size(600px, 100px);
+	@extend #box2;
+	
+}
 
-// }
-
-// #box2{
-
-// }
