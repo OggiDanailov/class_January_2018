@@ -1,0 +1,24 @@
+body {
+	
+	background-color: maroon;
+	font-family: 'Arial';
+}
+
+
+.jukebox {
+	border: 2px solid teal;
+	width: 300px;
+	height: 100px;
+	margin: 0 auto;
+}
+
+#playButton, #stopButton, #nextButton{
+	width: 15%;
+	height: 30px;
+	background-color: salmon;
+	text-align: center;
+	margin:35px 20px;
+	float: left;
+	line-height: 30px;
+	border-radius: 20px;
+}
