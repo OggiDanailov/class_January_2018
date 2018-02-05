@@ -92,7 +92,7 @@ Write a program that checks if a variable is less than 10. If it is, alert the u
 
 ###Exercise 5
 •   Create an array filled with several strings of names  
-•   Use a loop to print out the names, followed by 'is my friend'. Like so:>>Jake is my friendJohn is my friendSamantha is my friendBilly is my friend
+•   Use a loop to print out the names, followed by 'is my friend'. Like so:>>Jake is my friend John is my friend Samantha is my friend Billy is my friend
 
  - while loop
  x = 6;  
