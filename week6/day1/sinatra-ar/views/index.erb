@@ -1,0 +1,34 @@
+<form action='/' method='get'>
+<input type='text' name='search' placeholder='Search here'>
+<input type='submit' value='Search term'>
+</form>
+
+<hr>
+
+<% @blogs.each do |b| %>
+
+	<div>Title: <%= b.title %></div>
+	<div>Category: <%= b.category %></div>
+	<div>Content: <%= b.content %></div>
+
+<% end %>
+
+<hr>
+
+<h3>Create new Blog</h3>
+<div>
+	<form method='POST' action='new_blog'>
+		<p>Title</p>
+		<input type='text' name='title' placeholder='title'>
+		<p>Category</p>
+		<input type='text' name='category' placeholder='category'>
+		<p>Content</p>
+		<input type='text' name='content' placeholder='content'>
+		<br>
+		<br>
+		<input type='submit' value='create Blog'>
+	</form>
+
+
+</div>
+<hr>
