@@ -1,3 +1,4 @@
+<!-- Search form -->
 <form action='/' method='get'>
 <input type='text' name='search' placeholder='Search here'>
 <input type='submit' value='Search term'>
@@ -5,21 +6,22 @@
 
 <hr>
 
+<h3 style='color: red'>All the blogs:</h3>
+
 <% @blogs.each do |b| %>
 
-	<div>Title: <%= b.title %></div>
-	<div>Category: <%= b.category %></div>
-	<div>Content: <%= b.content %></div>
-
+<div><%= b.name %></div>
+<div><%= b.content %></div>
+<div><%= b.category %></div>
+<hr>
 <% end %>
 
-<hr>
 
-<h3>Create new Blog</h3>
+<h3 style='color:red'>Create new Blog</h3>
 <div>
-	<form method='POST' action='new_blog'>
+	<form method='POST' action='/new_blog'>
 		<p>Title</p>
-		<input type='text' name='title' placeholder='title'>
+		<input type='text' name='name' placeholder='title'>
 		<p>Category</p>
 		<input type='text' name='category' placeholder='category'>
 		<p>Content</p>
@@ -31,4 +33,3 @@
 
 
 </div>
-<hr>

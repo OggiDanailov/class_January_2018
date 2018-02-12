@@ -10,12 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180208041217) do
+ActiveRecord::Schema.define(version: 20180212032859) do
 
   create_table "blogs", force: :cascade do |t|
-    t.string "title"
-    t.string "category"
-    t.text "content"
+    t.string "name"
+    t.string "content"
+    t.text "category"
   end
 
 end

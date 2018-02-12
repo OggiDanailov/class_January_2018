@@ -1,0 +1,23 @@
+
+<h1>Welome to my page</h1>
+<h3>List of All blogs:</h3>
+<% @blogs.each do |b| %>
+<div><%=b.title   %></div>
+<div><%=b.category   %></div>
+<div><%=b.content   %></div>
+
+<% end %>
+<hr>
+
+<h3>Crate a blog:</h3>
+
+<form method='post' action='/profile'>
+	Title:<input type='text' name='title'>
+	Category:<input type='text' name='category'>
+	Content:<input type='text' name='content'>
+	<input type='submit' value='create blog'>
+
+
+</form>
+
+
