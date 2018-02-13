@@ -1,0 +1,17 @@
+<!-- Search form -->
+<form action='/' method='get'>
+<input type='text' name='search' placeholder='Search here'>
+<input type='submit' value='Search term'>
+</form>
+
+<hr>
+
+<h3 style='color: red'>All the blogs:</h3>
+
+<% @users.each do |u| %>
+
+<div><%= u.name %></div>
+<div><%= u.fav_food %></div>
+###########
+<% end %>
+

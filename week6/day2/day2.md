@@ -38,6 +38,7 @@ CheatSheet
 	- find; - it returns 1 result
 	- where; - it returns an array
 	- destroy;
+	- update
 	- connect to DB Browser; 
 
 	    
