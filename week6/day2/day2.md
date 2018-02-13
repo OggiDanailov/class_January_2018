@@ -30,9 +30,22 @@ CheatSheet
 	
 	
 	-----------	-----------	-----------
-
-- Foreign Key
 - post request - redirect;  
-- get request - render;  
+- get request - render;
 
-- sessions - it is like cookies;
+- Create User and Blog and play around in the irb;
+	- Foreign Key;
+	- find; - it returns 1 result
+	- where; - it returns an array
+	- destroy;
+	- connect to DB Browser; 
+
+	    
+	 
+
+- create dependecy 
+  
+
+- sessions (cookie); sticks around while the browser window is still open. When I am logged in in FB, I open another window and when I come back I am still logged in FB; it is key value pairs
+
+

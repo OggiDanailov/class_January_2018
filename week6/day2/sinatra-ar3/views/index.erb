@@ -7,11 +7,11 @@
 <%# end %>
 
 <h4>Current User:<h4>
-<div style='color: red'><%= @user.username %></div>
+<div style='color: red'><a href='/users/<%=@user.id%>/edit'><%= @user.username %></a></div>
 
 <h4>Current posts</h4>
 <% @blogs.each do |b| %>
-<%= b.title %>
+<a href='/blog/<%= b.id %>'><%=b. title %></a>
 <%= b.content %>
 <%= b.category %>
 

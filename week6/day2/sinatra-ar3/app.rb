@@ -7,19 +7,21 @@ set :sessions, true
 
 require './models'
 
-
+# getting only the blogs created by a given user
 # get '/'  do   
 # # @user = User.find(1)
 # # @blogs = Blog.where(user_id: @user)
 
 # erb :index
 # end
+
+# home page - the sign in page
 get '/' do
 
 erb :login
 end
 
-
+# the signin action that checks if a given user exists
 post '/login' do
 	user = User.where(username: params[:username]).first
 	if user.password == params[:password]
@@ -30,13 +32,15 @@ post '/login' do
 	end
 end
 
-
+# it prints all the blogs associated with this user
 get '/profile' do
 	@user = User.find(session[:user_id])
 	@blogs = @user.blogs
 erb :index
 end
 
+
+# it creates a blog 
 post '/create_blog' do
 @user = User.find(session[:user_id])
 @title = params[:title]
@@ -49,9 +53,36 @@ post '/create_blog' do
  end
 end
 
+# it gets each separate blog
+get '/blog/:id' do  
+	@blog = Blog.find(params[:id])
+erb :blog		
+end
+
+
+#renders the edit form for the user
+get '/users/:id/edit' do
+  @user = User.find(params[:id])
+  erb :edit
+end
 
 
 
+# the udpate action from edit form
+post '/update' do
+user = User.find(session[:user_id])
+user.update(username: params[:username], password: params[:password])
+redirect '/'
+end
+
+
+# the destroy action from the edit form
+post '/destroy_user' do 
+	user = User.find(session[:user_id])
+	user.destroy
+
+	redirect '/'
+end
 
 
 
