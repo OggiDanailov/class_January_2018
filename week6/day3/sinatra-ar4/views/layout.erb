@@ -1,0 +1,16 @@
+
+<div class='navbar'>
+	<h1>My page</h1>
+	<form action="/logout" method="post">
+		<input type="submit"value="Logout">
+	</form>
+	<div><a href="/">Home</a></div>
+	<div><a href="/users">All users</a></div>
+	<%#= current_user.username %>
+	
+</div>
+
+
+<div class="container">
+	<%= yield %>
+</div>
