@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 require './models'
 
-set :database, "sqlite3:development.sqlite3"
+configure(:development){set :database, "sqlite3:blog.sqlite3"}
 set :sessions, true
 
 # def current_user
