@@ -1,6 +1,9 @@
 require 'sinatra'
 require 'sinatra/activerecord'
 require './models'
+require './database-config'
+
+
 
 configure(:development){set :database, "sqlite3:blog.sqlite3"}
 set :sessions, true
