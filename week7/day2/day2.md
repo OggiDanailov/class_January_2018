@@ -1,0 +1,1 @@
+- ApplicationController is practically the class which every other controller in you application is going to inherit from (although this is not mandatory in any mean).
