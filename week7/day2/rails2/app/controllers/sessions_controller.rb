@@ -1,9 +1,9 @@
 class SessionsController < ApplicationController
   
-  def new
-    # redirect_to '/', notice: 'You are already logged in' if logged_in?
-    @user = User.new
-  end
+  # def new
+  #   # redirect_to '/', notice: 'You are already logged in' if logged_in?
+  #   @user = User.new
+  # end
 
 
   def create
