@@ -18,7 +18,9 @@ request should redirect to a view.
 <%= flash[:alert] if flash[:alert] %>  
  
 - rails generate migration add_email_to_users email:string
-- 
+- rails g migration ChangeColumnName
+- rename_column :comments, :User_id, :user_id  
+
 - find => This return single record if the given primary_key(id) exists in the system otherwise in will give an error.
 - find_by => This will return single record depends on the given attribute, and if the value of the attribute is not exist in the DB it will return nil.
 - :local - By default form submits are remote and unobstrusive XHRs. Disable remote submits with local: true.
