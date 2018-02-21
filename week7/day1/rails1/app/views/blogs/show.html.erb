@@ -1,0 +1,5 @@
+<div><a href='/blogs/<%=@blog.id %>/edit'><%= @blog.title %></a></div>
+
+<div><%= link_to 'Destroy', blog_path(@blog),
+						method: :delete,
+              			data: { confirm: 'Are you sure?' } %></div>
