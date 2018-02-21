@@ -1,7 +1,9 @@
 <h2>Login</h2>
 
 
-<%= form_tag(sessions_path) do %>
+
+<!-- form_tag takes an url as an argument -->
+<%= form_tag(signin_path) do %>
   
     <%= label_tag :email %>
     <%= text_field_tag :email %>

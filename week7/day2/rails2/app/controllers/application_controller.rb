@@ -2,7 +2,7 @@ class ApplicationController < ActionController::Base
   protect_from_forgery with: :exception
 
 def current_user
-    @current_user ||= User.find_by_id(session[:user_id])
+    @current_user = User.find_by_id(session[:user_id])
     # This Operator only sets the variable if the variable is false or Nil.
   end
 
@@ -13,7 +13,7 @@ def current_user
     current_user != nil
   end
 
-  def authenticate
-    redirect_to '/signup' if !logged_in?
-  end
+  # def authenticate
+  #   redirect_to '/signup' if !logged_in?
+  # end
 end

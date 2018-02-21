@@ -10,11 +10,10 @@
 
   <body>
 
-  	<nav>
+  	<nav class='navbar'>
   		<ul>
         <% if logged_in? %>
-          <li><%= link_to 'Log out', '/logout', { method: 'post',
-                                                 local: true }  %></li>
+          <li><%= link_to 'Log out', '/logout', { method: 'post' }  %></li>
         <% end %>
       <% if !logged_in? %>
           <li><%= link_to 'Sign up', '/users/new' %></li>
@@ -29,9 +28,8 @@
   	</nav>
 
 <!-- flash messages are key/value pairs; add this to your application.rb file: -->
-    <% flash.each do |key, value| %>
-        <div class="alert alert-<%= key %>"><%= value %></div>
-      <% end %>
+   <%= flash[:message] if flash[:message] %>
+  <%= flash[:alert] if flash[:alert] %>
     <%= yield %>
   </body>
 </html>
