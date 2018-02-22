@@ -23,6 +23,19 @@ class UsersController < ApplicationController
 	end
 
 
+	def signin
+    	@user = User.find_by_email(params[:email])
+    if @user && @user.authenticate(params[:password])
+      session[:user_id] = @user.id
+      flash[:message] = 'succesfully logged in!'
+      redirect_to '/'
+    else
+    	flash[:message] = 'please try again!'
+      redirect_to '/signin'
+    end
+  end
+
+
 
 private
 
