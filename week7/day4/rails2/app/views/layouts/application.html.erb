@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Rails1</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+
+  	<nav class='navbar'>
+  		<ul>
+        <% if logged_in? %>
+          <li><%= link_to 'Log out', '/logout', { method: 'post' }  %></li>
+        <% end %>
+      <% if !logged_in? %>
+          <li><%= link_to 'Sign up', '/users/new' %></li>
+          <li><%= link_to 'Sign in', '/signin' %></li>
+      <% end %>
+
+  			<li><a href="/">Home</a></li>
+  			<li><a href='/about'>About</a></li>
+        <li><a href='/blogs'>Blogs</a></li>
+        <li><a href='/blogs/new'>New Blog</a></li>
+  		</ul>
+  	</nav>
+
+<!-- flash messages are key/value pairs; add this to your application.rb file: -->
+   <%= flash[:message] if flash[:message] %>
+  <%= flash[:alert] if flash[:alert] %>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,16 @@
+<div><a href='/blogs/<%=@blog.id %>/edit'><%= @blog.title %></a></div>
+
+<div><%= link_to 'Destroy', blog_path(@blog),
+						method: :delete,
+              			data: { confirm: 'Are you sure?' } %></div>
+
+
+<h2>Create a Post</h2>
+
+
+<%= form_for [@blog, @blog.comments.build]  do |f| %>
+   
+      <%= f.text_area :message %>
+  
+    <%= f.submit  %>
+  <% end %>
