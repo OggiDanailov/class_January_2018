@@ -8,11 +8,10 @@ make sure you remember your credentials as you will be prompted to sign later fr
 
 ———
 
-1. go to your app (Rails or Sinatra) and run git init.
+1. go to your app  and run git init.
 
-2. push your project to GitHub if you don’t have connection to it
 
-3. write heroku create in the terminal in your project (here you will be prompted to write your credentials for heroku)
+2. write heroku create in the terminal in your project (here you will be prompted to write your credentials for heroku)
 
 ———
 
