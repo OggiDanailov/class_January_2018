@@ -1,0 +1,12 @@
+<div id="author-index">
+  <h1>Authors List</h1>
+  <ul>
+    <% @authors.each do |author| %>
+      <li>
+        <%= link_to author.name, author %> -
+        <%= link_to 'Delete', author, method: 'delete', local: true %>
+      </li>
+    <% end %>
+  </ul>
+  <%= link_to 'Create author', new_author_path %>
+</div>

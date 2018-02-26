@@ -1,0 +1,12 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each do |p| %>
+<%= image_tag p.avatar.url(:thumb) %>
+<div><%= p.title %></div>
+<div><%= p.body %></div>
+
+<% end %>
+
+
+
