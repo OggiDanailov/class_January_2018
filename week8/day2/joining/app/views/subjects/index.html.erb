@@ -1,0 +1,8 @@
+<h2>List of all Subjects</h2>
+
+<% @subjects.each do |s| %>
+<div><a href='/subjects/<%= s.id%>'><%= s.topic %></a></div>
+
+<% end %>
+
+

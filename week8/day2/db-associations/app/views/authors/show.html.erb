@@ -1,0 +1,38 @@
+<h1><%= @author.name %></h1>
+<h3>Books</h3>
+<ul>
+  <%= 'No books yet' if @author.books.empty? %>
+
+  <% @author.books.each do |book| %>
+    <li>
+      <%= link_to book.title, author_book_path(@author, book) %>
+    </li>
+  <% end %>
+</ul>
+
+<div>
+  <h3>Add a book</h3>
+  <%= form_with(model: Book.new, local: true) do |f| %>
+    <%= hidden_field_tag :author_id, @author.id %>
+    <%= f.label :title %>
+    <%= f.text_field :title %>
+    <br>
+    <%= f.select :tag_ids, options_from_collection_for_select(Tag.all, 'id', 'name') %>
+    <%= f.submit %>
+  <% end %>
+</div>
+
+<%= link_to 'Delete', @author, method: 'delete', local: true %> -
+<%= link_to 'Back', authors_path %>
+
+
+
+
+
+
+
+
+
+
+
+<!-- -->

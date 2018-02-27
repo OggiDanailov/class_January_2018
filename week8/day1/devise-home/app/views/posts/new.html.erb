@@ -1,0 +1,14 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= check_box_tag(:pet_dog) %>
+<%= label_tag(:pet_dog, "I own a dog") %>
+<%= check_box_tag(:pet_cat) %>
+<%= label_tag(:pet_cat, "I own a cat") %>
+<hr>
+<%= radio_button_tag(:age, "child") %>
+<%= label_tag(:age_child, "I am younger than 21") %>
+<%= radio_button_tag(:age, "adult") %>
+<%= label_tag(:age_adult, "I'm over 21") %>
+
+<%= render 'form' %>

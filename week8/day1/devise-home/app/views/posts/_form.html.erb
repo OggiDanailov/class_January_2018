@@ -1,0 +1,6 @@
+<%= form_for @post do |p| %>
+ <%= p.file_field :avatar %>
+<%=  p.text_field :title %>
+<%=  p.text_area :body %>
+<%= p.submit %>
+<% end %>

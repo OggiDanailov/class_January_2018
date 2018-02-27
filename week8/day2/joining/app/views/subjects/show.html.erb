@@ -1,0 +1,33 @@
+<h2><%= @subject.topic.capitalize %></h2>
+
+List of Rooms:
+
+<% @subject_rooms.each do |s| %>
+	<div>Room: <%= s.number %></div>
+<% end %>
+
+<h3>Assign a room:</h3>
+
+<% @rooms.each do |r| %>
+ <%= link_to r.number, {:controller => "rooms", :action => "assign"}, :room => r.id,  :method=> :post %>
+
+	
+<% end %>
+
+
+
+
+
+
+
+
+<!-- <form method='post' action='/assign'>
+	<a href='/subjects/<%#= @subject.id %>'><%#= r.number %></a>
+	<input type="hidden"  name="id" value="#{r.id}" />
+</form> -->
+<%#= link_to 'Something', {:controller => "rooms", :action => "assign", :room => r.id }, :method=> :post %>
+
+
+
+
+
