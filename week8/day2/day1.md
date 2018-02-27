@@ -43,6 +43,14 @@ d = Dog.create
 d.build_owner(name: 'whatever')
 d.create_owner(name: 'whatever')
 
+Join table
+- simple join - it joins two tables without creating 3 model; HABTM and there is no primary key
+- rich join - it has a model
+
+- rails g migration CreateJoinTableRoomSubject room subject 
+
+http://guides.rubyonrails.org/association_basics.html
+
 	
  - has_and_belongs_to_many  
  - has_and_belongs_to_many
