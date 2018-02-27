@@ -54,6 +54,15 @@ http://guides.rubyonrails.org/association_basics.html
 	
  - has_and_belongs_to_many  
  - has_and_belongs_to_many
+ 
+ s = Subject.first(1)
+ r = Room.first(1)
+ s.rooms = r
+ r.rooms = s
+ s.room_ids
+ r.subject_ids
+ s.rooms.delete(r)
+ 
 
  - has_many :through
  - has_many :through

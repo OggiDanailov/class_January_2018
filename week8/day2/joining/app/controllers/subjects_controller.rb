@@ -1,5 +1,5 @@
 class SubjectsController < ApplicationController
-
+protect_from_forgery with: :exception, prepend: true
 	def index
 		@subjects = Subject.all
 
@@ -24,8 +24,6 @@ class SubjectsController < ApplicationController
 		@subject_rooms = @subject.rooms
 		@rooms = Room.all
 	end
-
-
 
 
 	private

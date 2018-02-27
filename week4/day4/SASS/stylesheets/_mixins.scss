@@ -15,3 +15,7 @@
   color: $color;
   font-size: $size;
 }
+
+@mixin testing {
+	background-color: green;
+}
