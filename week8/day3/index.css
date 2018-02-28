@@ -1,0 +1,24 @@
+.container {
+	border: 2px solid black;
+	width: 80%;
+	/*height: 400px;*/
+	margin: 0 auto;
+
+}
+
+.box {
+	width: 70%;
+	border: 2px solid red;
+	margin: 0 auto;
+	width: 50%;
+	height: 200px;
+}
+
+.field {
+	/*border: 2px solid green;*/
+	width: 70%;
+	margin: 10px auto;
+	height: 50px;
+	display: none;
+}
+

@@ -57,11 +57,17 @@ http://guides.rubyonrails.org/association_basics.html
  
  s = Subject.first(1)
  r = Room.first(1)
- s.rooms = r
- r.rooms = s
+ s.rooms << r
+ r.rooms<< s
  s.room_ids
  r.subject_ids
  s.rooms.delete(r)
+ r1.subjects.delete(r1.subject_ids[1])
+ 
+ - collection
+ The collection method returns a Relation of all of the associated objects. If there are no associated objects, it returns an empty Relation
+ @rooms = s.rooms
+ s.rooms << Subject.find(3)
  
 
  - has_many :through
