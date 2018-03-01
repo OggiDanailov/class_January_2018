@@ -1,0 +1,11 @@
+<h1><%= @book.name %></h1>
+<p>Author: <%= link_to @book.author.name, @book.author %></p>
+
+<div>
+  <h3>Genre</h3>
+  <ul>
+    <% @book.genres.each do |tag| %>
+      <li><%= tag.name %></li>
+    <% end %>
+  </ul>
+</div>

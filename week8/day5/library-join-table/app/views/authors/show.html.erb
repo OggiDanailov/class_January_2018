@@ -1,0 +1,23 @@
+<h1><%= @author.name %></h1>
+<h3>Books</h3>
+<ul>
+  
+
+  <% @author.books.each do |book| %>
+    
+      <div><%= link_to book.name, author_book_path(@author, book) %></div>
+    
+  <% end %>
+</ul>
+
+<h3>Add a book</h3>
+  <%= form_for [@author, @book ] do |f| %>
+    <%= hidden_field_tag :author_id, @author.id %>
+    <%= f.label :name %>
+    <%= f.text_field :name %>
+    <br>
+    <%= f.select :genre_ids, options_from_collection_for_select(Genre.all, 'id', 'name') %>
+    <%= f.submit %>
+  <% end %>
+    <br>
+   
