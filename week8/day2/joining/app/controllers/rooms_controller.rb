@@ -8,6 +8,6 @@ class RoomsController < ApplicationController
 		# room = Room.find(params[:id])
 		# p "this is the room #{room}"
 		@subject.rooms << room
-		redirect_to root_path
+		redirect_to "/subjects/#{@subject.id}"
 	end
 end

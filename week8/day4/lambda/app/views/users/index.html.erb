@@ -1,0 +1,7 @@
+<% @users.each do |u| %>
+<div><%= u.username %></div>
+<div><%= u.email %></div>
+<br>
+<% end %>
+
+<%= check_box_tag 'accept'%>
