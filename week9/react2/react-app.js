@@ -23,6 +23,6 @@ class Message extends React.Component{
 
 
 ReactDOM.render(
-	<Message text="whatever" />,
+	<Message />,
 	document.getElementById("react")
 )
