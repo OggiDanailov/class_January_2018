@@ -24,7 +24,7 @@ class Post extends React.Component{
 					<div>Title: {this.state.title}</div>
 					<div>Content: {this.state.content}</div>
 
-					
+
 					Title: <input onChange={this.updateTitle} value={this.state.title}  />
 					<br />
 					<br />
@@ -67,3 +67,45 @@ ReactDOM.render(
 <Post />,
 document.getElementById('main-app')	
 	)
+
+
+
+// bind explained
+// class Product{
+// 	constructor(){
+// 		this.name = 'beer'
+// 	}
+// 	showProduct(){
+// 		console.log(this.name)
+// 	}
+// }
+
+// class Cart{
+// 	constructor(){
+// 		this.name = 'My Shopping Cart'
+// 	}
+// }
+// beer = new Product();
+// c = new Cart();
+
+// c.showProduct = beer.showProduct.bind(c)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

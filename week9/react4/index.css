@@ -1,0 +1,22 @@
+body {
+	background-color: teal;
+}
+
+.side-menu {
+	position: fixed;
+	background-color: darkred;
+	color: salmon;
+	font-size: 30px;
+	right: -140;
+	animation: slideMenu 2s ease-in-out 2s;
+	animation-fill-mode: forwards;
+}
+
+@keyframes slideMenu{
+	0%{
+		right: -140px;
+	}
+	100% {
+		right: 5px;
+	}
+}
