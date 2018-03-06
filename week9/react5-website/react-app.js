@@ -5,6 +5,8 @@ class App extends React.Component{
 		this.state = {
 			blogList: props.blogs  
 		}
+
+	
 	}
 
 	render(){
@@ -18,7 +20,9 @@ class App extends React.Component{
 				<Footer />
 			</div>
 		)
-	}	
+	}
+
+
 }
 
 
@@ -26,11 +30,13 @@ function Header(){
 	return(
 		<div className='title'>
 			<header>
-				<h2>The Amazing Blog of Oggi on React</h2>
+				<h2 className='title2'>The Amazing Blog of Oggi on React</h2>
 			</header>
 		</div>
 	)
 }
+		
+		
 
 function Footer(){
 	var data = new Date();
