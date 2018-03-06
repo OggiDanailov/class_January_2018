@@ -10,7 +10,7 @@ class Message extends React.Component{
 	render(){
 		return <div>
 					<div className='message'>{this.state.text}</div>
-					<input onChange={this.changeMessage} type='text' value={this.state.text} />
+					<input onChange={this.changeMessage} type='text'  />
 				</div>
 	}
 

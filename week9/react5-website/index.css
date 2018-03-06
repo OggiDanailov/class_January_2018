@@ -1,0 +1,88 @@
+* {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: lightgrey;
+	font-size: 24px;
+	font-family: helvetica;
+	font-family: cursive;
+}
+
+
+.title {
+	height: 200px;
+	background-color: black;
+	
+}
+
+.title h2 {
+	color: white;
+	
+	text-align: center;
+	line-height: 200px;
+}
+
+
+.footer {
+	background-color: beige;
+	height: 70px;
+}
+
+.footer p {
+	text-align: center;
+	line-height: 70px;
+}
+
+.main-container {
+	min-height: 500px;
+}
+
+
+.side-bar {
+	position: fixed;
+	top: 300px;
+	right: 50px;
+	width: 200px;
+	height: 200px;
+	padding: 10px;
+	font-size: 16px;
+	background-color: darkred;
+	box-shadow: 5px 5px 5px black;
+}
+
+
+.profile-img {
+	background-image: url('sofia.jpg');
+	background-size: 100% 100%;
+	border-radius: 50%;
+	height: 100px;
+	width: 100px;
+	margin: 0 auto;
+}
+
+
+.blog-container {
+	font-size: 20px;
+	width: 40%;
+	margin: 20px auto;
+	background-color: darkred;
+	padding: 10px;
+	box-shadow: 5px 5px 5px black;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

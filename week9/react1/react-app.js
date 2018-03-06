@@ -21,10 +21,26 @@ class Message extends React.Component{
 	constructor(props){
 		super(props)
 		this.text = props.text
+		this.state = {
+			name: 'something'
+		}
+
+		this.changeName = this.changeName.bind(this)
 	}
 
 	render(){
-		return <div>{this.text}</div>	
+		return( 
+			<div>
+			<div onClick={this.changeName}>{this.props.text}</div>	
+			<div>{this.state.name}</div>
+			</div>
+		)
+	}
+
+	changeName(){
+		this.setState({
+			name: 'whatever'
+		})
 	}
 }
 

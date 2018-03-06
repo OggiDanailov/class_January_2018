@@ -17,3 +17,5 @@
 - when you write a function in JS class you don't need the key word function.
 - setState is a method that comes from the Component (that's why we use the this keyword) and it takes an object literal as an argument.
 - if you don't do bind on the method the error will tell you that cannot read property of setState so we have to set 'bind'; the problem is that we are losing the value of 'this'. In JS you can attach the 'this' value through 'bind'; here this.setState is in the scope of the method so we have to bind the method to the general object (component);
+
+- functional component vs. Class component; we will use functional component when we have only static info; when we pass arguments and we change something then we will use Class.
