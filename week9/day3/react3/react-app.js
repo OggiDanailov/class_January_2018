@@ -1,7 +1,5 @@
 // Write two methods that render two inputs -  one for Post title Post content
 
-
-
 class Post extends React.Component{
 	constructor(){
 		super()
@@ -23,12 +21,10 @@ class Post extends React.Component{
 		return <div>
 					<div>Title: {this.state.title}</div>
 					<div>Content: {this.state.content}</div>
-
-
-					Title: <input onChange={this.updateTitle} value={this.state.title}  />
+					Title: <input onChange={this.updateTitle}   />
 					<br />
 					<br />
-					Content: <input onChange={this.updateContent} value={this.state.content}  />
+					Content: <input onChange={this.updateContent}   />
 					<br />
 					<br />
 					<button onClick={this.updateLatestPost}>Post latest</button>
@@ -42,9 +38,7 @@ class Post extends React.Component{
 
 	updateLatestPost(){
 		this.setState({
-			latestPost: {title: this.state.title, content: this.state.content},
-			title: '',
-			content: ""			
+			latestPost: {title: this.state.title, content: this.state.content}		
 		})
 	}
 

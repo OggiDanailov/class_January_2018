@@ -51,34 +51,31 @@ function Footer(){
 }
 
 
-function Sidebar(){
-	var today = new Date();
-	var d = today.getDay();
-	var m = today.getMonth();
-	var y = today.getFullYear();
-	if(d == 1){
-		d = 'Monday'
-	}else if(d == 2){
-		d = 'Tuesday'
+class Sidebar extends React.Component{
+	construnctor(props){
+		
+		this.changeImg = this.changeImg.bind(this)	
 	}
 
 
-today = (m + 1) + '/' + d + '/' + y;
-
-	return(
-		<div className='side-bar'>
-			<div>{today}</div>
-			<div className='profile-img'></div>
-			<div className='bio'><p>This is where I grew up; literally in the mountain!!!!</p></div>
-		</div>
-	)
+	render(){
+		return(
+			<div className='side-bar'>
+				<div id='s' onClick={this.changeImg} className='img'></div>
+				<div className='bio'><p>This is where I grew up; literally in the mountain!!!!</p></div>
+			</div>
+		)
+	}
+	changeImg(){
+		document.getElementById('s').classList.add("img2")
+	}
 }
 
 function Blogs(argument){
 	console.log(argument)
-	var blogs = argument.blogy.map(function(b){
+	var blogs = argument.blogy.map(function(b, index){
 		return(
-			 <div className='blog-container'>
+			 <div key={index} className='blog-container'>
 					<h2>{b.title} </h2>
 					<p>{b.content} </p>
 				</div>
