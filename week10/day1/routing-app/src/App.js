@@ -7,6 +7,7 @@ import axios from 'axios';
 import Home from './Home'
 import About from './About'
 import Destinations from './Destinations'
+import NewDestination from './NewDestination'
 
 class App extends Component {
   render() {
@@ -18,11 +19,13 @@ class App extends Component {
           <li><Link to='/'>Home</Link></li>
           <li><Link to='/about'>About</Link></li>
           <li><Link to='/destinations'>Destinations</Link></li>
+          <li><Link to='/destination'>Create Destinations</Link></li>
           </ul> 
 
             <Route exact path='/' component={Home} />
             <Route path='/about' component={About} />
             <Route path='/destinations' component={Destinations} />
+            <Route path='/destination' component={NewDestination} />
          
           </div>
         </BrowserRouter>

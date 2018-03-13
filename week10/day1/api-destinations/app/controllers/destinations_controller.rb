@@ -4,10 +4,9 @@ class DestinationsController < ApplicationController
 		render json: Destination.all
 	end
 
-	def create
-		p params[:data]
+	def create	
 		Destination.create(destination_params)
-		render json: Destination.all
+		
 	end
 
 
