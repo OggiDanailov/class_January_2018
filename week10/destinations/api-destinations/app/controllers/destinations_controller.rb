@@ -10,6 +10,10 @@ class DestinationsController < ApplicationController
 		render json: Destination.all
 	end
 
+	def show
+		
+	end
+
 
 	private
 

@@ -9,6 +9,10 @@ class DestinationsController < ApplicationController
 		
 	end
 
+	def show
+		render json: Destination.find(params[:id])
+	end
+
 
 	private
 
