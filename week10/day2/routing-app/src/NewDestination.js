@@ -20,13 +20,13 @@ class NewDestination extends React.Component{
 	render(){
 		return (
 			<div>
-				Name<input type='text' onChange={this.createName} />
+				<div className='form'>City<input type='text' onChange={this.createName} /></div>
 				<br />
-				Description<input type='text' onChange={this.createDescription} />
+				<div className='form'>Description<input type='text' onChange={this.createDescription} /></div>
 				<br />
-				Images<input type='text' onChange={this.createImage} />
+				<div className='form'>Images<input type='text' onChange={this.createImage} /></div>
 				<br />
-				<input type='submit' onClick={this.createDestination} />
+				<div className='form'><input type='submit' onClick={this.createDestination} /></div>
 			</div>
 		)
 	}
