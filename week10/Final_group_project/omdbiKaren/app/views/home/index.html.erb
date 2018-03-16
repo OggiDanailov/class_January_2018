@@ -2,7 +2,9 @@
 
 
 
-<%= link_to "Whatever", :url => {:controller=>'posts', :action =>'new'}, :remote => true,  :method => :post, :with =>"whatever()" %>
+<% @movie.each do |m| %>
+<div><%= m.title %></div>
+<% end %>
 
 
 

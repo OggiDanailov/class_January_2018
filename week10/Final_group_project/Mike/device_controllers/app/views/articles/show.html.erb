@@ -1,0 +1,14 @@
+
+<h2><%= @article.title %></h2>
+
+<p class='content'><%=@article.content%></p>
+<hr>
+<h3>Add your story to the story!</h3>
+<div class='adding'>
+	<%= form_for @article, method: :patch do |f| %>
+	<%= f.text_area :content, placeholder: @article.content %>
+	
+	<br>
+	<%= f.submit 'add', :class =>'submit' %>
+	<% end %>
+</div>
