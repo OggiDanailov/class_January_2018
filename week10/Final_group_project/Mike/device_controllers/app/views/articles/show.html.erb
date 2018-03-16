@@ -5,10 +5,11 @@
 <hr>
 <h3>Add your story to the story!</h3>
 <div class='adding'>
-	<%= form_for @article, method: :patch do |f| %>
+	<%= form_for(:article, :url => {:action => 'update', :id => @article.id}, method: :patch) do |f| %>
 	<%= f.text_area :content, placeholder: @article.content %>
 	
 	<br>
 	<%= f.submit 'add', :class =>'submit' %>
 	<% end %>
 </div>
+
