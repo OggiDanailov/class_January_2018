@@ -2,6 +2,8 @@
 <p>Find me in app/views/articles/index.html.erb</p>
 
 <% @articles.each do |a| %>
+<div class='index-content'>
 <h4><a href='/articles/<%= a.id %>'><%= a.title %></a></h4>
-<p><%= a.content %></p>
+<span class='content-article'><%= a.content %></span>
 <%end %>
+</div>
