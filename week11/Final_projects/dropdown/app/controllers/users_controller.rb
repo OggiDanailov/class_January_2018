@@ -5,6 +5,7 @@ class UsersController < ApplicationController
 
   def new
   	@user = User.new
+    @job = ["buyer", 'seller']
   end
 
   def show

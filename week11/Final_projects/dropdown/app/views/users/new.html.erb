@@ -4,7 +4,7 @@
 <%= form_for @user do |f| %>
 Name: <%= f.text_field :name %>
 Password: <%= f.text_field :password %>
-<%= f.select :status, ["buyer", 'seller'] %>
+<%= f.select :status, @job %>
 <%= f.submit %>
 
 <% end %>
