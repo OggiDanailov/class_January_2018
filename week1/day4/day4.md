@@ -12,7 +12,7 @@ Commands:
 - git add -A  - add all current changes for commiting  
 - git commit -m   - commits all utracked changes; don't forget the -m!!! if you forget it you will be prompted to Vim text editor; to get out of there you have to press `sec` and then type :wq  
 
-- git checkout ...number of commit - you will move bakc in time to a given commit  
+- git checkout ...number of commit - you will move back in time to a given commit  
     
 - git reset --hard ...number of commit-you will delete all commits (all the code); don't do that unless absolutely necessary!!!!  
 

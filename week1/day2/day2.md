@@ -65,7 +65,7 @@ https://kyleschaeffer.com/development/css-font-size-em-vs-px-vs-pt-vs/
 - background-size  
 
 ##2. Exercise Float:
-- Create 2 `<p>` elements with 4-5 sentences of lorem ipsuminside of them
+- Create 2 `<p>` elements with 4-5 sentences of lorem ipsum inside of them
 -   Also put an `<img>` element on the page above the `<p>` elements
 -   Give all of the elements different classes and try floating the `<img>` first, than the `<p>` elements to get an idea of how floats impact page layout
 

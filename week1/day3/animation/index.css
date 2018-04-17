@@ -22,7 +22,7 @@ body {
 	border: 1px solid red;
 	position: relative;
 	transition: border;
-	transition: border-radius ;
+	transition: border-radius;
 	transition-duration: 10s;
 
 }
@@ -55,7 +55,9 @@ animation: sliding 5s;
 	50% {top: 50px;
 		background-color: orange;}
 	75% {top: 25px;}
-	100% {top: 0 }
+	100% {top: 0;
+		background-color: purple;
+	 }
 }
 
 #four:hover {
