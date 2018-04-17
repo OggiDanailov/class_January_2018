@@ -18,7 +18,7 @@ https://www.thoughtco.com/absolute-vs-relative-3466208
 
 
 
-###Nomralize.css
+###Normalize.css
 
 - css reset  - it is a way of keeping your brower more consitently. 
 - https://necolas.github.io/normalize.css/
