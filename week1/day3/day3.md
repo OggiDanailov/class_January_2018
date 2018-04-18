@@ -31,6 +31,8 @@ https://www.thoughtco.com/absolute-vs-relative-3466208
 ###Mobile responsivness
 - syntax:
 - you have to include the view tag:	`<meta name="viewport" content="width=device-width, initial-scale=1">`
+- ####viewport - 
+A viewport represents a polygonal (normally rectangular) area in computer graphics that is currently being viewed. In web browser terms, it refers to the part of the document you're viewing which is currently visible in its window (or the screen, if the document is being viewed in full screen mode). Content outside the viewport is not visible onscreen until scrolled into view.
 
 - @media all and (min-width: 481px) and (max-width:767px){  
 	 body {  
