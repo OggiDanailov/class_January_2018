@@ -1,0 +1,64 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.wrapper {
+	width: 100%;
+	display:grid;
+	margin: 0 auto;
+	grid-template-columns: 1fr 1fr;
+}
+
+
+.logo {
+	/*border: 2px solid red;*/
+	background-image: url("acme-logo.png");
+	background-repeat: no-repeat;
+	position: relative;
+	top: 50px;
+	left: 100px;
+}
+
+.navbar {
+	/*border: 2px solid green;*/
+	margin-top: 100px;
+}
+
+.navbar li {
+	text-decoration: none;
+	/*border: 2px solid;*/
+	display:inline;
+	padding-right: 20px;
+	font-size: 25px;
+	color: grey;
+
+}
+
+
+.image {
+	background-image: url("anvil.png");
+	background-size: 100% 100%;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	/*border: 2px solid green;*/
+	height: 400px;
+	width: 80%;
+	margin: 50px auto;
+}
+
+h2 {
+	color: grey;
+	margin-bottom: 30px;
+}
+.text-left {
+	padding: 10px 50px;
+	/*border: 2px solid green;*/
+}
+
+.text-right {
+	padding: 10px 50px;
+	/*border: 2px solid red;*/
+
+}
+
