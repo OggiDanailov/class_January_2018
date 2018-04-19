@@ -1,0 +1,64 @@
+/*.element {
+	transition: [property] [duration] [ease] [delay];
+}*/
+
+
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: red;
+	transition: height 1s, width 1s;
+}
+
+.box:hover {
+	height: 150px;
+	width: 150px;
+}
+
+/*animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];*/
+
+.box2 {
+	margin-top: 20px;
+	position: relative;
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+	animation: myFristFrame 5s ease-out 1s 1 normal forwards;
+	animation-play-state:paused;
+	
+}
+.box2:hover {
+	animation-play-state:running; 
+}
+
+@keyframes myFristFrame {
+	0% {
+		top: 0;
+		left: 0;
+
+	}
+	50% {
+		top: 100px;
+		left: 100px;
+		background-color: green;
+	}
+	100% {
+		top: 300px;
+		left: 400px;
+		background-color: red;
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
