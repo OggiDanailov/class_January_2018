@@ -75,9 +75,9 @@ If/Else statements
 
 ###Exercise 3
 
-Write a program that checks if a variable is less than 10. If it is, alert the user that their variable is less than 10. If it is not, let the user know what the variable was and that it was greater than 10.  
+Write a program that checks if a variable is less than 100. If it is, alert the user that their variable is less than 10. If it is not, let the user know what the variable was and that it was greater than 10.  
 •   Try running the script and then changing the variable's value to see how this affects the program output  
-•   If you have extra time, write a similar program to check if a string stored in a variable is the same as another string
+•    write a similar program to check if a string stored in a variable is the same as another string
 
 
 - Functions
