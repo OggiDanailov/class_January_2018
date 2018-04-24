@@ -1,7 +1,8 @@
 coding challenge:
-
-1. write a function that takes two arguments, adds them and checks if the output is bigger than 100;
-2. write a function that lists all the numbers from 0 to 100; if the outcome number is even print to the console the number plus  add the line 'it is an even';
+1. write a function that takes an array as an argument and lists all the items in this array.
+2. write a function that takes two arguments, adds them and checks if the output is bigger than 100;
+3. Create an object literal called person; give some key value pairs as firstName and lastName; finally print the length of the firstName and the lastName of the object. 
+4. write a function that lists all the numbers from 0 to 100; if the outcome number is even print to the console the corresponding number plus add the line 'it is an even';
 if it is odd add the line 'it is odd'
 
 ##Scope in Javascript
@@ -37,7 +38,7 @@ console.log(c);
 
 - forms and inputs;
 
-######(difference between innerHTML and innerText - Unlike innerText, though, innerHTML lets you work with HTML rich text and doesn't automatically encode and decode text. In other words, innerText retrieves and sets the content of the tag as plain text, whereas innerHTML retrieves and sets the same content but in HTML format.)  
+(difference between innerHTML and innerText - Unlike innerText, though, innerHTML lets you work with HTML rich text and doesn't automatically encode and decode text. In other words, innerText retrieves and sets the content of the tag as plain text, whereas innerHTML retrieves and sets the same content but in HTML format.)  
 
 ###targeting elements from the DOM and use them in the JS:
  - document.getElementById()

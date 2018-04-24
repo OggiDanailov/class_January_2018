@@ -23,7 +23,7 @@ something.addEventListener('click', function(){
 })
 
 
-var submit = document.getElementById('submit')
+// var submit = document.getElementById('submit')
 var username = document.getElementById('username')
 
 
@@ -31,3 +31,28 @@ var username = document.getElementById('username')
 function submission(){
 	console.log(username.value)
 }
+
+// Gives you a string of the text inside the element.
+// var myVar = document.querySelector('p').textContent;
+// Gives you the raw HTML representing the element.
+// var myVar = document.querySelector('p').innerHTML;
+// Also gives you the text of the element as a string.
+// var myVar = document.querySelector('p').innerText;
+// Gives you the child elements of the element.
+// var myVar = document.querySelector('p').children;
+// Gives you all the child nodes of the element.
+// var myVar = document.querySelector('p').childNodes;
+
+
+var header = document.getElementsByClassName("header")
+for(var i=0;i<header.length;i++){
+	console.log(header[i].textContent)
+}
+
+var one = document.getElementById('div1')
+one.addEventListener('click', function(event){
+	console.log(event.target.type)
+})
+
+
+
