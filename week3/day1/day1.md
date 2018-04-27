@@ -66,7 +66,7 @@ The value of this will become the new object when the constructor is used to cre
 2. 3 examples of Person; you create instances of object person and you inherit all the functionality that this object contains. 
 If you try to do the same with object literal you won't be able to; JS won't allow you to create a new object based on object literal;
 ###Exercise 1
-•   Create a new JavaScript file with a constructor function for an object of your choosing
+•   Create a new JavaScript file with a constructor function for an object of your choice
 •  Include at least one method in it(function)
 •   Instantiate two copies of that object without getting syntax errors
 

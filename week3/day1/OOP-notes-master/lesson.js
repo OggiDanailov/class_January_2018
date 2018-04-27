@@ -52,6 +52,8 @@ function Animal(){
 	Person.apply(this, arguments)
 }
 
+// apply takes an array as an argument; call will take individual arugments
+
 Animal.prototype = new Person;
 
 
