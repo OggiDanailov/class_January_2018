@@ -65,6 +65,7 @@ The value of this will become the new object when the constructor is used to cre
 1. example of function constructor;
 2. 3 examples of Person; you create instances of object person and you inherit all the functionality that this object contains. 
 If you try to do the same with object literal you won't be able to; JS won't allow you to create a new object based on object literal;
+
 ###Exercise 1
 •   Create a new JavaScript file with a constructor function for an object of your choice
 •  Include at least one method in it(function)
@@ -76,7 +77,8 @@ If you try to do the same with object literal you won't be able to; JS won't all
 
 ###Exercise 2
 •   Take the object you created in the last exercise and extend it using its prototype
-•   Add one more attribute and one more method to it•   Try to access these attributes and methods on both an already created instance and a brand new instance of the object
+•   Add one more attribute and one more method to it
+•   Try to access these attributes and methods on both an already created instance and a brand new instance of the object
 
 5. Class in Javascript - this is simply a new way of writing the same. This is ECMA6 so it is relatively new. Reactjs is all written in classes.
 6. Examples -

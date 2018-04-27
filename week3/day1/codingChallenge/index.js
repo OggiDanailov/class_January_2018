@@ -1,5 +1,5 @@
-// 1. Create a function that takes an array of numbers as argument
-//  and returns the sum of only the Even and only the Odd numbers
+// 1. Create a function that takes an array of numbers as an argument
+//  and returns the sum of all of the Even and all of the Odd numbers
 
 
 // function sumOddandPair(array){

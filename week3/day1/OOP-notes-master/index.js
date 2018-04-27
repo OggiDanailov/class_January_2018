@@ -11,7 +11,7 @@
 // object constructor
 
 // function Person(name, nationality, yearBirth){
-// 	this.name = name;
+// 	this.name = name; 
 // 	this.nationality = nationality;
 // 	this.yearBirth = yearBirth
 // }
