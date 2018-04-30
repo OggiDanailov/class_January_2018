@@ -15,6 +15,13 @@ var sum = a.reduce(function(a, b){
 	return a + b;  
 }, 0)  
 
+
+------------------------------------------------
+1. use forEach method in JS to list all the items in the array:
+var names = ['NYC', "Bordaux", "Amsterdam", "Toronto", "Helsinki"];
+google it if you haven't used it so far;
+2. Write a function that takes an array of numbers and finds the biggest number in it;
+
 ##Review:
  - varabiles - var, const and let
  - string;  
