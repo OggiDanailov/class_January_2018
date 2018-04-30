@@ -56,9 +56,7 @@ function Album(){
 	}
 	}
 
-	this.lastPhoto = function(photo){
-		photo[photo.length - 1]
-	}
+
 
 }
 
