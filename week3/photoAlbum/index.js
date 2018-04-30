@@ -12,19 +12,48 @@
 //  animate the images on the page somehow. Have fun!
 
 
-var button = document.getElementById('button')
+
+
+
+
+var button = document.getElementById('button');
+var nameFunction = document.getElementById("nameFunction")
+
+var photoName = document.getElementById('photoName')
+var photoLocation = document.getElementById('photoLocation')
+var photoUrl = document.getElementById('photoUrl')
+
 
 function Album(){
 	this.photoList = [];
 
-	this.addPhotos = function(photo){
-		this.photoList.push(photo)
+	this.addPhotos = function(){
+		// this.photoList.push(photo)
+	var newName = photoName.value;
+	newName = new Photos(newName, photoLocation.value, photoUrl.value )
+	this.photoList.push(newName)
+		console.log(this.photoList)
 	}
 
 	this.listPhotos = function(){
-		for(let i=0;i<this.photoList.length;i++){
-			this.photoList[i]
-		}
+		// create wrapper
+		var wrapper = document.createElement("DIV")
+		wrapper.style.width = "90%"
+		wrapper.style.border = "2px solid red"
+		wrapper.style.margin = "10px auto";
+		document.body.appendChild(wrapper)
+		// list all images
+	for(let i = 0;i<album.photoList.length;i++){
+		var img = document.createElement('div');
+		img.style.border = "4px solid black"
+		img.style.width = "200px"
+		img.style.height = "200px"
+		img.style.backgroundSize = "100% 100%"
+		img.style.margin = '5px'
+		img.id = 'img';	
+		img.style.backgroundImage = "url(" + album.photoList[i].url + ")"
+		wrapper.appendChild(img)
+	}
 	}
 
 	this.lastPhoto = function(photo){
@@ -40,25 +69,26 @@ function Photos(name, location, url){
 }
 
 var album = new Album;
-var p1 = new Photos('Plovdiv', 'Bulgaria', "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Plovdiv_view.jpg/300px-Plovdiv_view.jpg");
-var p2 = new Photos('whatever', 'New Mexico');
-album.addPhotos(p1)
-album.addPhotos(p2)
+// var p1 = new Photos('Plovdiv', 'Bulgaria', "https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Plovdiv_view.jpg/300px-Plovdiv_view.jpg");
+// var p2 = new Photos('Varna', 'Bulgaria', 'http://varna-bulgaria.info/wp-content/uploads/2010/10/varna-bulgaria-info.jpg');
+// var p3 = new Photos("Skopje", "Macedonia", "https://www.gonomad.com/wp-content/uploads/2018/02/Skopje-Macedonia.jpg");
+// album.addPhotos(p1)
+// album.addPhotos(p2)
+// album.addPhotos(p3)
+
 
 button.addEventListener("click", function(){
-	frame()
+	album.listPhotos()	
+});
 
+
+nameFunction.addEventListener("click", function(){
+	album.addPhotos()
+	
+	
 })
 
-function frame(){
-	var img = document.createElement('div');
-	img.style.border = "4px solid black"
-	img.style.width = "200px"
-	img.style.height = "200px"
-	img.id = 'img';
-	img.style.backgroundImage = "url(" + album.photoList[0].url + ")"
-	document.body.appendChild(img)
-}
+
 
 
 
