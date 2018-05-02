@@ -7,7 +7,7 @@
 //     }
 // });
 $(document).ready(function(){
-
+ 
 
 $(".something").click(function(){
 		naming()
@@ -44,11 +44,11 @@ function naming(){
 // }
 
 // toggling = here I can use 'this' which will refer to box
-// $("#box").click(function(){
-// 	$(this).toggleClass("green")
-// 	// $(this).css('background-color', 'yellow');
-// 	$("h2").toggle()
-// })
+$("#box").click(function(){
+	$("#box2").toggleClass("green")
+	// $(this).css('background-color', 'yellow');
+	// $("h2").toggle()
+})
 
 
 
@@ -60,11 +60,11 @@ function naming(){
 
 
 // in javascript toggling
-var box = document.getElementById('box')
+// var box = document.getElementById('box')
 
-box.addEventListener("click", function(){
-	box.classList.toggle('green')
-})
+// box.addEventListener("click", function(){
+// 	box.classList.toggle('green')
+// })
 
 
 

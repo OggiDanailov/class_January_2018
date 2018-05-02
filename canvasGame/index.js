@@ -38,17 +38,12 @@ function moveShip(event){
 
 // create bullet
 function createBullet(){
-	while(y>0){
+	ctx.clearRect(0, 0, canvas.width, canvas.height);
 	ctx.beginPath()
-	ctx.clearRect(0, 0, 7, 7);
 	ctx.rect(x, y-15, 7, 7);
 	ctx.fillStyle = "blue";
 	ctx.fill();
 	ctx.closePath();
-	 y--;
-	 console.log(y)
-	}
-
 }
 
 
@@ -60,3 +55,22 @@ document.addEventListener('keydown', function(e){
 		createBullet()
 	}
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

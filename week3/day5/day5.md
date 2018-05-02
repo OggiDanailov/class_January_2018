@@ -1,17 +1,22 @@
-coding challenge:
+ 
+   coding challenge:
 
 1.  Write a function that takes an array of numbers and creates a new array with 
 // only the even numbers from the first array. For instance, 
 // if you pass your function an array of [1, 3, 4, 6, 9], your function should return [4, 6].
 
 1. 1/2 
-Create a function that takes two arrays, each having elements that are numbers. Compare the sum of the numbers in each array. Return the array with the largest sum. Example:var array1 = [1,54,65,345,54,878,565,23,43,123,432,1232,543,876,89,546, 32,123];
+Create a function that takes two arrays, each having elements that are numbers. Compare the sum of the numbers in each array. Return the array with the largest sum. Example:
+var array1 = [1,54,65,345,54,878,565,23,43,123,432,1232,543,876,89,546, 32,123];
 var array2 = [123, 32, 123,432,345,234,567,789,56,345,65,34,456,23,543,2,345,23,45,2,234,34,234,234,34,234, 434]
 
 
 2.  Write a program that prints the numbers from 1 to 100. For multiples of three print “Rick” instead of the number and for the multiples of five print “Roll”. For numbers which are multiples of both three and five print "RickRoll".
 
-3. Create a function that takes 2 numbers as arguments. Return true if there is a digit that appears in both numbers. Example:// sameDigit(5, 65) -> true// sameDigit(23, 82) -> true// sameDigit(85, 49) -> false
+3. Create a function that takes 2 numbers as arguments. Return true if there is a digit that appears in both numbers. Example:
+// sameDigit(5, 65) -> true
+// sameDigit(23, 82) -> true
+// sameDigit(85, 49) -> false
 
 4. Write a function that in each second with math.random gives you a number between 1 to 100. If the number is even print 'even' on the screen plus the number and changes the background color to red; if the number is odd print 'whatever' on the screen plus the number plus changes the background color to green
 

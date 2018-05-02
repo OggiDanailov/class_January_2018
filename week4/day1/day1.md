@@ -1,4 +1,11 @@
 coding challenge:
+1. write a method that gives you random names from an array in JS
+
+function randomize(array){
+var a = Math.floor(Math.random() * array.length)
+return array[a]
+}
+
 
 1. write a function that takes an array of names and returns a whole string of these names with comma and the word 'and' before the last name;
 ["John", "George", "James", "Anna"] ---> "John, George, James, and Anna";

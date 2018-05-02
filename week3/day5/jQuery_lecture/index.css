@@ -22,6 +22,21 @@
 }
 
 
+
+
 .green {
-	background-color: green;
+display: none;	
 }
+
+#box2 {
+	width: 200px;
+	height: 200px;
+	background-color: orange;	
+}
+
+
+
+
+
+
+
