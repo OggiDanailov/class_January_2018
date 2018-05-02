@@ -30,9 +30,9 @@ setTimeout(function(){
 // example of class targeting in both 
 
 
-// function naming(){
-// 	$(".name").html("hello Jquery")
-// }
+function naming(){
+	$(".name").html("hello Jquery")
+}
 
 
 // var name = document.getElementsByClassName("name")
@@ -43,8 +43,27 @@ setTimeout(function(){
 // 	}
 // }
 
+// toggling = here I can use 'this' which will refer to box
+// $("#box").click(function(){
+// 	$(this).toggleClass("green")
+// 	// $(this).css('background-color', 'yellow');
+// 	$("h2").toggle()
+// })
 
 
+
+
+
+
+
+})
+
+
+// in javascript toggling
+var box = document.getElementById('box')
+
+box.addEventListener("click", function(){
+	box.classList.toggle('green')
 })
 
 
