@@ -1,4 +1,4 @@
-// Objects:
+c// Objects:
 // literal notation of objects
 
 // var person = {

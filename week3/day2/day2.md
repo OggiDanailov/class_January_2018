@@ -1,7 +1,7 @@
 add the sum: 
 
 var obj = {
-	name: 'torture',
+	name: 'torture exercise',
 	miniObj: {
 		name: 'Minitorture',
 		array: [{
