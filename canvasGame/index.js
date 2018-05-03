@@ -36,15 +36,20 @@ function moveShip(event){
 	}
 }
 
+var colors = ['blue', 'red', 'green', 'yellow', 'orange']
 // create bullet
+
 function createBullet(){
-	ctx.clearRect(0, 0, canvas.width, canvas.height);
-	ctx.beginPath()
-	ctx.rect(x, y-15, 7, 7);
-	ctx.fillStyle = "blue";
-	ctx.fill();
-	ctx.closePath();
+	for(let i = 0;i<5;i++){
+		ctx.clearRect(0, 0, canvas.width, canvas.height);
+		ctx.beginPath()
+		ctx.rect(x + (i* 3), y-15, 7, 7);
+		ctx.fillStyle = colors[i];
+		ctx.fill();
+		ctx.closePath();
+	}
 }
+
 
 
 document.addEventListener('keydown', function(e){

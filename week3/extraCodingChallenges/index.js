@@ -40,20 +40,20 @@
 // }
 // arrayToObj(houseWords); 
 
-// Using indexOf and splice() create a function that takes an array as an argument and removes a given item from the array;
+// Using indexOf and splice() create a function that takes an array and a name as an argument and removes a given item from the array if it is there;
 // EX. var names = ["Beatles", "rolling stones", "Pink Floyd", "Kinks", "Who", 'Kiss', "Jimi Hendrix", "Yes"] - you check if 
-// Kiss is in the array and you remove it
+// "Kiss" is in the array and you remove it
 
-var names = ["Oggi", "Boro", "jordan", "Spas"]
+// var names = ["Oggi", "Boro", "jordan", "Spas"]
 
 
-function name(array){
-	if(array.indexOf("Oggi") !== -1){
-		var position = array.indexOf("Oggi")
-	}
-	array.splice(array[position], 1)
-	return array
-}
+// function name(array){
+// 	if(array.indexOf("Oggi") !== -1){
+// 		var position = array.indexOf("Oggi")
+// 	}
+// 	array.splice(array[position], 1)
+// 	return array
+// }
 
 
 
