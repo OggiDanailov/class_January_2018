@@ -74,6 +74,8 @@ $(".my-element").animate(
  var parsing = JSON.parse('{"animals": ["zebra","ostrich","baboon"  ]}')  
  parsing.animals[0]
  
+ Aplication Programming Interface
+ 
  AJAX - Asynchronous Javascript and XML
  you send a request to a given page without reloading the page; 
  $.ajax({    

@@ -7,7 +7,7 @@ document.getElementById('submit').addEventListener("click", function(){
 	
 
 	$.ajax({url: "http://www.omdbapi.com/?apikey=660a106a&",
-		data: {s: search},
+		data: {plot: search},
 		dataType: "json",
 		success: function (response){
 			var result = response.Search
