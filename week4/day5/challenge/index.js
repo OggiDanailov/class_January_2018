@@ -3,21 +3,41 @@
 //2. when you click each element that you created you console.log the corresponding letter ex: if you press 
 // the box with letter 'a' you should get 'a' on the console hint: give class to each box and loop through them
 
-var vowels = ['a', 'e', 'i', 'o', 'u']
+// var vowels = ['a', 'e', 'i', 'o', 'u']
 
-for(let i=0; i<vowels.length; i++){
-	var div = document.createElement('div')
-	var letters = document.createTextNode(vowels[i])
-	div.appendChild(letters)
-	div.style.width= '30px';
-	div.style.height='30px';
-	div.style.border='2px solid';
-	div.style.margin='10px';
-	div.classList.add('boxes')
-	document.body.appendChild(div);
-	var boxes = document.getElementsByClassName('boxes');
-	boxes[i].addEventListener('click', function(){
-		show(i);
+// for(let i=0; i<vowels.length; i++){
+// 	var div = document.createElement('div')
+// 	var letters = document.createTextNode(vowels[i])
+// 	div.appendChild(letters)
+// 	div.style.width= '30px';
+// 	div.style.height='30px';
+// 	div.style.border='2px solid';
+// 	div.style.margin='10px';
+// 	div.classList.add('boxes')
+// 	document.body.appendChild(div);
+// 	var boxes = document.getElementsByClassName('boxes');
+// 	boxes[i].addEventListener('click', function(){
+// 		show(i);
+// 	})
+// }
+
+
+
+
+
+
+// function show(x){
+// 	console.log(vowels[x])
+// }
+
+var one = document.getElementsByClassName('one')
+
+box = document.getElementById("box")
+
+for(let i = 0;i<one.length;i++){
+	one[i].addEventListener("click", function(event){
+		box.innerHTML += (event.target.innerHTML + "<br />")
+
 	})
 }
 
@@ -26,9 +46,14 @@ for(let i=0; i<vowels.length; i++){
 
 
 
-function show(x){
-	console.log(vowels[x])
-}
+
+
+
+
+
+
+
+
 
 
 

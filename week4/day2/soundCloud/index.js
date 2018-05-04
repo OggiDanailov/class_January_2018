@@ -26,6 +26,7 @@ function search(){
 	SC.get("/tracks", {
 		q: song
 		}).then(function(response) {
+			console.log(response)
 			response.forEach(function(x){
 				songList.push(x)
 			})
