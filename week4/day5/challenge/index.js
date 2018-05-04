@@ -30,6 +30,7 @@
 // 	console.log(vowels[x])
 // }
 
+
 var one = document.getElementsByClassName('one')
 
 box = document.getElementById("box")
