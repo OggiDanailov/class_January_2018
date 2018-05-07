@@ -55,6 +55,24 @@
 // 	return array
 // }
 
+// 1. Write a method that takes two arguments = a long string and a word and substitute all instances of a given word with the word you are passing. EX:
+// var text = "Today the boy woke up yearly; he left the house and went to school. There the boy studied math for couple of hours. The boy knew it will be hard but the boy didn't expect to be that hard. The boy felt that this field may not be promising. The boy decided to try a new career - a boyscout leader, lawyer, rapper or something similar."
+
+// you have to substitute all instances of 'boy' with 'girl'
+
+
+
+// function subs(text, arg1, arg2){
+// 	var textArray = text.split(" ")
+// 	for(let i = 0;i<textArray.length;i++){
+// 		if(textArray[i].indexOf(arg1) !== -1){
+// 			textArray.splice(i, 1, arg2)
+
+// 		}
+// 	}
+// 	return textArray.join(" ")
+// }
+
 
 
 

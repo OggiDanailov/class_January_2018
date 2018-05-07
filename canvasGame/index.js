@@ -82,35 +82,94 @@ var ctx = canvas.getContext("2d");
 
 // experiemtns
 
+// var canvas;  
+// var ctx;
+// var x = 400;
+// var y = 300;
+// var dx = 2;
+// var dy = -8;
+// var width = 400;
+// var height = 300; 
+
+// function clearCircle(){
+// 	ctx.clearRect(0, 0, width, height);
+// }
+
+// function circle(x, y, r){
+// 	ctx.beginPath();
+// 	ctx.arc(x,y,10,0,2 * Math.PI);
+// 	ctx.stroke()
+// 	ctx.fillStyle = 'red'
+// 	ctx.fill()
+	
+
+	
+
+// }
+
+// function animate(){
+	
+// 		y += dy
+// 	circle(x, y, 10)
+// }
+
+// 	setInterval(function(){
+// 		animate()
+// 	}, 100)
+
+// lesson example:
+
 var canvas;  
 var ctx;
 var x = 400;
 var y = 300;
 var dx = 2;
-var dy = -4;
+var dy = 4;
 var width = 400;
 var height = 300; 
 
-function circle(x, y, r){
-	ctx.beginPath();
-	ctx.arc(x,y,10,0,2 * Math.PI);
-	ctx.stroke()
-	ctx.fillStyle = 'red'
-	ctx.fill()
-	y += dy
-	
+function circle(x,y,r) {
+  ctx.beginPath();
+  ctx.arc(x, y, r, 0, Math.PI*2, true);
+  ctx.fill();
+}
 
+// function rect(x,y,w,h) {
+//   ctx.beginPath();
+//   ctx.rect(x,y,w,h);
+//   ctx.closePath();
+//   ctx.fill();
+// }
+
+ 
+function reset() {
+  ctx.clearRect(50, 20, width, height);
+}
+
+function init() {
+  canvas = document.getElementById("canvas");
+  ctx = canvas.getContext("2d");
+  return setInterval(animate, 10);
 }
 
 
+function animate() {
+  reset();
+  // ctx.fillStyle = "red";
+  // rect(0,0,width,height);
+  ctx.fillStyle = "green";
+  circle(x, y, 10);
 
-	// setInterval(function(){
-	// 	circle(x, y, 10)
-	// }, 100)
+  if (x + dx > width || x + dx < 0)
+    dx = -dx;
+  if (y + dy > height || y + dy < 0)
+    dy = -dy;
 
+  x += dx;
+  y += dy;
+}
 
-
-
+// init();
 
 
 
