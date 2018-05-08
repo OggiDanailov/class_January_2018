@@ -37,7 +37,15 @@ a. Create a basic website that has al least:
 - you use some $variables;  
 - you use at least 2 @mixins;  
 - you use @extend;
-b. Import Bourbon and try to incorporate some of existing functionality   
+- 
+b. Import Bourbon and try to incorporate some of existing functionality 
+  
+c. The site should include:
+- images;
+- navbar;
+- footer;
+- a lot of box shadow, different colors, fonts (so you can easily change them through variables
+- divs with dummy text
 
 
 
