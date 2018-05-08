@@ -12,6 +12,45 @@ return fibonacci(num - 1) + fibonacci(num - 2);
 
 // without recursive
 
+// Anthony
+// function fib(x){
+// var a=0
+// var b= 1
+
+// for(let i=0; i<x-2; i++){
+// var c = a + b
+// a=b
+// b=c
+
+//  }
+//  return c
+// }
+
+// Bridgit
+
+// Write a fibonacci sequence function without using recursion
+
+// fibonacci is number plus previous number: 0 1 1 2 3 5 8 13 21...
+
+// function fibonacci (range) {
+//   var many = Math.floor(range/2);
+//   var place = 0;
+//   var set = 1;
+//   for (i=0;i<many;i++) {
+//     console.log(place);
+//     set+= place;
+//     console.log(set);
+//     place += set;
+//   }
+//   if (range%2 != 0) {
+//     console.log(place)
+//   }
+// }
+
+// fibonacci(9);
+
+
+
 // function fibo(n){
 // 	if(n<= 1){
 // 		return n;
@@ -30,15 +69,15 @@ return fibonacci(num - 1) + fibonacci(num - 2);
 
 // Factorial without recursion
 
-var factor = function(number) {
-  var result = 1;
-  var count;
-  for (count = number; count > 1; count--) {
-    result *= count;
-  }
-  return result;
-};
-console.log(factor(6));
+function factorial(n){
+    var result = 1;
+    
+    for(let i = n; i > 1; i--){
+        result *= i;
+    }
+
+    console.log(result);
+}
 // 720
 
 

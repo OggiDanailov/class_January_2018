@@ -28,7 +28,8 @@ sass --watch stylesheets:css
 
 -bourbon
 gem install bourbon    
-bourbon install  
+bourbon install - install it in the stylesheets folder 
+@import "bourbon/bourbon" - in the main.scss
 you have to restart the server  
 
 1. Exercise:
