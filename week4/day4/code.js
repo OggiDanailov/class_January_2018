@@ -1,3 +1,38 @@
+// 1. write a function that takes a string as an argument and returns it as dashes:
+// e.g:
+// var word = > "_ _ _ _"
+// var dashed = word.replace(/[a-z]/gi, " __ ")
+
+// 2. In JS file, create divs for the whole alphabet and upon click console.log the corresponding letter
+
+
+// var wrapper = document.createElement('div')
+// wrapper.style.width = "90%";
+// wrapper.style.margin = '0 auto'
+// wrapper.style.border = '2px solid orange'
+// document.body.appendChild(wrapper)
+
+// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+
+// for(let i = 0;i<26;i++){
+// 	var alpha = document.createElement('div')
+// 	alpha.style.width = '20px'
+// 	alpha.style.border = '2px solid red'
+// 	alpha.style.textAlign = 'center';
+// 	alpha.style.display = 'inline-block'
+// 	alpha.style.margin = '5px'
+// 	alpha.classList.add('a')
+// 	alpha.innerHTML = alphabet[i]
+// 	wrapper.appendChild(alpha)
+// 	var boxes = document.getElementsByClassName('a')
+// 	boxes[i].addEventListener('click', function(event){
+// 		console.log(event.target.innerHTML)
+// 	})
+
+// }
+
+
 // write a method that finds and replaces all instances of "Oggi" in the text below with 'the teacher'. It should be 
 // case insensitive
 
