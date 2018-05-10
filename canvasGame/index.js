@@ -1,29 +1,28 @@
-var canvas = document.getElementById("canvas");
-var ctx = canvas.getContext("2d");
+// var canvas = document.getElementById("canvas");
+// var ctx = canvas.getContext("2d");
 
 
-var width = canvas.width;
-var height = canvas.height;
-  var x = 0;
-  var y = 0;
-  var dx = 3;
+// var width = canvas.width;
+// var height = canvas.height;
+//   var x = 0;
+//   var y = 0;
+//   var dx = 3;
   
-   var rectangle = new Path2D();
-   lineWidth = 30;
-    rectangle.rect(10, 10, 50, 50);
+//    var rectangle = new Path2D();
+//     rectangle.rect(10, 10, 50, 50);
 
-    var rectangle2 = new Path2D();
-    rectangle2.rect(150, 10, 50,50)
+//     var rectangle2 = new Path2D();
+//     rectangle2.rect(150, 10, 50,50)
 
-    var circle = new Path2D();
-    circle.moveTo(125, 35);
-    circle.arc(100, 35, 25, 0, 2 * Math.PI);
-    ctx.fillStyle = 'orange'
+//     var circle = new Path2D();
+//     circle.moveTo(125, 35);
+//     circle.arc(100, 35, 25, 0, 2 * Math.PI);
+//     ctx.fillStyle = 'orange'
 
 
-    ctx.stroke(rectangle);
-    ctx.fill(rectangle2);
-    ctx.fill(circle);
+//     ctx.stroke(rectangle);
+//     ctx.fill(rectangle2);
+//     ctx.fill(circle);
 
 
 
@@ -203,12 +202,73 @@ var height = canvas.height;
 // }
 
 // init();
+var word = 'abracadabra'
+var wrong = [];
+var right = []
+var lives = 5;
+
+var wrapper = document.createElement('div')
+wrapper.style.width = "90%";
+wrapper.style.margin = '0 auto'
+wrapper.style.border = '2px solid orange'
+document.body.appendChild(wrapper)
+
+var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+
+
+for(let i = 0;i<26;i++){
+    var alpha = document.createElement('div')
+    alpha.style.width = '20px'
+    alpha.style.border = '2px solid red'
+    alpha.style.textAlign = 'center';
+    alpha.style.display = 'inline-block'
+    alpha.style.margin = '5px'
+    alpha.classList.add('a')
+    // alpha.className = 'a'
+    alpha.innerHTML = alphabet[i]
+    wrapper.appendChild(alpha)
+    var boxes = document.getElementsByClassName('a')
+    boxes[i].addEventListener('click', function(event){
+        checkWord(event.target.innerHTML)
+    })
+
+}
+
+
+function checkWord(x){
+  for(let i =0;i<word.length;i++){
+    if(x == word[i]){
+
+      right.push(x)
+    }
+  }  
+  if(word.indexOf(x) == -1){
+    wrong.push(x)
+    count()
+  }
+  console.log("right " + right )
+  console.log("wrong " + wrong)
+}
 
 
 
 
+function count(){
+  lives -= 1;
+  console.log(lives)
+
+  }
 
 
+  var obj = {
+    jersey: '1 whatever jersey',
+    football: '2 whatever football'
+  }
+
+
+
+
+  
 
 
 
