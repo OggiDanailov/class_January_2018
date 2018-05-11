@@ -202,10 +202,12 @@
 // }
 
 // init();
-var word = 'abracadabra'
-var wrong = [];
-var right = []
-var lives = 5;
+
+
+// var word = 'abracadabra'
+// var wrong = [];
+// var right = []
+// var lives = 5;
 
 var wrapper = document.createElement('div')
 wrapper.style.width = "90%";
@@ -213,57 +215,93 @@ wrapper.style.margin = '0 auto'
 wrapper.style.border = '2px solid orange'
 document.body.appendChild(wrapper)
 
-var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
+// var alphabet = ['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z']
 
 
-for(let i = 0;i<26;i++){
-    var alpha = document.createElement('div')
-    alpha.style.width = '20px'
-    alpha.style.border = '2px solid red'
-    alpha.style.textAlign = 'center';
-    alpha.style.display = 'inline-block'
-    alpha.style.margin = '5px'
-    alpha.classList.add('a')
-    // alpha.className = 'a'
-    alpha.innerHTML = alphabet[i]
-    wrapper.appendChild(alpha)
-    var boxes = document.getElementsByClassName('a')
-    boxes[i].addEventListener('click', function(event){
-        checkWord(event.target.innerHTML)
-    })
+// for(let i = 0;i<26;i++){
+//     var alpha = document.createElement('div')
+//     alpha.style.width = '20px'
+//     alpha.style.border = '2px solid red'
+//     alpha.style.textAlign = 'center';
+//     alpha.style.display = 'inline-block'
+//     alpha.style.margin = '5px'
+//     alpha.classList.add('a')
+//     // alpha.className = 'a'
+//     alpha.innerHTML = alphabet[i]
+//     wrapper.appendChild(alpha)
+//     var boxes = document.getElementsByClassName('a')
+//     boxes[i].addEventListener('click', function(event){
+//         checkWord(event.target.innerHTML)
+//     })
 
-}
-
-
-function checkWord(x){
-  for(let i =0;i<word.length;i++){
-    if(x == word[i]){
-
-      right.push(x)
-    }
-  }  
-  if(word.indexOf(x) == -1){
-    wrong.push(x)
-    count()
-  }
-  console.log("right " + right )
-  console.log("wrong " + wrong)
-}
+// }
 
 
+// function checkWord(x){
+//   for(let i =0;i<word.length;i++){
+//     if(x == word[i]){
+
+//       right.push(x)
+//     }
+//   }  
+//   if(word.indexOf(x) == -1){
+//     wrong.push(x)
+//     count()
+//   }
+//   console.log("right " + right )
+//   console.log("wrong " + wrong)
+// }
 
 
-function count(){
+
+
+// function count(){
+//   lives -= 1;
+//   console.log(lives)
+
+//   }
+
+// Create HTML elements that give you a word to guess and a hint; hint is originally hidden so in order to use it
+// you have to press a button. When you press the hint button you loose one live
+
+var array  =['jersey', 'football', 'baseball', 'hockey'];
+var hints = ["bad place in the NOrthEast", "handpapaya", 'boring', 'bearable']
+
+var lives = 5;
+random = Math.floor(Math.random() * array.length)
+
+var word = document.createElement('div')
+word.style.width = "80%";
+word.style.margin =  "0 auto";
+word.style.height = "40px";
+word.style.border = '2px solid green'
+word.innerHTML = array[random]
+wrapper.appendChild(word)
+
+var button = document.createElement('button')
+button.innerHTML = 'take a hint!'
+button.setAttribute('id', 'button')
+wrapper.appendChild(button)
+
+button.addEventListener('click', hinting)
+
+function hinting(){
   lives -= 1;
+  var hint = document.createElement('div')
+  hint.style.width = "80%"
+  hint.style.margin =  "50px auto";
+  hint.style.height = "40px";
+  hint.style.border = '6px solid red'
+  hint.style.backgroundColor = 'salmon'
+  hint.innerHTML =  hints[random]
+
+  wrapper.appendChild(hint)
   console.log(lives)
+ }
 
-  }
 
 
-  var obj = {
-    jersey: '1 whatever jersey',
-    football: '2 whatever football'
-  }
+
 
 
 
