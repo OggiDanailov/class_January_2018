@@ -1,51 +1,21 @@
-var ship;
-var bullet;
-var bullets = []
-
-function setup() {
-	createCanvas(640, 480);
-	ship = new Ship();
-	bullet = new Bullet(width/2, height/2)
-}
-
-function draw() {
-	background(0,40,40)	
-	ship.show()
-	ship.cannon()
-	
-
-}
-
-window.addEventListener('keypress', function(event){
-	keyPressed(event)
-	
-})
-
-function keyPressed(event){	
-	
-	if(event.key == " "){
-		bullet.show()
-		bullet.move(event.key)		
-	}
-
-	if(event.key == "ArrowRight"){
-		ship.move(event.key)
-		clear();
-	} else if(event.key == "ArrowLeft"){
-		ship.move(event.key)
-		clear();
-	}else if(event.key == "ArrowUp"){
-		ship.move(event.key)
-		clear()
-	}else if(event.key =='ArrowDown'){
-		ship.move(event.key)
-		clear()
-	}
-
+function setup(){
+	createCanvas(500, 300)
 
 }
 
 
+var sqr1 = new Sqr1()
+
+function draw(){
+	sqr1
+
+}
+
+function Sqr1(){
+	this.size  = rect(100,100, 100,100);
+	this.color =  fill(233, 12, 12)
+	this.
+}
 
 
 
