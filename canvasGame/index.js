@@ -8,35 +8,27 @@
 //   var y = 0;
 //   var dx = 3;
   
-//    var rectangle = new Path2D();
-//     rectangle.rect(10, 10, 50, 50);
+// //    var rectangle = new Path2D();
+// //     rectangle.rect(10, 10, 50, 50);
 
-//     var rectangle2 = new Path2D();
-//     rectangle2.rect(150, 10, 50,50)
+// //     var rectangle2 = new Path2D();
+// //     rectangle2.rect(150, 10, 50,50)
 
-//     var circle = new Path2D();
-//     circle.moveTo(125, 35);
-//     circle.arc(100, 35, 25, 0, 2 * Math.PI);
-//     ctx.fillStyle = 'orange'
-
-
-//     ctx.stroke(rectangle);
-//     ctx.fill(rectangle2);
-//     ctx.fill(circle);
+// //     var circle = new Path2D();
+// //     circle.moveTo(125, 35);
+// //     circle.arc(100, 35, 25, 0, 2 * Math.PI);
+// //     ctx.fillStyle = 'orange'
 
 
+// //     ctx.stroke(rectangle);
+// //     ctx.fill(rectangle2);
+// //     ctx.fill(circle);
 
 
-
-
-
-
-
-
-// var width = canvas.width;
-// 	var height = canvas.height;
-// 	var x = width/2;
-// 	var y = 300;
+// // var width = canvas.width;
+// // 	var height = canvas.height;
+// // 	var x = width/2;
+// // 	var y = 300;
 
 // // ship form
 // function drawShip(){
@@ -204,10 +196,10 @@
 // init();
 
 
-// var word = 'abracadabra'
-// var wrong = [];
-// var right = []
-// var lives = 5;
+var word = 'abracadabra'
+var wrong = [];
+var right = []
+var lives = 5;
 
 var wrapper = document.createElement('div')
 wrapper.style.width = "90%";
@@ -237,67 +229,67 @@ document.body.appendChild(wrapper)
 // }
 
 
-// function checkWord(x){
-//   for(let i =0;i<word.length;i++){
-//     if(x == word[i]){
+// // function checkWord(x){
+// //   for(let i =0;i<word.length;i++){
+// //     if(x == word[i]){
 
-//       right.push(x)
-//     }
-//   }  
-//   if(word.indexOf(x) == -1){
-//     wrong.push(x)
-//     count()
-//   }
-//   console.log("right " + right )
-//   console.log("wrong " + wrong)
-// }
-
-
+// //       right.push(x)
+// //     }
+// //   }  
+// //   if(word.indexOf(x) == -1){
+// //     wrong.push(x)
+// //     count()
+// //   }
+// //   console.log("right " + right )
+// //   console.log("wrong " + wrong)
+// // }
 
 
-// function count(){
-//   lives -= 1;
-//   console.log(lives)
 
-//   }
 
-// Create HTML elements that give you a word to guess and a hint; hint is originally hidden so in order to use it
-// you have to press a button. When you press the hint button you loose one live
+// // function count(){
+// //   lives -= 1;
+// //   console.log(lives)
 
-var array  =['jersey', 'football', 'baseball', 'hockey'];
-var hints = ["bad place in the NOrthEast", "handpapaya", 'boring', 'bearable']
+// //   }
 
-var lives = 5;
-random = Math.floor(Math.random() * array.length)
+// // Create HTML elements that give you a word to guess and a hint; hint is originally hidden so in order to use it
+// // you have to press a button. When you press the hint button you loose one live
 
-var word = document.createElement('div')
-word.style.width = "80%";
-word.style.margin =  "0 auto";
-word.style.height = "40px";
-word.style.border = '2px solid green'
-word.innerHTML = array[random]
-wrapper.appendChild(word)
+// // var array  =['jersey', 'football', 'baseball', 'hockey'];
+// // var hints = ["bad place in the NOrthEast", "handpapaya", 'boring', 'bearable']
 
-var button = document.createElement('button')
-button.innerHTML = 'take a hint!'
-button.setAttribute('id', 'button')
-wrapper.appendChild(button)
+// // var lives = 5;
+// // random = Math.floor(Math.random() * array.length)
 
-button.addEventListener('click', hinting)
+// // var word = document.createElement('div')
+// // word.style.width = "80%";
+// // word.style.margin =  "0 auto";
+// // word.style.height = "40px";
+// // word.style.border = '2px solid green'
+// // word.innerHTML = array[random]
+// // wrapper.appendChild(word)
 
-function hinting(){
-  lives -= 1;
-  var hint = document.createElement('div')
-  hint.style.width = "80%"
-  hint.style.margin =  "50px auto";
-  hint.style.height = "40px";
-  hint.style.border = '6px solid red'
-  hint.style.backgroundColor = 'salmon'
-  hint.innerHTML =  hints[random]
+// // var button = document.createElement('button')
+// // button.innerHTML = 'take a hint!'
+// // button.setAttribute('id', 'button')
+// // wrapper.appendChild(button)
 
-  wrapper.appendChild(hint)
-  console.log(lives)
- }
+// // button.addEventListener('click', hinting)
+
+// // function hinting(){
+// //   lives -= 1;
+// //   var hint = document.createElement('div')
+// //   hint.style.width = "80%"
+// //   hint.style.margin =  "50px auto";
+// //   hint.style.height = "40px";
+// //   hint.style.border = '6px solid red'
+// //   hint.style.backgroundColor = 'salmon'
+// //   hint.innerHTML =  hints[random]
+
+// //   wrapper.appendChild(hint)
+// //   console.log(lives)
+// //  }
 
 
 
