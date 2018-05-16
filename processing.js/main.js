@@ -1,6 +1,7 @@
 var sq;
 var bullet;
 var bullets = [];
+
 var enemies = [];
 var speedX  = 1;
 var speedY = 4;
@@ -13,6 +14,10 @@ var height = 300;
 function setup(){
 	createCanvas(500, 300)
 	sq = new Square()
+
+	for(let i = 0;i<12;i++){
+		enemies[i] = new Enemies(20 + (i**2)*2, 40);
+	}
 	
 }
 
@@ -36,13 +41,21 @@ function draw(){
 	for(let i = 0;i<bullets.length;i++){
 		bullets[i].draw()
 		bullets[i].move()
+		// for(let j = 0;j<enemies.length;j++){
+		// 	if(bullets[i].hits(enemies[j])){
+		// 		console.log('hit!!!')
+
+		// 	}
+		// }
 
 	}
 
 	for(let i = 0; i< 12; i++){
-		enemies.push(new Enemies)
+		// enemies.push(new Enemies)
+		enemies[i].draw()
 
 	}
+	
 	// stroke(32)
 	// // noStroke()
 	// fill(233, 43, 1)
@@ -68,12 +81,12 @@ function draw(){
 function Square(){
 	xShip = width/2 ;
 	yShip =  height-30;
-	this.draw = function(){
-		
+	this.draw = function(){		
 		stroke(255, 0 , 0)
 		fill(0,0, 255)
 		rect(xShip ,yShip, 32, 32)
 	}
+
 	this.move = function(dir){
 		if(dir == 'ArrowLeft'){
 
@@ -107,6 +120,7 @@ function keyPressed(event){
 	}
 	if(event.key == " "){
 		bullets.push(new Bullet)
+		console.log(bullets)
 	}
 
 }
@@ -115,9 +129,7 @@ function Bullet(){
 	this.x = xShip;
 	this.y = yShip;
 	this.draw = function(){
-		ellipse(this.x, this.y, 8, 8)
-		// bullets.push(new Bullet)
-		
+		ellipse(this.x, this.y, 8, 8)	
 	}
 	this.move = function(){		
 			this.y -= 2; 		
@@ -125,10 +137,11 @@ function Bullet(){
 
 }
 
-function Enemies(){
-	this.x = 20;
-	this.y = 20;
+function Enemies(x, y){
+	this.x = x;
+	this.y = y;
 	this.draw = function(){
+		fill(41)
 		ellipse(this.x, this.y, 20, 20)
 	}
 }
