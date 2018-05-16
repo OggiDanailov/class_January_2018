@@ -436,6 +436,24 @@ example:
 -5, 6 returns -5
 -1, -1 returns -1
 
+////////
+
+Object iteration:
+
+var obj = {
+ first: "John",
+ last: "Doe"
+};
+
+//
+//    Visit non-inherited enumerable keys
+//
+Object.keys(obj).forEach(function(key) {
+
+ console.log(key, obj[key]);
+
+});
+
 
 
 
