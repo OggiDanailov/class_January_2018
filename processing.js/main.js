@@ -1,6 +1,8 @@
 var sq;
 var bullet;
 var bullets = [];
+var bulletRadius;
+var enemyRadius
 
 var enemies = [];
 var speedX  = 1;
@@ -37,10 +39,12 @@ function draw(){
 	background(221, 143,32)
 // this function is looping over and over again
 	sq.draw()
+	collisionDetection()
 	
 	for(let i = 0;i<bullets.length;i++){
 		bullets[i].draw()
 		bullets[i].move()
+		// bullets[i].currentPosition()
 		// for(let j = 0;j<enemies.length;j++){
 		// 	if(bullets[i].hits(enemies[j])){
 		// 		console.log('hit!!!')
@@ -120,35 +124,44 @@ function keyPressed(event){
 	}
 	if(event.key == " "){
 		bullets.push(new Bullet)
-		console.log(bullets)
 	}
-
 }
 
 function Bullet(){
 	this.x = xShip;
 	this.y = yShip;
+	this.radius = 8;
 	this.draw = function(){
-		ellipse(this.x, this.y, 8, 8)	
+		ellipse(this.x, this.y, this.radius, 10)	
 	}
 	this.move = function(){		
 			this.y -= 2; 		
-	}
-
+	}	
 }
 
 function Enemies(x, y){
 	this.x = x;
 	this.y = y;
+	this.r = 20
 	this.draw = function(){
 		fill(41)
-		ellipse(this.x, this.y, 20, 20)
+		ellipse(this.x, this.y, this.r, 20)
 	}
 }
 
 
 
-
+function collisionDetection(){
+	for(let i = 0;i<bullets.length;i++){
+		for(let j = 0; j<enemies.length; j++){
+			if(bullets[i].y == enemies[j].y && bullets[i].x > enemies[j].x){
+				console.log('this is a hit')
+			}
+		}	
+		
+		
+	}
+}
 
 
 

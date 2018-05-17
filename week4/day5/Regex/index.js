@@ -128,23 +128,44 @@ function capitalization(arg){
 	var output ="";
 	var vowels = "aeiou"
 	var temp = arg.split('')
-	temp.forEach(function(letter){
-		if(vowels.indexOf(letter) !== -1){
-			output += letter.toUpperCase()
-		}else {
-			output += letter
-		}
-	})
-
-	// for(let i = 0;i<temp.length;i++){
-	// 	if(vowels.indexOf(temp[i]) !== -1){
-	// 		output +=temp[i] + " " + 2
+	// temp.forEach(function(letter){
+	// 	if(vowels.indexOf(letter) !== -1){
+	// 		output += letter.toUpperCase()
 	// 	}else {
-	// 		output += temp[i]
+	// 		output += letter
 	// 	}
-	// }
+	// })
+
+	for(let i = 0;i<temp.length;i++){
+		if(vowels.indexOf(temp[i]) !== -1){
+			output += temp[i].toUpperCase()
+		}else {
+			output += temp[i]
+		}
+	}
 	console.log(output)
 }
+
+
+
+// 1. Write a method that lists all the numbers from 1 to 100 and adds together all the odd numbers
+
+// 2. Write a function that takes the nested array as an argument and converts it into an object literal.
+// Second array contains the keys and first array contains the values
+
+// array = [["oggi", "Danailov", 23, "Serbia"], ["first name", "last name", "age", "country"]]
+// function convertArray(array){
+// 		var obj = {}
+// 	for(let i = 0;i<array[0].length;i++){
+// 		obj[array[1][i]] = array[0][i]
+// 	}
+// 	return obj;	
+// }
+
+// 3. Write a function that finds the smallest number in an array; the array should work with 
+// negative numbers as well
+
+
 
 
 
