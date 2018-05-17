@@ -41,28 +41,28 @@
 // }
 
 
-function chess(){
-var element = "";
-	for(let i = 0;i < 8; i++){
-		for(let j=0;j<8;j++){
-			if(i%2 == 0){	
-				if(j%2 == 0){
-					element += "#" 
-				}else {
-					element += "-"
-				}	
-			}else {
-				if(j % 2 == 0){
-					element += "-" 
-				}else {
-					element += '#'
-				}
-			}
-		}
-		element += '\n'
-	}
-		console.log(element)	
-}
+// function chess(){
+// var element = "";
+// 	for(let i = 0;i < 8; i++){
+// 		for(let j=0;j<8;j++){
+// 			if(i%2 == 0){	
+// 				if(j%2 == 0){
+// 					element += "#" 
+// 				}else {
+// 					element += "-"
+// 				}	
+// 			}else {
+// 				if(j % 2 == 0){
+// 					element += "-" 
+// 				}else {
+// 					element += '#'
+// 				}
+// 			}
+// 		}
+// 		element += '\n'
+// 	}
+// 		console.log(element)	
+// }
 
 
 // var wrapper = document.createElement('div')
@@ -99,8 +99,52 @@ var element = "";
 	
 
 // 	}
-		
+// create method that takes a string and returns the corresponding next letter for each letter in thsi string
+// abc => bcd
+// capitalze all vowels
+// you would use foreach here becuase forEach will return a string; you can apply toUpperCase() right away
+	
+	var a = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+"q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
+function nextLetter(string){
+	var word = "";
+	var temp = string.split("");
+	for(let i =0;i<temp.length;i++){
+		for(let j = 0;j<a.length;j++){
+			if(temp[i] == a[j]){
+				if(temp[i] == 'z'){
+					word += "a"
+				}else {
+					word += a[j + 1]
+				}
+			}
+		}
+	}
+	capitalization(word)
+}
+
+function capitalization(arg){
+	var output ="";
+	var vowels = "aeiou"
+	var temp = arg.split('')
+	temp.forEach(function(letter){
+		if(vowels.indexOf(letter) !== -1){
+			output += letter.toUpperCase()
+		}else {
+			output += letter
+		}
+	})
+
+	// for(let i = 0;i<temp.length;i++){
+	// 	if(vowels.indexOf(temp[i]) !== -1){
+	// 		output +=temp[i] + " " + 2
+	// 	}else {
+	// 		output += temp[i]
+	// 	}
+	// }
+	console.log(output)
+}
 
 
 
