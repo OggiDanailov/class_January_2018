@@ -15,7 +15,7 @@
 	// https://scotch.io/tutorials/understanding-hoisting-in-javascript
 
 Hoisting is a JavaScript mechanism where variables and
- function declarations are moved to the top of their scope before code execution.
+ function declarations are moved to the top of their scope before code execution. 
 
 JS executes in two different phases:
 - first JS stores all the variables in something like Memory Space
@@ -25,6 +25,8 @@ JS executes in two different phases:
 // to the Memory Space but without its value;instead, it is set to be undefined. 
 // when we execute the code during the second phase JS doesn't know what the value of a is.
 // Aviod Hosting overall!!
+
+
 
 //  Hoisting - here a will be undefined; b will execute; if we remove var a then we will get 
 //  an error;
@@ -107,12 +109,31 @@ hoist = 'The variable has been hoisted.';
 
 
 
+// Global object is an object that it is not in a function;
+// there is this that refers to this object; in the case of the browser 'this' refers to the Glboal object
+// When we create functions or variables they get attached to the Global object.
 
 
+// single threaded-synchronous execution of JS:
+// y
+// sss
+// whatever
+// will be the order here
 
+// function a(){
+// 	b()
+// 	console.log('sss')
+// }
 
+// function b(){
+// 	console.log('y')
+// }
 
+// a()
+// console.log("whatever")
 
+// Asynchronous - more than one at the time; 
+// there is an event queue where functions to be executed get stored
 
 
 
