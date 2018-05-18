@@ -165,6 +165,55 @@ function capitalization(arg){
 // 3. Write a function that finds the smallest number in an array; the array should work with 
 // negative numbers as well
 
+// 4. write a function that lists all the prime numbers from 1 to 100
+
+function prime(){
+	var array = []
+	for(let i = 1;i<100;i++){
+		if(i%2 == 0){
+			if(i == 2){
+				array.push(i)
+			}
+		}else if(i%3 == 0){
+			if(i == 3){
+				array.push(i)				
+			}	
+		}else if(i% 5 == 0){
+			if(i == 5){
+				array.push(i)
+			}
+		}else if(i%7 == 0){
+			if(i ==7){
+				array.push(i)
+			}
+		}else {
+			array.push(i)
+		}
+
+	}if(array[0] ==1){
+		array.shift()
+	}
+	return array	
+}
+
+function allPrimes(num){
+  primes = [];
+  for(let i=1; i<=num; i++){
+    factors = [];
+    for(let j=1; j<=i; j++){
+      if(i%j===0){
+        factors.push(j)
+      }
+    }
+    if(factors.length===2){
+      console.log(factors);
+      primes.push(i);
+    }
+  }
+  return primes.join(", ")
+}
+
+console.log(allPrimes(100))               
 
 
 

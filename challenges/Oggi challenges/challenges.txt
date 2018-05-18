@@ -447,6 +447,12 @@ Check if the word from the red input contains letters ‘r’, ‘e’, AND ‘d
 Check if the word/sentence from the blue input contains letters ‘b’, ‘l’ ‘u’ OR ‘e’. IF it does change the background color of the div into Blue.
 
 
+1. Write a function that takes two arrays. First, you should check if there are any letters in any of them. If there are letters get rid of them.
+ - then filter only the odd numbers in both arrays.
+- then filter any negative numbers in both arrays 
+ - finally get the value of both arrays and compare which one is bigger
+
+
 
 
 
