@@ -154,8 +154,8 @@ function Enemies(x, y){
 function collisionDetection(){
 	for(let i = 0;i<bullets.length;i++){
 		for(let j = 0; j<enemies.length; j++){
-			if(bullets[i].y == enemies[j].y && bullets[i].x > enemies[j].x){
-				console.log('this is a hit')
+			if(bullets[i].y == 20 && bullets[i].x > enemies[j].x){
+				console.log('this is a hit ')
 			}
 		}	
 		

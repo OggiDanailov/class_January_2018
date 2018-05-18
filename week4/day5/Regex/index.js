@@ -167,61 +167,87 @@ function capitalization(arg){
 
 // 4. write a function that lists all the prime numbers from 1 to 100
 
-function prime(){
-	var array = []
-	for(let i = 1;i<100;i++){
-		if(i%2 == 0){
-			if(i == 2){
-				array.push(i)
-			}
-		}else if(i%3 == 0){
-			if(i == 3){
-				array.push(i)				
-			}	
-		}else if(i% 5 == 0){
-			if(i == 5){
-				array.push(i)
-			}
-		}else if(i%7 == 0){
-			if(i ==7){
-				array.push(i)
-			}
-		}else {
-			array.push(i)
-		}
+// function prime(){
+// 	var array = []
+// 	for(let i = 1;i<100;i++){
+// 		if(i%2 == 0){
+// 			if(i == 2){
+// 				array.push(i)
+// 			}
+// 		}else if(i%3 == 0){
+// 			if(i == 3){
+// 				array.push(i)				
+// 			}	
+// 		}else if(i% 5 == 0){
+// 			if(i == 5){
+// 				array.push(i)
+// 			}
+// 		}else if(i%7 == 0){
+// 			if(i ==7){
+// 				array.push(i)
+// 			}
+// 		}else {
+// 			array.push(i)
+// 		}
 
-	}if(array[0] ==1){
-		array.shift()
-	}
-	return array	
+// 	}if(array[0] ==1){
+// 		array.shift()
+// 	}
+// 	return array	
+// }
+
+// function allPrimes(num){
+//   primes = [];
+//   for(let i=1; i<=num; i++){
+//     factors = [];
+//     for(let j=1; j<=i; j++){
+//       if(i%j===0){
+//         factors.push(j)
+//       }
+//     }
+//     if(factors.length===2){
+//       console.log(factors);
+//       primes.push(i);
+//     }
+//   }
+//   return primes.join(", ")
+// }
+
+// console.log(allPrimes(100))               
+
+// 1. Using the JavaScript language, have the function LongestWord(sen) take the sen
+//  parameter being passed and return the largest word in the string. 
+//  If there are two or more words that are the same length,
+//   return the first word from the string with that length. 
+//   Ignore punctuation and assume sen will not be empty. 
+
+// function longestWord(sen){
+// 	var splitting = sen.split(" ")
+// 	var max = splitting[0]
+// 	for(let i = 0;i<splitting.length;i++){
+// 		if(splitting[i].length > max.length){
+// 			max = splitting[i]
+// 		}
+			
+// 	}
+// 	console.log(max)
+// }
+
+// 3. Using the JavaScript language, have the function FirstReverse(str) 
+// take the str parameter being passed and return the string in reversed order. 
+// For example: if the input string is "Hello World and Coders" then 
+// your program should return the string sredoC dna dlroW olleH. 
+
+function FirstReverse(str) {
+	var word =""
+	var temp = str.split("").reverse().join("")
+	console.log(temp)
+	// for(let i = temp.length-1 ;i>=0;i--){
+	// 	word +=temp[i]
+	// }
+	// console.log(word)
+
 }
-
-function allPrimes(num){
-  primes = [];
-  for(let i=1; i<=num; i++){
-    factors = [];
-    for(let j=1; j<=i; j++){
-      if(i%j===0){
-        factors.push(j)
-      }
-    }
-    if(factors.length===2){
-      console.log(factors);
-      primes.push(i);
-    }
-  }
-  return primes.join(", ")
-}
-
-console.log(allPrimes(100))               
-
-
-
-
-
-
-
-
 
 
 
