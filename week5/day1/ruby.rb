@@ -1,4 +1,4 @@
-# SYMBOL vs Variable --------------- -------------------------
+np# SYMBOL vs Variable --------------- -------------------------
 # puts 'hello' + ' ' + 'world'
 # puts 'whatever' << ' you say'
  # puts :hello + " " + :world 
@@ -29,15 +29,29 @@
 # 	:country => 'germany'
 # }
 
+p car[:name]
+
 # HASH LITERALS
 
-# car = {
-# 	'name' => 'honda',
-# 	'country' => 'Japan'
-# }
+h = {color: "black", font: "Monaco"}
+p h[:color]
 
-# puts car['name']
-# puts car.length
+car = {
+	'name' => 'honda',
+	'country' => 'Japan'
+}
+
+puts car['name']
+puts car.length
+
+
+car = {
+	:name => "honda",
+	:country => "Japan",
+	:models => [1,2,3,4,5,6]
+} 
+
+puts car[:models][1]
 
 # - CONSTRUCT A HASH
 # car = Hash.new
@@ -47,18 +61,23 @@
 
 # puts car[:name]
 
-# - NAME
 
-# car = {
-# 	name: 'nissan',
-# 	country: 'Japan'
-# }
-# puts car
-
-# puts car[:name]
 
 
 # IF/ELSE statments  ---------------------------------------------
+# puts "what is your name?"
+# name = gets.chomp
+# name2 = name.to_i
+# if name == "oggi".capitalize || name == 'oggi'
+# 		puts 'welcome Oggi'
+# elsif  name2.class == Fixnum
+# 		puts 'can not be a number'
+# elsif name == " "
+# 		puts 'can not be a blank'
+# else
+# 	puts ' this is a wrong name'
+# end
+
 # puts 'whats your name?'
 # name = gets.chomp
 

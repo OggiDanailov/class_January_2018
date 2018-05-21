@@ -14,14 +14,16 @@ The second syntax is much closer to how you create objects in Ruby.
 Ruby is a class-based programming language. We use classes in order to create objects. Class is used to create the blueprint of an object and then we can create many instances of this object with the 'new' keyword.
 You can think of classes as basic outlines of what an object should be made of and what it should be able to do. 
 When defining a class, we typically focus on two things: states and behaviors.  
-ex.3   
+####ex.3   
 we declare the class (in our case Animal) and we capitalize it. Then comes the initialize method. In our example, instantiating a new Animal object triggered the initialize method and resulted in the string being outputted. We refer to the initialize method as a constructor, because it gets triggered whenever we create a new object. It is the same concept as the constructor method in JS class.
 The initialize method gets called every time a new instance of the object is instantiated.
 
 Each new instance of the object that we created has an unique ID number. We already talked about the id's yesterday.
 
 - Instance variables - instance variables starts always with '@' in RUby. It is a variable that exists as long as the object instance exists and it is one of the ways we tie data to objects.
-ex. 4
+- When in JS we create object constructor with some values we always tie them with the word 'this' - which refers to the instance of the new object that we are going to create. 
+- We do a very similar thing with the @ symbol or instance variable in RUby.
+####ex. 4
 
 In example 4 we have: a new object Animal insitgated through a class. the class has two passing arugments - name and color. It is the same way of passing arguments for every new instance of an object in Javascript. 
 We use instance variables though - now @name and @color are available throughout the class Animal and accessible to each new instance of the object Animal. 
