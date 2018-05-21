@@ -23,9 +23,9 @@
 # toyota.country = "japan"
 # p toyota.country
 
-h = {color: "black", font: "Monaco"}
+# h = {color: "black", font: "Monaco"}
 
 
-p h[:color]
+# p h[:color]
 
 

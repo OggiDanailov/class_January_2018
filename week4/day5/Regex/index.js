@@ -239,14 +239,9 @@ function capitalization(arg){
 // your program should return the string sredoC dna dlroW olleH. 
 
 function FirstReverse(str) {
-	var word =""
 	var temp = str.split("").reverse().join("")
 	console.log(temp)
-	// for(let i = temp.length-1 ;i>=0;i--){
-	// 	word +=temp[i]
-	// }
-	// console.log(word)
-
+	
 }
 
 
