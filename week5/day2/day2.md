@@ -24,6 +24,7 @@ Each new instance of the object that we created has an unique ID number. We alre
 Instance variables are bound to a specific instance of a class. By binding itself to the entire object, an instance variable makes itself available to every method of the object.
 - When in JS we create object constructor with some values we always tie them with the word 'this' - which refers to the instance of the new object that we are going to create. 
 - We do a very similar thing with the @ symbol or instance variable in RUby.
+
 ####ex. 4
 
 In example 4 we have: a new object Animal insitgated through a class. the class has two passing arugments - name and color. It is the same way of passing arguments for every new instance of an object in Javascript. 
