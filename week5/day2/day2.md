@@ -21,12 +21,14 @@ The initialize method gets called every time a new instance of the object is ins
 Each new instance of the object that we created has an unique ID number. We already talked about the id's yesterday.
 
 - Instance variables - instance variables starts always with '@' in RUby. It is a variable that exists as long as the object instance exists and it is one of the ways we tie data to objects.
+Instance variables are bound to a specific instance of a class. By binding itself to the entire object, an instance variable makes itself available to every method of the object.
 - When in JS we create object constructor with some values we always tie them with the word 'this' - which refers to the instance of the new object that we are going to create. 
 - We do a very similar thing with the @ symbol or instance variable in RUby.
 ####ex. 4
 
 In example 4 we have: a new object Animal insitgated through a class. the class has two passing arugments - name and color. It is the same way of passing arguments for every new instance of an object in Javascript. 
-We use instance variables though - now @name and @color are available throughout the class Animal and accessible to each new instance of the object Animal. 
+We use instance variables though - now @name and @color are available throughout the class Animal and accessible to each new instance of the object Animal.
+The variable age has a local scope - it will be available only in the block so it is not accessable from outside the block; 
 If we remove the @ sybmols from the exmple you will see how Ruby won't recognize  color in say_color method.
 say_color is a method within the Object and it is available to each new instance of a new object (simple function - just as it is in JS)
 
@@ -41,6 +43,9 @@ Atributes in Ruby Objects
 
 in ex4. if we want to access @name in a new object instance we have to create a special method.  
 ex.5   
+in the JS example, we can create a new instance of the object and call it easily. We can change the age of the new instance without a problem.
+
+We can't really call in Ruby oggi.age - this will raise an error. We can get the age through creating a new method that returns this value
 This is a getter method; if we want to change it, however, we need a setter method.
 Lets look at example 6.  
 ex. 6    
@@ -102,7 +107,7 @@ We can create a new method called roar to Cat. Now it will call 'mewouw'. If we 
 
 
 ----------------------------------------
-Exercise4 in class
+###Exercise4 in class
 •   Create an "object zoo". Create a class that models a Zoo which has at least one attribute called exhibits. Inside of this attribute is an array of object instances extended from an Animal class that have their own unique traits depending on which animal they are.
 •   Create unique methods on all of your objects depending on what 
 kind of animal they are supposed to emulate (roar for a Lion object, fly for Eagle object, etc). You could use super and even have a method on Animal that is customized per specific animal objects.

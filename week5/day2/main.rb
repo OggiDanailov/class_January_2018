@@ -1,3 +1,35 @@
+# Coding challenge in JS:
+
+# 1. Create a new object called car with function constructor that takes couple of arguments:
+# brand, country, year of production, model and price.
+# also, create two methods - the first method should return the age of the car;
+# the second method should return the price of the car converted into euro
+# Finally, create two instances of the new object
+
+# 2. Create the same object but as a class in JS 
+
+# class Car{
+# 	constructor(brand, country, year, model, price){
+# 		this.brand = brand;
+# 		this.country = country;
+# 		this.year = year;
+# 		this.model = model;
+# 		this.price = price;
+# 	}
+
+# 	age(){
+# 		return 'this car is ' + 2018 - this.year + " old"
+# 	}
+# 	euPrice(){
+# 		return this.price * 0.85 + " in Euro"
+# 	}
+
+# }
+
+# var car1 = new Car('toyota', 'japan', 2016, 'camry', 26000)
+
+	
+
 # ex1. 
 # Constructor Function in JS
 
@@ -45,10 +77,12 @@
 # 	def initialize(name, color)
 # 		@name = name
 # 		@color = color
+# 		# age = 23
 # 	end
 
 # 	def say_color
 # 		puts "I am a car and my color is " +  @color
+# 		# puts age
 # 	end
 # end
 
@@ -56,6 +90,16 @@
 # puts cat.say_color
 # -------------------------------------------------
 # ex. 5
+# JS
+# class Man{
+# 	constructor(age){
+# 	this.age = age;
+
+# 	}
+# }
+# oggi = new Man(44)
+
+
 # class Man
 # 	def initialize(age)
 # 		@age = age
@@ -69,7 +113,8 @@
 
 # oggi = Man.new(44)
 
-# oggi.get_age
+# oggi.get_age()
+
 # -------------------------------------------------
 # ex. 6
 # class Man
@@ -83,7 +128,6 @@
 
 # 	def set_age=(age)
 # 		@age = age
-
 # 	end
 
 # end
@@ -187,7 +231,7 @@
 
 
 # italian = Man.new(99, "Mario")
-# p italian
+# p italian.weight
 
 # -------------------------------------------------
 
@@ -209,11 +253,13 @@
 # mu = Cat.new
 # p mu.roar
 
+
+
 # -------------------------------------------------
 # ex. 13
 
 # array = [1,2,3,4,5]
-# print array.methods
+# puts array.methods
 
 # -------------------------------------------------
 # ex. 14
@@ -233,22 +279,22 @@
 
 # ex. 17 - fetch
 
-obj = {
-	first_name: 'Oggi',
-	last_name: 'Danailov'
-}
+# obj = {
+# 	first_name: 'Oggi',
+# 	last_name: 'Danailov'
+# }
 
-p obj.fetch(:last_name)
- obj.store(:country, 'bulgaria')
-p obj
+# p obj.fetch(:last_name)
+#  obj.store(:country, 'bulgaria')
+# p obj
 
-obj.each {|k, v|
-	# puts v
-	puts k
-}
+# obj.each {|k, v|
+# 	# puts v
+# 	puts k
+# }
 
-p obj.keys
-p obj.values
+# p obj.keys
+# p obj.values
 
 
 
