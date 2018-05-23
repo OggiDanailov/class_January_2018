@@ -6,6 +6,22 @@
 # the second method should return the price of the car converted into euro
 # Finally, create two instances of the new object
 
+# function Car(brand, country, year, model, price){
+# 	this.brand = brand;
+# 	this.country = country;
+# 	this.year = year;
+# 	this.model = model;
+# 	this.price = price;
+
+# 	this.age = function(){
+# 		return 'this car is ' + (2018 - this.year) + " old"
+# 	}
+
+# 	this.euPrice = function(){
+# 		return this.price * 0.85 + " in Euro"
+# 	}
+# }
+
 # 2. Create the same object but as a class in JS 
 
 # class Car{
@@ -295,6 +311,46 @@
 
 # p obj.keys
 # p obj.values
+
+
+# Elevator
+
+# class Elevator
+# 	attr_accessor :floor
+# 	def initialize
+# 		@floor = 1
+# 	end
+
+# 	def go_up
+# 		if(@floor == 12)
+# 			@floor = 12
+# 			puts "you cannot go up; this is the last floor"
+# 		end
+# 		@floor += 1
+# 	end
+
+# 	def go_down
+# 		if(@floor == 1)
+# 			@floor = 1
+# 			puts "you are on floor 1; you have to go up or out"
+# 		end
+# 		@floor -= 1
+# 	end
+
+# 	def cheery_greeting
+# 		puts "currenty we are on #{@floor}"
+# 	end
+
+# end	
+
+# elevator = Elevator.new()
+
+# puts elevator.cheery_greeting
+# puts elevator.go_up
+# puts elevator.cheery_greeting
+# puts elevator.go_up
+# puts elevator.go_up
+# puts elevator.cheery_greeting
 
 
 
