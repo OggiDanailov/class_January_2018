@@ -1,3 +1,10 @@
+Coding challenge:
+Create a simple Sinatra app that has a form for username and password;
+The app should check if:
+if username and password values are equal to 'jeremy' and "1234" the app should open a page with content "Welcome Jeremy"
+if the username and password values are equal to "oggi" and "9876" the app should open a page with content "whatever"
+in any other circumstances the app should reopen the same page where the form is
+
 Sinatra
 
 - gem install sinatra
@@ -17,7 +24,7 @@ http://localhost:4567/search?request=something
 
 4. form - the improtance of form and the imporance of name in forms - the name of the input should be the same as the name of the params term (in our case search)
 
-5. create password to illustrat what we are going to do in the next two months
+5. create password to illustrates what we are going to do in the next two months
 
 6. layout.erb and yield - all the html code from the other pages will be compiled where yield is
 

@@ -17,7 +17,7 @@ get '/posts' do
 
 	erb :posts
 end
-
+erb
 
 get '/search' do
 @search_term = params[:search]
