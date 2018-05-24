@@ -7,6 +7,35 @@ in any other circumstances the app should reopen the same page where the form is
 
 Sinatra
 
+Thrusday - 
+Using the Ruby language, have the function SimpleAdding(num) add up all the numbers from 1 to num. For example: if the input is 4 then your program should return 10 because 1 + 2 + 3 + 4 = 10. For the test cases, the parameter num will be any number from 1 to 1000. 
+
+Using the Ruby language, have the function LetterCapitalize(str) take the str parameter being passed and capitalize the first letter of each word. Words will be separated by only one space. 
+def capit(arg)
+name = arg.split(" ")
+empty = []
+	name.each do |x|
+		empty.push(x.capitalize)
+	end
+	puts empty.join(" ")
+end
+
+capit('this is whatever and whatever')
+
+Write a method that compbines the nested arrays:
+
+names = [["Dostoyevsky", "Tolstoy", "Kafka", "Ecco"],["Idiot", "War and Peace", "Metamorphosis","The name of the Rose"],["Russia", "Russia", "Germany", "Italy"]]
+you should get in arrays["Dostoyevsky", "Idiot", "Russia"]
+
+def grouping(arg)
+	obj = {}
+	result = arg[0].zip(arg[1],arg[2])
+
+end
+
+p grouping(names)
+
+
 - gem install sinatra
 
 1. Create an app.rb file, and include the line:  
