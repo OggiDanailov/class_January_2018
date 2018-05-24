@@ -1,0 +1,7 @@
+<h3>List of all Users:</h3>
+
+
+<% @users.each do |u| %>
+	<li><a href="/users/<%= u.id %>">  <%= u.username %></a></li> 
+
+	<% end %>

@@ -18,7 +18,7 @@ require './models'
 # home page - the sign in page
 get '/' do
 
-erb :login
+erb :loginu
 end
 
 # the signin action that checks if a given user exists

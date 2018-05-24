@@ -69,6 +69,10 @@ get '/users/:id' do
   erb :'users/show'
 end
 
+
+
+
+
 # render edit form
 get '/users/:id/edit' do	
 	@user = User.find(session[:user_id]) 
@@ -81,6 +85,16 @@ post '/users/:id' do
 	@user.update(username: params[:username], password: params[:password])
 	redirect '/'
 end
+
+
+
+
+
+
+
+
+
+
 
 # logout action
 post "/logout" do
