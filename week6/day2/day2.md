@@ -28,7 +28,8 @@ CheatSheet
 	- rake db:migrate
 
 	
-	
+	rake -T
+	will give you all commands for rake
 	-----------	-----------	-----------
 - post request - redirect;  
 - get request - render;

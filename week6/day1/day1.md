@@ -46,6 +46,12 @@ http://guides.rubyonrails.org/active_record_basics.html
 - primary key
 - foreign key
 
+- adding column to an exising table in Sinatra:
+- change_table :blogs do |t|
+  		t.column :user_id, :integer
+  	end
+
+
 
 Intro to Database
 https://www.khanacademy.org/computing/computer-programming/sql/sql-basics/v/welcome-to-sql
