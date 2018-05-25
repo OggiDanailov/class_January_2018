@@ -6,6 +6,7 @@
 	this goes through learning the material. 
 2. ####Second goal is to get you to the point that you are indepenedent
  - meaning, once you graduate you can proceed to study on your own without the help of anyone else. Being indepenedent requires a habit - to investigate everything on your own before coming for help. The more you can resolve on your own the better position you will be when we finish the course.
+ - To UNDERSTAND! not only to build. There are many people out there that can build even without understanding the material clearly; we will try to understand everything and establish a solid base for your future growth as developers.
 
  - ##Material: 
 

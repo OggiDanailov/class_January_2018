@@ -25,7 +25,7 @@ capit('this is whatever and whatever')
 Write a method that compbines the nested arrays:
 
 names = [["Dostoyevsky", "Tolstoy", "Kafka", "Ecco"],["Idiot", "War and Peace", "Metamorphosis","The name of the Rose"],["Russia", "Russia", "Germany", "Italy"]]
-you should get in arrays["Dostoyevsky", "Idiot", "Russia"]
+you should get [["Dostoyevsky", "Idiot", "Russia"], ["Tolstoy", ""War and Peace","Russia"], ["Kafka", "Metamorphosis", "Germany"], ['Ecco', "The name of the Rose", "Italy"]]
 
 def grouping(arg)
 	obj = {}
@@ -34,6 +34,24 @@ def grouping(arg)
 end
 
 p grouping(names)
+
+without zipping
+names = [["Dostoyevsky", "Tolstoy", "Kafka", "Ecco"],["Idiot", "War and Peace", "Metamorphosis","The name of the Rose"],["Russia", "Russia", "Germany", "Italy"]]
+
+def rearrange(nest)
+	new_nest = []
+	for i in 1..nest[0].length
+		new_nest.push([])
+	end
+	nest.each do |array|
+		array.each_with_index do |string, i|
+			new_nest[i].push(string)
+		end
+	end
+	print new_nest
+end
+
+rearrange(names)
 
 
 - gem install sinatra
