@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sinatra/activerecord'
 
 set :database, 'sqlite3:myDB.sqlite3'
-enable :sessions
+# enable :sessions
 require './models'
 
 

@@ -13,7 +13,7 @@ CheatSheet
 	- require './app'  
 3. app.rb  
 	- require 'sinatra'  
-	- require 'sinatra/activereocrd'  
+	- require 'sinatra/activerecord'  
 	- set :database, 'sqlite3:whatever.sqlite3'  
 	- require './models'  
 4. Terminal
