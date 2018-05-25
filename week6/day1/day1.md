@@ -39,8 +39,12 @@ SELECT * FROM movies;
 http://guides.rubyonrails.org/active_record_basics.html
 
 - Object-relational mapping - converting data between two different programs/languages  
-- Active Records - allows you to write sequel as Ruby objects.
+- Active Records - allows you to write sequel as Ruby objects. It represents Ruby objects converted from SQL
 - CRUD
+- MVC
+- RESTful protocol - representational state transfer
+	A primary benefit of using REST, both from a client and server's perspective, is REST-based interactions happen using constructs that are familiar to anyone who is accustomed to using the internet's Hypertext Transfer Protocol (HTTP). Representational State Transfer (REST) is an architectural style that defines a set of constraints and properties based on HTTP. Web Services that conform to the REST architectural style, or RESTful web services, provide interoperability between computer systems on the Internet. 
+	Communication between server and web application.
 
 
 - primary key

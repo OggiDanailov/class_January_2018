@@ -31,6 +31,13 @@ post '/edit/:id' do
 	redirect '/users'
 end
 
+post "/destroy/:id" do
+	@user = User.find(params[:id])
+	@user.destroy
+		redirect "/users"
+
+end
+
 
 
 
