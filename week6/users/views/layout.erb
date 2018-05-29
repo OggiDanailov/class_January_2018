@@ -1,0 +1,31 @@
+<html>
+<head>
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="main.css">
+</head>
+<body>
+<nav>
+	<li><a href="/">Home</a></li>
+	<li><a href="/login">Login</a></li>
+	<li><a href="/users/new">SignUp</a></li>
+	<li><form action='/logout' method='post'>
+			<input type='submit' value='Logout'>
+	</form></li>
+	<% if current_user %>
+		<li><a href="/blogs/new">Create Post</a></li>
+	<% end %>
+	<div class='current-user'>
+	<% if current_user %>
+		<div><%= current_user.username %><div>
+	<% end %>
+</div>
+</nav>
+
+
+<div class='space'></div>
+
+
+
+<%= yield %>
+</body>
+</html>

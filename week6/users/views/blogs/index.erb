@@ -1,0 +1,7 @@
+<h2>List of all blogs</h2>
+
+<% @blogs.each_with_index do |b, index| %>
+<div>Title: <%= index + 1%> <%=b.title %></div>
+<div>Content: <%= b.content %></div>
+<% end %>
+
