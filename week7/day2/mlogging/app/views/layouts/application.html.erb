@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mlogging</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+  	<nav>
+  		<% if logged_in? %>
+          <li><%= link_to 'Log out', '/logout', { method: 'post' }  %></li>
+          	<%= current_user.username %>
+        <% end %>
+      <% if !logged_in? %>
+          <li><%= link_to 'Sign up', '/users/new' %></li>
+          <li><%= link_to 'Sign in', '/signin' %></li>
+      <% end %>
+      <li><%= link_to "new Blogs", new_blog_path %></li>
+  	</nav>
+
+
+
+
+    <%= yield %>
+
+     <%= flash[:message] if flash[:message] %>
+     <%= flash[:alert] if flash[:alert] %>
+  </body>
+</html>
