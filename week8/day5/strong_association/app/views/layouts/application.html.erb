@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StrongAssociation</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+<nav>
+	<li><a href='/doctors'>All Doctors</a></li>
+	<li><a href='/appointments'>All Appointments</a></li>
+	<li><a href='/doctors/new'>Create a new Doctor</a></li>
+	<li><a href='/patients/new'>Create a new Patient</a></li>
+	<li><a href='/patients'>List of all Patients</a></li>
+</nav>
+
+    <%= yield %>
+  </body>
+</html>

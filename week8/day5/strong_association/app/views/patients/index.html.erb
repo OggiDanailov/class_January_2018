@@ -1,0 +1,5 @@
+<h2>List of current Patients on file</h2>
+
+<% @patients.each_with_index do |p, index| %>
+	<div><%= index+1 %>. <%= p.name %></div>
+<% end %>

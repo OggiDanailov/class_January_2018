@@ -1,0 +1,17 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+
+<%= form_for @post do |f| %>
+<%= f.text_field :content %>
+<div class="field">
+    <%= f.label :avatar %><br>
+    <%= f.file_field :avatar %>
+    <% if f.object.avatar? %>
+      <%= image_tag f.object.avatar.thumb.url %>
+      <%= f.label :remove_avatar %>
+      <%= f.check_box :remove_avatar %> 
+    <% end %>
+  </div>
+<%= f.submit %>
+<% end %> 

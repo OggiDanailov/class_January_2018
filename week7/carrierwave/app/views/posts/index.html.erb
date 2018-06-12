@@ -1,0 +1,9 @@
+<h1>Posts#index</h1>
+<p>Find me in app/views/posts/index.html.erb</p>
+
+<% @posts.each_with_index do |p, index| %>
+<div class='index-block'>
+ <%=index + 1 %>. <%= image_tag p.avatar.thumb.url %>
+ <%= p.content %>
+</div>
+ <% end %>

@@ -15,9 +15,18 @@ function c(){
  
  - has_many
  - belongs_to
+ User 
+ has_many :posts
+ Post
+ belongs_to :user
 
  - has_one
  - belongs_to
+ User
+ has_one :subject
+ Subject
+ belongs_to :user
+ 
  -  in which model do I want the foreign key to be? In fact, this is the slight difference between has_one and belongs_to in Ruby on Rails.
  -  belongs_to means that the foreign key is in the table for this class. So belongs_to can ONLY go in the class that holds the foreign key.
  -  has_one means that there is a foreign key in another table that references this class. So has_one can ONLY go in a class that is referenced by a column in another table.
@@ -34,14 +43,21 @@ create_association(attributes = {})
 create_association!(attributes = {})
 reload_association
 
-b = Boss.create()
-b.cats.build(name: 'whatever')
+b = Boss.create(name: 'oggi)
+b.cats.build(name: 'grisha')
 b.save
 (new cat has been declared)
 ////////////////////////////////
-d = Dog.create
-d.build_owner(name: 'whatever')
-d.create_owner(name: 'whatever')
+the prvious example doesn't work with has_one:
+
+
+
+
+d = Dog.new(name: 'joy')
+d.build_owner(name: 'oggi')
+d.create_owner(name: 'oggi')
+=> new dog with the name of joy and owner of oggi;
+this also works with one to many associations
 
 Join table
 - simple join - it joins two tables without creating 3 model; HABTM and there is no primary key
@@ -50,7 +66,7 @@ Join table
 - rails g migration CreateJoinTableRoomSubject room subject 
 
 http://guides.rubyonrails.org/association_basics.html
-
+fCat.al
 	
  - has_and_belongs_to_many  
  - has_and_belongs_to_many
@@ -58,7 +74,7 @@ http://guides.rubyonrails.org/association_basics.html
  s = Subject.first(1)
  r = Room.first(1)
  s.rooms << r
- r.rooms<< s
+ r.subjects << s
  s.room_ids
  r.subject_ids
  s.rooms.delete(r)
@@ -72,3 +88,8 @@ http://guides.rubyonrails.org/association_basics.html
 
  - has_many :through
  - has_many :through
+ 
+ 
+ 
+ <%= form_for @post, :as => :post,
+ 

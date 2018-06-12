@@ -1,0 +1,9 @@
+<h2>List of appointments: </h2>	
+
+<% @appointments.each_with_index do |a, index| %>
+<div class='app-block'>
+<div><%=index+ 1 %>.  <%= a.meeting.strftime("%B %e, %Y at %I:%M %p") %></div>
+Doctor's name: <div><b><%= a.doctor.name %></b></div>
+Patient's name: <div><span style='color: red'><%= a.patient.name %></span></div>
+</div>
+<% end %>

@@ -32,7 +32,7 @@ group :production do
   gem 'pg'
 
 end
-
+(you shouldn't create two :development groups; include gem 'sqlite in existing group)
 
 4. run bundle install --without production
 
@@ -51,3 +51,6 @@ end
 heroku apps:rename NEW NAME OF YOUR URL --app CURRENT NAME OF YOUR URL
 
 3. open heroku
+
+
+heroku logs command in the terminal will list the last errors in case you have ones.
