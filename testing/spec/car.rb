@@ -12,6 +12,10 @@ attr_reader :wheels
 	def colors
 		color_names = ['blue', 'green', 'red']
 	end
+
+	def math
+		
+	end
 end
 
 

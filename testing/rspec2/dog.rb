@@ -13,5 +13,12 @@ class User
 	def age
 		2018 - @year
 	end
+
+
+	def math
+		array = [8,4,3,2,5,1,7,6,9]
+		result = array.sort
+		return result
+	end
 end
 

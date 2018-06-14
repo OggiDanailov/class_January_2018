@@ -37,6 +37,13 @@ describe User do
 		end
 	end	
 
+	describe "#math" do
+		it "returns a valid number" do
+			user = User.new('asdf', 'asdfasd', 1977)
+			expect(user.math).to eq([1,2,3,4,5,6,7,8,9])
+		end
+	end
+
 end
 
 
