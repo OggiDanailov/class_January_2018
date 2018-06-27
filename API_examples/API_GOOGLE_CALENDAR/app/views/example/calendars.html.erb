@@ -1,5 +1,5 @@
 <ul>
   <% @calendar_list.items.each do |calendar| %>
-    <li><%= calendar.summary %> (<%= calendar.id %>)</li>
+    <li><b><%= calendar.summary %></b> <a href="/events/<%= calendar.id %>">  <%= calendar.id %> </a></li>
   <% end %>
 </ul>

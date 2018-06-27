@@ -30,7 +30,6 @@ def split_array(arr)
 end
 
 def result_array(x, y)
-	array = ["$",2,"%",4,"$",6,"%",8,"$",10,"%",12,"$",14,"%",16,"$",18,"%",20]
 	result = []
 	x.each_with_index do |a, index|
 		if(index % 2 != 0)

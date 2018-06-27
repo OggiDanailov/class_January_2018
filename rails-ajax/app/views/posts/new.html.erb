@@ -1,0 +1,13 @@
+<h1>Posts#new</h1>
+<p>Find me in app/views/posts/new.html.erb</p>
+
+<%= form_for(@post, remote: true) do |f| %>
+	Title: <%= f.text_field :title, class: "title_field" %>
+	Content: <%= f.text_field :content, class: "content_field" %>
+	<%= f.submit %>
+<% end %>
+
+
+<div id='place' style='border: 2px solid'>
+	
+</div>

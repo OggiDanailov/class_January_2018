@@ -1,0 +1,55 @@
+1. Chris - 
+news aggregator
+- news scraper; when you google something you will get the corresponding results.
+User will save his/her interests; when there is a new news it will be a notification.
+in the database will be categories of interests. 
+
+2. Steve
+- 3 mini pokemon games;
+all in JS; score, communication, action cable will be in Rails.
+ - api will be for the game results;
+
+3. Asim
+Trip app/game
+- nodes; has to add the gaming aspect; 
+
+4. Adam
+plan B - fresh food app; Items, Users, Stores, Schedule
+
+5. Lori
+Rails Blog movie tracker;
+API for movies/TV series/what is coming out;
+User, Favorites, Wish list, 
+
+6. Bridget
+Teachers, Students, Activities, Levels, Tracks; 
+Student Blog learning app;
+
+7. Lanette:
+
+JS - front end; maze game; 
+
+8. Anthony - 
+
+
+9. Carlos - 
+Workers, Customers, Jobs, 
+
+10. Mike - 
+quiz application; User, Test, Admin, Score;
+quiz template
+
+11. Jessica
+teachers app for sharing books and resources; Teachers join groups; 
+
+12. Emmanuel
+3D JS - audio files with animation; 
+
+
+
+
+
+
+
+
+

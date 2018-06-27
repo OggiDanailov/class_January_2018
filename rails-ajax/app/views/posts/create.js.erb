@@ -1,0 +1,13 @@
+
+var title_field = document.getElementsByClassName('title_field')[0]
+var content_field = document.getElementsByClassName('content_field')[0]
+var container_post = document.getElementsByClassName("container-post")[0]
+title_field.value = " "
+content_field.value = " "
+
+var place = document.getElementById("place")
+
+
+place.innerHTML += '<%= @post.title %>' + ":" + '<%= @post.content %>'
+place.style.backgroundColor = 'red'
+place.style.marginTop = "20px"

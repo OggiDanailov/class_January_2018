@@ -1,11 +1,11 @@
  array = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20]
 
- 1. write a method that takes the array and returns all odd numbers as 
+ 1. write a method in ruby that takes the array and returns all odd numbers as 
 alternating characters => $ %
 ex =>
 array = ["$",2,"%",4,"$",6,"%",8,"$",10,"%",12,"$",14,"%",16,"$",18,"%",20]
 
-2. write a test that makes sure that your return value is correct.
+2. write a test in Rspec that makes sure that your return value is correct.
 
 
 JS decision:
