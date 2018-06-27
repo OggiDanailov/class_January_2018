@@ -14,7 +14,11 @@ Trip app/game
 - nodes; has to add the gaming aspect; 
 
 4. Adam
-plan B - fresh food app; Items, Users, Stores, Schedule
+Rails/action cable three party debate site;
+Users, Judges - two users argue on topic; judge assigns winning to one of them. The communication will be through action cable. 
+DB - User, Results, Judges, 
+start Action Cable 
+plan B - fresh food app;
 
 5. Lori
 Rails Blog movie tracker;
