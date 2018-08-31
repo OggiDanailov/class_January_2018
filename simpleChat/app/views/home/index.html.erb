@@ -1,0 +1,33 @@
+
+Message:
+<textarea id='msg'></textarea>
+<button id='send'>Send</button>
+<hr>
+<br>
+
+Debator: <div id ='chat' style='border: 2px solid blue;min-height: 20px'></div>
+<br>
+Challenger: <div id='chat2' style='border: 2px solid green;min-height: 20px'></div>
+<br>
+Judge: <div id='chat3' style='border: 2px solid red;min-height: 20px'></div>
+
+<script>
+	var send = document.getElementById('send')
+	var msg = document.getElementById("msg")
+
+	// sending message
+
+	send.addEventListener("click", function(){
+		App.chat.send_msg(msg.value)
+	})
+
+	// receive message
+	var chat = document.getElementById("chat")
+	var chat2 = document.getElementById("chat2")
+	var chat3 = document.getElementById("chat3")
+
+	App.chat.received = function(data){
+		chat.append(data["message"]) 
+	}
+
+</script>

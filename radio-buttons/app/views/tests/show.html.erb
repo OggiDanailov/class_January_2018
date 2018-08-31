@@ -1,0 +1,14 @@
+<%= @test.question %>
+<br>
+<%= form_tag("/guess", method: :post)  do %>
+<%= @test.answer1 %> <%= radio_button_tag :answer,  @test.answer1 %>
+<br>
+<%= @test.answer2 %> <%= radio_button_tag :answer,  @test.answer2 %>
+<br>
+<%= @test.answer3 %> <%= radio_button_tag :answer,  @test.answer3 %>
+<br>
+<%= @test.answer4 %> <%= radio_button_tag :answer,  @test.answer4 %>
+<br>
+<%= hidden_field_tag :correct_answer, @test.correct_answer %>
+<%= submit_tag "Guess" %>
+<% end %>

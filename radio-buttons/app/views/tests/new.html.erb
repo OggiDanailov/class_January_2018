@@ -1,0 +1,18 @@
+
+
+<%= form_for @test do  |t| %>
+	Question<%= t.text_area :question %>
+	<br>
+	Answer1: <%= t.text_field :answer1 %>
+	<br>
+	Answer2: <%= t.text_field :answer2 %>
+	<br>
+	Answer3: <%= t.text_field :answer3 %>
+	<br>
+	Answer4: <%= t.text_field :answer4 %>
+	<br>
+	Correct: <%= t.text_field :correct_answer %>
+	<br>
+	<%= t.submit %>
+<% end %>
+
