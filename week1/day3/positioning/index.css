@@ -5,8 +5,8 @@
 
 .wrapper {
 	width: 90%;
-	border: 2px solid;
-	height: 500px;
+	border: 2px solid blue;
+	height: 900px;
 	margin: 0 auto;
 	/*position: relative;*/
 	background-color: lightgreen;
@@ -14,30 +14,33 @@
 
 #one {
 	/*position: fixed;*/
-	/*position:absolute;*/
-	/*top: 120px;*/
-	/*left: 1px;*/
+	/*position:absolute;
+	top: 12px;
+	left: 1px;*/
+	background-color: purple;
 }
 
 #two {
-
+background-color: red;
 }
 
 #three {
+	background-color: orange;
 	position: absolute;
-	left: 20px;
-	top: 40px;
+	left: 60px;
+	top: 140px;
 	background-color: green;
 }
 
 #four {
+	background-color: brown;
 
 }
 
 
 
 .box {
-	background-color: red;
+	/*background-color: red;*/
 	/*float: left;*/
 	width: 100px;
 	height: 20px;
