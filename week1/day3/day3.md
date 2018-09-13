@@ -16,6 +16,32 @@ https://www.thoughtco.com/absolute-vs-relative-3466208
 
 - position:fixed - it will stick to the given position no matters if you scroll up and down.
 
+###Flex
+
+Before the Flexbox Layout module, there were four layout modes:
+
+Block, for sections in a webpage
+Inline, for text
+Table, for two-dimensional table data
+Positioned, for explicit position of an element
+
+
+
+ - we delcare the parent element as display:flex;
+ - flex-direction - can be either column or row;
+ - justfy-content - will align center the elements (like text-align: center in inline-block)
+
+
+ ###Grid
+
+ - similarly to flex box we declare as display: grid the parental element;
+ - grid-column-gap/ grid-row-gap;
+ - grid-column-start/grid-column-end;
+ - grid-row-start/grid-row-end;
+ - grid-template-columns;
+ - grid-template-rows:
+ - justify-content: center;
+
 
 
 ###Normalize.css

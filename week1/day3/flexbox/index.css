@@ -1,0 +1,30 @@
+.wrapper {
+	display: flex;
+	flex-direction: row;
+	/*flex-wrap: wrap;*/
+	/*default flex-wrap is non-wrap; when you wrap it in acts like inline-block*/
+	background-color: orange;
+	border: 4px solid;
+	justify-content: center;
+}
+
+
+.numbers, .numbers2 {
+border: 2px solid green;
+width: 150px;
+height: 150px;
+margin: 10px;
+}
+
+
+
+.wrapper2 {
+	margin-top: 20px;
+	border: 5px solid;
+	background-color: lightblue;
+	text-align: center;
+}
+
+.numbers2 {
+	display: inline-block;
+}
