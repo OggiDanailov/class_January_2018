@@ -40,7 +40,8 @@ Positioned, for explicit position of an element
  - grid-row-start/grid-row-end;
  - grid-template-columns;
  - grid-template-rows:
- - justify-content: center;
+ - justify-content: center; (The justify-content property is used to align the whole grid inside the container.)
+ - align-content (The align-content property is used to vertically align the whole grid inside the container.)j
 
 
 
