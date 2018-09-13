@@ -70,7 +70,7 @@ A viewport represents a polygonal (normally rectangular) area in computer graphi
 - min-width; max-with - it prevents an element to become smaller/bigger than given width.
 
 ####Exercise 1
-Build an image gallery using floats and the CSS background-image property on `<div>s` instead of `<img>` tags that:  
+Build an image gallery using floats  and the CSS background-image property on `<div>s` instead of `<img>` tags that:  
 -  also looks good when the browser is resized to 400px  
 -    uses a different, smaller background-image for each image when the browser is resized  
 -       has a frame around each image in full-size width and no frame at 400px
