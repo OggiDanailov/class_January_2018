@@ -71,6 +71,15 @@ span {
   border: 3px solid green;
   display: grid;
   grid-template-columns: 1fr  minmax(150px, 250px) 1fr; 
+  /*grid-template-columns: 40px 40px 40px;*/
+  /*this one is to test justify-content*/
+  /*justify-content: space-evenly;*/
+  
+
+  /*in order align-content to work the grid has to have height*/
+  /*align-content: space-evenly;*/
+  /*height: 500px;*/
+
 }
 
 .last {
