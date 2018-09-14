@@ -81,9 +81,35 @@ Build an image gallery using floats  and the CSS background-image property on `<
 - https://open.spotify.com/view/2016-page
 - https://chekhov.withgoogle.com/alive
 
+
+
+
 ###Animation Key Frames/Transitions
+
 - transition - it has to have duration; otherwise it won't kick in
+	The CSS transition property listens for changes to specified properties (background-color, width, height, etc.) over time.
+	selector {
+    transtion: [property-name] [duration] [timing-function] [delay]
+	}
+		div {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s;
+}
+	- The transition effect will start when the specified CSS property (width) changes value.
+div:hover {
+    width: 300px;
+}
+
+
 - transform (scale, rotate, skew, matrix)
+	The CSS transform property rotates/scales/skews an element over the X,Y, or Z axes. 
+	select {
+    transform: [rotate] [skew] [scale] [translate] [perspective]
+	 }
+
+
 - animation  - animation: (name of function); then outside of the element you define the function with the @keyframes (name of the function)
 
 ####Exercise 2

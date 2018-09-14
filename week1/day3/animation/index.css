@@ -11,14 +11,16 @@ body {
 	width: 800px;
 	border: 1px solid;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	text-align: center
 }
 
 .box {
-	float: left;
+	/*float: left;*/
+	display: inline-block;
 	width: 100px;
 	height: 100px;
-	margin: 20px 0 20px 80px;
+	margin: 20px;
 	border: 1px solid red;
 	position: relative;
 	transition: border;
@@ -41,6 +43,14 @@ body {
 #three {
 animation: sliding 5s 3;
 
+}
+
+#five {
+	transition: transform 3s ease-out 2s;
+}
+
+#five:hover {
+	transform: skew(23deg);
 }
 
 
