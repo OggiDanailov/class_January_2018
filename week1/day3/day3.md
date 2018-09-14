@@ -111,6 +111,7 @@ div:hover {
 
 
 - animation  - animation: (name of function); then outside of the element you define the function with the @keyframes (name of the function)
+	/*animation: [name] [duration] [timing-function] [delay] [iteration-count] [direction] [fill-mode] [play-state];*/
 
 ####Exercise 2
 Go to:
