@@ -1,0 +1,159 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	background-color: lightgrey;
+}
+
+.wrapper {
+	width: 100%;
+	display: grid;
+	grid-template-columns: 1fr 1fr 1fr;
+	border: 2px solid;
+}
+
+
+.navbar {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: black;
+	color: white;
+	text-align: center;
+	height: 50px;
+}
+
+
+.navbar ul li {
+	display: inline-block;
+	line-height: 40px;
+	margin-left: 20px;
+}
+
+.column {
+	/*border: 1px solid;*/
+	text-align: center;
+	/*height: 200px;*/
+}
+
+.title {
+	font-size: 22px;
+	margin: 20px;
+}
+
+.img {
+	width: 100px;
+	height: 100px;
+	margin: 10px auto 20px;
+	border-radius: 10px;
+}
+
+.text {
+	padding: 10px;
+	width: 80%;
+	margin: 0 auto;
+	background-color: grey;
+	border-radius: 10px;
+}
+
+.circle {
+	text-align: center;
+	opacity: .5;
+	position:absolute;
+	border-radius: 50%;
+	width: 150px;
+	height: 150px;
+	background-color: rgba(255, 133, 144, 0.8);
+	line-height: 150px;
+	top: 18vh;
+	/*top: 200px;*/
+	left: 30vw;
+	/*left: 550px;*/
+}
+
+.circle-text  {
+	font-family: Helvetica;
+	font-size: 12px;
+}
+
+.img-australia {
+	background-image: url("img/australia.jpeg");
+	background-size: 100% 100%;
+	/*border: 2px solid;*/
+	
+}
+
+.img-europe {
+	background-image: url("img/europe.jpeg");
+	background-size: 100% 100%;
+	width: 150px;
+	height: 150px;
+}
+
+.img-asia {
+	background-image: url("img/asia.jpeg");
+	background-size: 100% 100%;
+	width: 250px;
+	height: 200px;
+}
+
+.img-africa {
+	background-image: url("img/africa.jpeg");
+	background-size: 100% 100%;
+}
+
+
+.img-north {
+	background-image: url("img/north.jpeg");
+	background-size: 100% 100%;
+}
+
+.img-south {
+	background-image: url("img/south.jpeg");
+	background-size: 100% 100%;
+}
+
+.img-antarctica {
+	background-image: url("img/antarctica.jpeg");
+	background-size: 100% 100%;
+}
+
+
+.three {
+	
+	grid-column-start: 2;
+	grid-column-end: 3;
+	grid-row-start: 2;
+	grid-row-end: 4;
+	
+}
+
+.four {
+	/*background-color: orange;*/
+	grid-column-start: 3;
+	grid-column-end: 4;
+	grid-row-start: 2;
+	grid-row-end: 5;
+	
+	
+}
+
+
+
+
+.eight {
+	/*background-color: teal;*/
+	grid-column-start: 2;
+	grid-column-end: 3;
+}
+
+
+.footer {
+	grid-column-start: 1;
+	grid-column-end: 4;
+	background-color: black;
+	color: white;
+}
+
+
