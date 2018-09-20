@@ -81,10 +81,12 @@ Write a program that checks if a variable is less than 100. If it is, alert the 
 
 
 - Functions
+ - talk about prompt
 
 ###Exercise 4   
 • Declare a function that takes a name as an argument and tells the user what name they've entered, try invoking it after it has been declared  
-•   Declare a function that takes no arguments but prints something to the console, try invoking it after it has been declared  
+•   Declare a function that takes no arguments but prints something to the console, try invoking it after it has been declared 
+ •	Write a function that takes a number as an input from the user and checks if this number is even or odd;
 •   Declare a function that, depending upon which virtual "door" was entered, tells the user they've received a different "prize" in an alert. Try running it after it has been declared a few times with each door option
 
 - Loops
