@@ -49,6 +49,36 @@ end
 2. for renaming the name of your app run:
 
 heroku apps:rename NEW NAME OF YOUR URL --app CURRENT NAME OF YOUR URL
+or:
+Created a heroku app but I want to change the name now???
+HEROKU GIT
+Have you wondered when you just type heroku create and you get an arbit name and you are really scratching your head how the hell I should deal with changing git remotes and updating the name of the app. you are at the right place.
+
+Step 1: heroku create
+
+This will create an app on heroku with an arbitrary name
+step 2: git remote -v
+
+Shows the url of the remote servers you have configured. 
+step 3: git remote rm heroku
+
+Go to your app on heroku and rename it there from settings of the app and save the newname. Now come back to the commandline you were previously working and continue with the following steps.
+
+Step 4: git remote add heroku git@heroku.com:newname.git
+
+Step 5: You can recheck if the remote url is changed using git remote -v
+
+Step 6: git push heroku master
+
+Push your app to heroku
+
+YAY you are done.
+
+References: I used various resources to post this blog.Some of them are StackOverflow, http://git-scm.com/book/en/Git-Basics-Working-with-Remotes, http://git-scm.com/book/en/Git-Branching-Remote-Branches and more..
+
+
+
+////////////
 
 3. open heroku
 
