@@ -45,7 +45,7 @@ function submission(){
 
 
 var header = document.getElementsByClassName("header")
-for(var i=0;i<header.length;i++){
+for(let i=0;i<header.length;i++){
 	console.log(header[i].textContent)
 }
 

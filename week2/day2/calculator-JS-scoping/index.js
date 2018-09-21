@@ -23,7 +23,7 @@
 // function changeColor(x){
 // 	if(x == 0){
 // 		result.style.backgroundColor = 'green'
-// 	}else if (x % 2 === 0){
+// 	}else if (x % 2 == 0){
 // 		result.style.backgroundColor = 'red'
 // 	}else {
 // 		result.style.backgroundColor = 'yellow'
@@ -46,26 +46,26 @@
 // if we change to var c within the if block then var will be available outside the if 
 // 	statement; the function will print 2
 
-var c = 10; 
-// global variable
+// var c = 10; 
+// // global variable
 
 
-function hey(){
+// function hey(){
 
-	if(true){
-		let c = 2;
-	}
-	console.log(c)
-}
+// 	if(true){
+// 		let c = 2;
+// 	}
+// 	console.log(c)
+// }
 
 // Currently the two nested for loops behave in correct way; in the inner for loop
 // since we are using let i is available only within the inner for loop;
 // In this scenario JS does not mix the two i values
 
 
-for(var i = 0;i< 10;i++){
+for(let i = 0;i< 3;i++){
 	console.log(i)
-	for(let i = 10; i<20;i++){
+	for(let i = 111; i<113;i++){
 		console.log(i)
 	}
 }
