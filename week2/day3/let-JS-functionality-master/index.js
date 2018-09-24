@@ -5,7 +5,7 @@ var array = ['green', 'blue', 'red', 'orange']
 
 for(let i=0;i<button.length;i++){
 	button[i].addEventListener('click', function(){	
-		console.log(i)
+		console.log(i + 1)
 	showColor(i)
 	})
 
