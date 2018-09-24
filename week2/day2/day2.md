@@ -14,7 +14,7 @@ if the two numbers are different print "there is one even and one odd"; if both 
 ##Scope in Javascript
 
 null vs. undefined
-Null is used to define something programmatically empty. Undefined is meant to say that the reference is not existing. A null value has a defined reference to "nothing". If you are calling a not existing property of an object, then you will get undefined. If I would make that property intentionally empty, then it must be null so you know that it's on purpose. Many javascript libraries work like this way.
+Null is used to define something programmatically empty. Undefined is meant to say that the reference is not existing. A null value has a defined reference to "nothing". If you are calling a not existing property of an object, then you will get undefined. If I would make that property intentionally empty, then it must be null so you know that it's on purpose. Many javascript libraries work like this way.3
 
 
 - global scope vs. local scope
