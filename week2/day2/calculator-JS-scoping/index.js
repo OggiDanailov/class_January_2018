@@ -1,34 +1,34 @@
-// var num1 = document.getElementById("num1")
-// var num2 = document.getElementById("num2")
+var num1 = document.getElementById("num1")
+var num2 = document.getElementById("num2")
 
-// var add = document.getElementById("add")
-// var divide = document.getElementById("divide")
-// var multiply = document.getElementById("multiply")
-// var subtract = document.getElementById("subtract")
+var add = document.getElementById("add")
+var divide = document.getElementById("divide")
+var multiply = document.getElementById("multiply")
+var subtract = document.getElementById("subtract")
 
-// var result = document.getElementById('result')
+var result = document.getElementById('result')
 
-// add.addEventListener("click", function(){
-// 	var answer = parseInt(num1.value) + parseInt(num2.value)
-// 		result.innerHTML = answer
-// 		changeColor(answer)
-// })
+add.addEventListener("click", function(){
+	var answer = parseInt(num1.value) + parseInt(num2.value)
+		result.innerHTML = answer
+		changeColor(answer)
+})
 
-// subtract.addEventListener("click", function(){
-// 	var answer = parseInt(num1.value) - parseInt(num2.value)
-// 		result.innerHTML = answer
-// 		changeColor(answer)
-// })
+subtract.addEventListener("click", function(){
+	var answer = parseInt(num1.value) - parseInt(num2.value)
+		result.innerHTML = answer
+		changeColor(answer)
+})
 
-// function changeColor(x){
-// 	if(x == 0){
-// 		result.style.backgroundColor = 'green'
-// 	}else if (x % 2 == 0){
-// 		result.style.backgroundColor = 'red'
-// 	}else {
-// 		result.style.backgroundColor = 'yellow'
-// 	}
-// }
+function changeColor(x){
+	if(x == 0){
+		result.style.backgroundColor = 'green'
+	}else if (x % 2 == 0){
+		result.style.backgroundColor = 'red'
+	}else {
+		result.style.backgroundColor = 'yellow'
+	}
+}
 
 // var a = 8;
 
@@ -63,12 +63,12 @@
 // In this scenario JS does not mix the two i values
 
 
-for(let i = 0;i< 3;i++){
-	console.log(i)
-	for(let i = 111; i<113;i++){
-		console.log(i)
-	}
-}
+// for(let i = 0;i< 3;i++){
+// 	console.log(i)
+// 	for(let i = 111; i<113;i++){
+// 		console.log(i)
+// 	}
+// }
 
 
 

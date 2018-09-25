@@ -66,6 +66,9 @@ Plan for the next day:
 			return 3.14
 		}
 
+		- createElement;
+		- appendChild;s
+
 
 
 
