@@ -21,3 +21,51 @@ Plan for the day:
 - create palindrome (split(), reverse(), join())
 - calculator to create from scratch
 - merging the two homeworks  - clock and modal and start working on them if there is time;
+
+Plan for the next day:
+
+1. write a function that takes three arguments - numbers - adds them together and returns true if the sum of these numbers is even and false if the sum of these numbers is odd;
+
+2. Write a function that takes a string and returns an array of all vowels in this string;
+
+3. Write a function that takes an array of numbers and returns the sum of all numbers
+
+- calculator to create from scratch
+
+- going over:
+	- callback function;
+		A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’. They are passed as arguments to another function;
+
+				function hello(){
+					console.log('hello')
+				}
+				function world(){
+					console.log('world')
+				}
+				hello()
+				world()
+
+			Written in this way, you will print 'hello' and 'world' one after another on the screen.
+			However, if you wrap console.log('hello') in a settimeout it won't print it in the same order.
+				function hello(arg){
+					setTimeout(function(){
+						console.log(arg)
+					}, 3000)
+
+				}
+
+				function world(){
+					console.log('this is the world')
+				}
+			
+			JavaScript didn’t wait for a response from hello() before moving on to execute world(). JavaScript is an event driven language. This means that instead of waiting for a response before moving on, JavaScript will keep executing while listening for other events.
+
+
+	- function expression;
+		var a = function(){
+			return 3.14
+		}
+
+
+
+
