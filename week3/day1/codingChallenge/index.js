@@ -1,4 +1,4 @@
-// 1. Find Beatles. You have an array of objects. Write a function that takes one argument - array list - 
+// 1. Find Beatles. You have an array of objects. Write a function that takes one argument - the array named list - 
 // and filters all the persons from this list born in Liverpool. Return an object that contains a property of names and 
 // value of an array of the names of all persons from Liverpool.
 
@@ -8,31 +8,36 @@ var list = [
 		age: 23,
 		location: 'Liverpool'
 	},
-	person2 = {
+	person2 =  {
+		name: "james",
+		age: 73,
+		location: 'Chicago'
+	},
+	person3 = {
 		name: "george",
 		age: 43,
 		location: 'Liverpool'
 	},
-	person3 = {name: "paul",
+	person4 = {name: "paul",
 		age: 54,
 		location: 'Liverpool'
 	},
-	person4 = {
+	person5 = {
 		name: "ringo",
 		age: 43,
 		location: 'Liverpool'
 	},
-	person5 = {
+	person6 = {
 		name: "mick",
 		age: 43,
 		location: 'London'
 	},
-	person5 = {
+	person7 = {
 		name: "keith",
 		age: 93,
 		location: 'London'
 	},
-	person6 = {
+	person8 = {
 		name: "jim",
 		age: 53,
 		location: 'Los Angeles'

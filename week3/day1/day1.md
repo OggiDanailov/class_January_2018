@@ -69,14 +69,22 @@ The value of 'this' is related to the scope where the word is used. When we use 
 
 The value of this will become the new object when the constructor is used to create an object.
 
+var person3 = new person1.constructor('Karen', 'Stephenson', 26, 'female', ['playing drums', 'mountain climbing']);
+
+Here we are going to use person1 that has been already created to create another instance of the same object through the constructor keyword; we will use this method if we don't have access to the main prototype Object.
+
+The constructor property has other uses. For example, if you have an object instance and you want to return the name of the constructor it is an instance of, you can use the following:
+
+p1.constructor.name - it will give you the name of the prototype object - Person
+
 1. example of function constructor;
 2. 3 examples of Person; you create instances of object person and you inherit all the functionality that this object contains. 
 If you try to do the same with object literal you won't be able to; JS won't allow you to create a new object based on object literal;
 
 ###Exercise 1
 •   Create a new JavaScript file with a constructor function for an object of your choice
-•  Include at least one method in it(function)
-•   Instantiate two copies of that object without getting syntax errors
+•  Include at least one method in it(function) and one array
+•   Instantiate three copies of that object without getting syntax errors
 
 3. Prototype - how we can add another functionality to the prototype object; because the other instances of this object have been created as bluepirnts from this particular one they will inherit this new functionality as well. This is call inheritance 
 
@@ -110,3 +118,45 @@ var myObject = {
     lastName: "Doe",
 }
 person.fullName.call(myObject);  // Will return "Mary Doe"
+
+
+
+function Room(number, beds, balcony, occupied){
+    this.bar = ['whiskey', 'beer', 'coke', 'wine'];
+    this.number = number;
+    this.beds = beds;
+    this.balcony = balcony;
+    this.price = function(){
+        if(this.balcony == true && this.beds >= 3){
+            return 200 + "$"
+        }else if(this.balcony == true && this.beds < 3){
+            return 150 + "$"
+        }else if(this.balcony == false && this.beds < 3){
+            return 120 + "$"
+        }else {
+            return 'we don not have such room'
+        }
+    };
+    this.occupied = occupied;
+    this.availability = function(){
+        if(this.occupied == true){
+            return true
+        }else {
+            return false
+        }
+    }
+}
+
+var r1 = new Room(100, 3, true, true);
+var r2 = new Room(101, 2, false, true);
+var r3 = new Room(102, 1, false, false);
+
+Room
+
+
+
+
+
+
+
+
