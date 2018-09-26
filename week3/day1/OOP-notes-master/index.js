@@ -1,4 +1,7 @@
-c// Objects:
+
+
+
+// Objects:
 // literal notation of objects
 
 // var person = {
@@ -26,14 +29,14 @@ c// Objects:
 // }
 
 // // object extends
-// function Bike(wheels, color){
-// this.wheels = wheels;
-// this.color = color
-// }
+function Bike(wheels, color){
+this.wheels = wheels;
+this.color = color
+}
 
-// function Car(){
-// Bike.apply(this, arguments)
-// }
+function Car(){
+Bike.apply(this, arguments)
+}
 
 //The apply() method calls a function with a given this value, 
 // and arguments provided as an array
@@ -45,6 +48,38 @@ c// Objects:
 
 // var newCar = new Car(4, 'green')
 
+// More examples:
+
+function Person(first, last, age){
+	this.first = first;
+	this.last = last;
+	this.age = age;
+}
+
+var p1 = new Person("Oggi", "Danailov", 32)
+
+p1.constructor 
+// (will give you the prototype object)
+p1.constructor.name 
+// (will give you the name)
+
+Person.prototype.fullName = function(){
+	return this.first + " " + this.last
+}
+
+
+function Student(first, last, age, major){
+	Person.call(this, first, last, age)
+
+	this.major = major;
+}
+
+
+// This looks similar to the Person constructor in many ways, but there is something strange here that we've not seen before — the call() function. This function basically allows you to call a function defined somewhere else, but in the current context. The first parameter specifies the value of this that you want to use when running the function, and the other parameters are those that should be passed to the function when it is invoked.
+
+// We want the Teacher() constructor to take the same parameters as the Person() constructor it is inheriting from, so we specify them all as parameters in the call() invocation.
+
+// Note: While the syntax of this function is almost identical to that of apply(), the fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
 
 
 // class concept in ECMA6

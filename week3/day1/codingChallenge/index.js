@@ -1,3 +1,67 @@
+// 1. Find Beatles. You have an array of objects. Write a function that takes one argument - array list - 
+// and filters all the persons from this list born in Liverpool. Return an object that contains a property of names and 
+// value of an array of the names of all persons from Liverpool.
+
+var list = [
+	person1 =  {
+		name: "john",
+		age: 23,
+		location: 'Liverpool'
+	},
+	person2 = {
+		name: "george",
+		age: 43,
+		location: 'Liverpool'
+	},
+	person3 = {name: "paul",
+		age: 54,
+		location: 'Liverpool'
+	},
+	person4 = {
+		name: "ringo",
+		age: 43,
+		location: 'Liverpool'
+	},
+	person5 = {
+		name: "mick",
+		age: 43,
+		location: 'London'
+	},
+	person5 = {
+		name: "keith",
+		age: 93,
+		location: 'London'
+	},
+	person6 = {
+		name: "jim",
+		age: 53,
+		location: 'Los Angeles'
+	}
+
+]
+
+obj = {}
+
+function listSelection(arg){
+	var array = [];
+	for(let i = 0;i<arg.length;i++){
+		if(list[i].location == "Liverpool"){
+			array.push(list[i].name)
+		}
+
+	}
+return obj.names = array;
+}
+
+
+
+
+
+
+
+
+
+
 // 1. Create a function that takes an array of numbers as an argument
 //  and returns the sum of all of the Even and all of the Odd numbers
 
