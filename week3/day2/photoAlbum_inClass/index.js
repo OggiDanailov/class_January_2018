@@ -104,72 +104,72 @@
 
 // CreateElement()
 
-// var wrapper = document.createElement("div")
-// wrapper.style.width = "90%"
-// wrapper.style.height = "300px"
-// wrapper.style.margin = "0 auto"
-// wrapper.style.border = "2px solid red"
-// document.body.appendChild(wrapper)
+var wrapper = document.createElement("div")
+wrapper.style.width = "90%"
+wrapper.style.height = "300px"
+wrapper.style.margin = "0 auto"
+wrapper.style.border = "2px solid red"
+document.body.appendChild(wrapper)
 
-//2.1/2 Extra Challenge: If you have time and are looking for an extra challenge try
- // using your solution to problem 2 to create a simple one page photo gallery.
- //  This page should display  all photos stored in your photo gallery object. 
- //  Try your best to implement modern design trends and if you are looking 
- //  for even more then give a user the option to press a button to
+// 2.1/2 Extra Challenge: If you have time and are looking for an extra challenge try
+//  using your solution to problem 2 to create a simple one page photo gallery.
+//   This page should display  all photos stored in your photo gallery object. 
+//   Try your best to implement modern design trends and if you are looking 
+//   for even more then give a user the option to press a button to
 //  animate the images on the page somehow. Have fun!
-// var photoName = document.getElementById("photoName")
-// var photoLocation = document.getElementById("photoLocation")
-// var photoUrl  = document.getElementById("photoUrl")
+var photoName = document.getElementById("photoName")
+var photoLocation = document.getElementById("photoLocation")
+var photoUrl  = document.getElementById("photoUrl")
 
-// var nameFunction  = document.getElementById("nameFunction")
-// var showFunction = document.getElementById("showFunction")
+var nameFunction  = document.getElementById("nameFunction")
+var showFunction = document.getElementById("showFunction")
 
-// function Photos(name, location, url){
-// 	this.name = name;
-// 	this.location = location;
-// 	this.url = url;
-// }
+function Photos(name, location, url){
+	this.name = name;
+	this.location = location;
+	this.url = url;
+}
 
 
-// function Album(){
-// 	this.photoList = [];
+function Album(){
+	this.photoList = [];
 
-// 	this.addPhotos = function(){
-// 		var newName = photoName
-// 		newName = new Photos(photoName.value, photoLocation.value, photoUrl.value)
-// 		this.photoList.push(newName)
-// 		console.log(this.photoList)
-// 	}
+	this.addPhotos = function(){
+		var newName = photoName
+		newName = new Photos(photoName.value, photoLocation.value, photoUrl.value)
+		this.photoList.push(newName)
+		console.log(this.photoList)
+	}
 
-// 	this.listPhotos = function(){
-// 		var wrapper = document.createElement("div")
-// 		wrapper.style.width = "90%"
-// 		wrapper.style.border = '2px solid orange'
-// 		wrapper.style.margin = '10px auto'
+	this.listPhotos = function(){
+		var wrapper = document.createElement("div")
+		wrapper.style.width = "90%"
+		wrapper.style.border = '2px solid orange'
+		wrapper.style.margin = '10px auto'
 
-// 		document.body.appendChild(wrapper)
-// 		for(let i = 0;i<this.photoList.length;i++){
-// 			var img = document.createElement('div');
-// 			img.style.border = "2px solid "
-// 			img.style.width = "200px"
-// 			img.style.height = "200px";
-// 			img.style.backgroundImage ="url(" +  this.photoList[i].url + ")"
-// 			img.style.backgroundSize = '100% 100%';
-// 			img.style.margin = '10px'
-// 			wrapper.appendChild(img)
-// 		}
-// 	}	
-// }
+		document.body.appendChild(wrapper)
+		for(let i = 0;i<this.photoList.length;i++){
+			var img = document.createElement('div');
+			img.style.border = "2px solid "
+			img.style.width = "200px"
+			img.style.height = "200px";
+			img.style.backgroundImage ="url(" +  this.photoList[i].url + ")"
+			img.style.backgroundSize = '100% 100%';
+			img.style.margin = '10px'
+			wrapper.appendChild(img)
+		}
+	}	
+}
 
-// var album = new Album();
+var album = new Album();
 
-// nameFunction.addEventListener("click", function(){
-// 	album.addPhotos()
-// })
+nameFunction.addEventListener("click", function(){
+	album.addPhotos()
+})
 
-// showFunction.addEventListener('click', function(){
-// 	album.listPhotos()
-// })
+showFunction.addEventListener('click', function(){
+	album.listPhotos()
+})
 
 // classes
 
@@ -217,40 +217,40 @@
 
 // Calculator
 
-var num1 = document.getElementById("num1")
-var num2 = document.getElementById("num2")
+// var num1 = document.getElementById("num1")
+// var num2 = document.getElementById("num2")
 
-var add = document.getElementById("add")
-var subtract = document.getElementById("subtract")
-var multiply = document.getElementById("multiply")
-var divide = document.getElementById("divide")
+// var add = document.getElementById("add")
+// var subtract = document.getElementById("subtract")
+// var multiply = document.getElementById("multiply")
+// var divide = document.getElementById("divide")
 
-var result = document.getElementById("result")
+// var result = document.getElementById("result")
 
 
-class Calculator{
-	adding(x, y){
-	result.innerHTML = parseInt(x) + parseInt(y)		
-	}
-	subtracting(x, y){
-	result.innerHTML = parseInt(x.value) - parseInt(y.value)
-	}
-	multiplying(x, y){
-	result.innerHTML = x * y
-	}
-	dividing(x, y){
-	result.innerHTML = x / y		
-	}
-}
-var calc = new Calculator();
+// class Calculator{
+// 	adding(x, y){
+// 	result.innerHTML = parseInt(x) + parseInt(y)		
+// 	}
+// 	subtracting(x, y){
+// 	result.innerHTML = parseInt(x.value) - parseInt(y.value)
+// 	}
+// 	multiplying(x, y){
+// 	result.innerHTML = x * y
+// 	}
+// 	dividing(x, y){
+// 	result.innerHTML = x / y		
+// 	}
+// }
+// var calc = new Calculator();
 
-add.addEventListener('click', function(){
-	calc.adding(num1.value, num2.value)
-})
+// add.addEventListener('click', function(){
+// 	calc.adding(num1.value, num2.value)
+// })
 
-subtract.addEventListener("click", function(){
-	calc.subtracting(num1, num2)
-})
+// subtract.addEventListener("click", function(){
+// 	calc.subtracting(num1, num2)
+// })
 
 
 

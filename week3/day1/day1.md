@@ -150,6 +150,11 @@ JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sug
 
 An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
 
+Hoisting
+In JavaScript, a variable can be declared after it has been used.
+In other words; a variable can be used before it has been declared. Hoisting is JavaScript's default behavior of moving all declarations to the top of the current scope (to the top of the current script or the current function).
+let and const do not hoist!!!
+
 6. Examples:
 
 class Human {
@@ -199,6 +204,7 @@ Take the object you created  and extend it using its extends
 •   Add one more attribute and one more method to it
 •   Try to access these attributes and methods on both an already created instance and a brand new instance of the object
 using super keyword
+- finally, write the same thing as constructor function
 
 
 
