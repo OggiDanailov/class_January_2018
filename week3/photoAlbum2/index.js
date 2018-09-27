@@ -20,28 +20,38 @@ var imgUrl = document.getElementById("imgUrl")
 var submit = document.getElementById('submit')	
 
 
-	
+submit.addEventListener('click', function(){
+	album.addPhoto()
+	album.listPhotos()
+
+})	
 
 function Photo(photoName, location, url){
-		this.photoName = name;
+		this.photoName = photoName;
 		this.location = location;
 		this.url = url;
 }
 
 function Album(){
+	this.count = 1
 	this.photoList = [];
+	this.naming = 'a';
 	this.addPhoto = function(){
-		for(let i =0;i<photoList.length;i++){
-			photoList.push(photolist[i])
-		}
+			var photo = "photo" + this.count
+			photo = new Photo(imgName.value, imgLocation.value, imgUrl.value)
+			this.photoList.push(photo)		
+			this.count++;
 	}
 
 	this.listPhotos = function(){
-		for(let i =0;i<photoList.length;i++){
-			photolist[i]
+		for(let i =0;i<this.photoList.length;i++){
+			console.log(this.photoList)
+
 		}
 	}
 }
+
+var album = new Album()
 
 
 
