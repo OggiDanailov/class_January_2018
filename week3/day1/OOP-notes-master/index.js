@@ -81,6 +81,8 @@ function Student(first, last, age, major){
 
 // Note: While the syntax of this function is almost identical to that of apply(), the fundamental difference is that call() accepts an argument list, while apply() accepts a single array of arguments.
 
+ c
+
 
 // class concept in ECMA6
 
@@ -153,38 +155,38 @@ function Student(first, last, age, major){
 // }
 
 
-var plus = document.getElementById('plus')
-var minus = document.getElementById('minus')
-var multi = document.getElementById('multi')
-var subtract = document.getElementById('subtract')
+// var plus = document.getElementById('plus')
+// var minus = document.getElementById('minus')
+// var multi = document.getElementById('multi')
+// var subtract = document.getElementById('subtract')
 
 
 
-class Calculator{
-	constructor(){
-		var i1 = document.getElementById('i1')
-		var i2 = document.getElementById('i2')
-		var result = document.getElementById('result')
-		this.adding = function(){	
-			result.innerHTML = parseInt(i1.value) + parseInt(i2.value)
-		}
-		this.subtracting = function(){
-			result.innerHTML = parseInt(i1.value) - parseInt(i2.value)
-		}
-		this.multiplying = function(){
-			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
-		}
+// class Calculator{
+// 	constructor(){
+// 		var i1 = document.getElementById('i1')
+// 		var i2 = document.getElementById('i2')
+// 		var result = document.getElementById('result')
+// 		this.adding = function(){	
+// 			result.innerHTML = parseInt(i1.value) + parseInt(i2.value)
+// 		}
+// 		this.subtracting = function(){
+// 			result.innerHTML = parseInt(i1.value) - parseInt(i2.value)
+// 		}
+// 		this.multiplying = function(){
+// 			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
+// 		}
 
-		this.dividing = function(){
-			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
-		}
-	}
+// 		this.dividing = function(){
+// 			result.innerHTML = parseInt(i1.value) * parseInt(i2.value)
+// 		}
+// 	}
 
-}
+// }
 
-var calc = new Calculator()
-plus.addEventListener('click', calc.adding)
-minus.addEventListener('click', calc.subtracting)
+// var calc = new Calculator()
+// plus.addEventListener('click', calc.adding)
+// minus.addEventListener('click', calc.subtracting)
 
 
 

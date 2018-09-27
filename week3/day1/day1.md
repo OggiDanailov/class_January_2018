@@ -95,13 +95,7 @@ If you try to do the same with object literal you won't be able to; JS won't all
 •   Add one more attribute and one more method to it
 •   Try to access these attributes and methods on both an already created instance and a brand new instance of the object
 
-5. Class in Javascript - this is simply a new way of writing the same. This is ECMA6 so it is relatively new. Reactjs is all written in classes.
-6. Examples -
-7. Extends - extends keyword
 
-###Exercise 3
-- Take an constructor function that you have already used and create it as a class (it will have the same functionality but different syntax)
-- extend its functionality to another class that you create (similar of what you already did in exercise 2
 
 
 
@@ -151,8 +145,60 @@ var r1 = new Room(100, 3, true, true);
 var r2 = new Room(101, 2, false, true);
 var r3 = new Room(102, 1, false, false);
 
-Room
+5. Class in Javascript - this is simply a new way of writing the same. This is ECMA6 so it is relatively new. Reactjs is all written in classes.
+JavaScript classes, introduced in ECMAScript 2015, are primarily syntactical sugar over JavaScript's existing prototype-based inheritance. The class syntax does not introduce a new object-oriented inheritance model to JavaScript.
 
+An important difference between function declarations and class declarations is that function declarations are hoisted and class declarations are not. You first need to declare your class and then access it, otherwise code like the following will throw a ReferenceError:
+
+6. Examples:
+
+class Human {
+    constructor(fname,lname, age, interests){
+        this.fname = fname;
+        this.lname = lname;
+        this.age = age;
+        this.interests = interests;
+        }
+        fullName(){
+            return this.fname + " " + this.lname
+        }
+    
+
+}
+The constructor method is a special method for creating and initializing an object created with a class. There can only be one special method with the name "constructor" in a class. A SyntaxError will be thrown if the class contains more than one occurrence of a constructor method.
+
+7. Extends - extends keyword
+
+A constructor can use the super keyword to call the constructor of the super class.
+
+class Woman extends Human {
+    
+}
+here Woman will inherit everything from Human class(object). However, if we want to give its own properites to class WOman then we will call the keyword super.
+
+class Woman extends Human {
+    constructor(fname, lname,age, interests, hairColor){
+        super(fname, lname,age, interests)
+        this.hairColor = hairColor
+    }
+}
+
+Here in the super keyword we will have to include all the items that we want to import from the extended one;
+
+var w1 = new Woman('Gigi', 'Migi', 33, ['hair', 'rockets'], 'blue');
+var w2 = new w1.constructor("Mandy", 'Bandy', 45, ['science', 'rugby'], 'shiny')
+
+
+
+###Exercise 3
+- Create a new JavaScript file with class syntax for an object of your choice
+•  Include at least one method in it(function) and one array
+•   Instantiate three copies of that object without getting syntax errors
+
+Take the object you created  and extend it using its extends
+•   Add one more attribute and one more method to it
+•   Try to access these attributes and methods on both an already created instance and a brand new instance of the object
+using super keyword
 
 
 
