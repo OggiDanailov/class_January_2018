@@ -12,3 +12,10 @@ body {
 .inputs {
 	margin: 10px;
 }
+
+
+.gallery {
+	width: 50%;
+	float: left;
+	border: 2px solid green;
+}

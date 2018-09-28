@@ -18,6 +18,8 @@ var imgName = document.getElementById("imgName")
 var imgLocation = document.getElementById("imgLocation")
 var imgUrl = document.getElementById("imgUrl")
 var submit = document.getElementById('submit')	
+var gallery = document.getElementsByClassName('gallery')[0]
+
 
 
 submit.addEventListener('click', function(){
@@ -29,8 +31,9 @@ submit.addEventListener('click', function(){
 function Photo(photoName, location, url){
 		this.photoName = photoName;
 		this.location = location;
-		this.url = url;
+		this.url = url
 }
+
 
 function Album(){
 	this.count = 1
@@ -45,7 +48,13 @@ function Album(){
 
 	this.listPhotos = function(){
 		for(let i =0;i<this.photoList.length;i++){
-			console.log(this.photoList)
+			var images = document.createElement('div')
+			images.style.width = '100px'
+			images.style.height = '100px'
+			images.style.border = "3px solid red"
+			images.style.backgroundImage = "url(" + this.photoList[i].url + ")"
+			images.style.backgroundSize = "100% 100%"
+			gallery.appendChild(images)
 
 		}
 	}
