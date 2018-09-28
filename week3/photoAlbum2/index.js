@@ -17,16 +17,14 @@
 var imgName = document.getElementById("imgName")
 var imgLocation = document.getElementById("imgLocation")
 var imgUrl = document.getElementById("imgUrl")
-var submit = document.getElementById('submit')	
+var submit = document.getElementById('submit')
+
 var gallery = document.getElementsByClassName('gallery')[0]
+var mainImage = document.getElementById('big-image')
 
 
 
-submit.addEventListener('click', function(){
-	album.addPhoto()
-	album.listPhotos()
-
-})	
+	
 
 function Photo(photoName, location, url){
 		this.photoName = photoName;
@@ -36,29 +34,63 @@ function Photo(photoName, location, url){
 
 
 function Album(){
-	this.count = 1
 	this.photoList = [];
-	this.naming = 'a';
+	this.bigImage;
+	
+
 	this.addPhoto = function(){
 			var photo = "photo" + this.count
 			photo = new Photo(imgName.value, imgLocation.value, imgUrl.value)
 			this.photoList.push(photo)		
-			this.count++;
 	}
 
 	this.listPhotos = function(){
-		for(let i =0;i<this.photoList.length;i++){
-			var images = document.createElement('div')
-			images.style.width = '100px'
-			images.style.height = '100px'
-			images.style.border = "3px solid red"
-			images.style.backgroundImage = "url(" + this.photoList[i].url + ")"
-			images.style.backgroundSize = "100% 100%"
-			gallery.appendChild(images)
+		// for(let i =0;i<this.photoList.length;i++){
+			this.images = document.createElement('div')
+			this.images.style.width = '100px'
+			this.images.style.height = '100px'
+			this.images.style.border = "3px solid red"
+			this.images.style.margin = '5px'
+			this.images.style.backgroundImage = "url(" + this.photoList[this.photoList.length-1].url + ")"
+			this.bigImage = "url(" + this.photoList[this.photoList.length-1].url + ")"
+			this.images.style.backgroundSize = "100% 100%"
+			this.images.className = 'images'
+			gallery.appendChild(this.images)
 
-		}
+			var title = document.createElement('div')
+			title.style.width = '70%'
+			title.style.margin = '10px auto'
+			// title.style.border = '1px solid'
+			title.style.textAlign = 'center'
+			title.innerHTML = this.photoList[this.photoList.length-1].photoName
+			gallery.appendChild(title)
+
+			var location = document.createElement('div')
+			location.style.width = '70%'
+			location.style.margin = '2px auto'
+			location.style.textAlign = 'center'
+			location.style.fontWeight = 'bold'
+			currentImage = this.photoList[this.photoList.length-1].photoName
+			location.innerHTML = this.photoList[this.photoList.length-1].location
+			gallery.appendChild(location)
+				this.moveImage(this.images,this.bigImage)
+		// }
 	}
+
+	this.moveImage = function(x, y){
+		x.addEventListener('click', function(){
+			mainImage.style.backgroundImage = y;
+			mainImage.style.backgroundSize = '100% 100%'
+		})
+	}
+
 }
+
+submit.addEventListener('click', function(){
+	album.addPhoto()
+	album.listPhotos()
+})
+
 
 var album = new Album()
 

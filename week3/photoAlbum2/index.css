@@ -15,7 +15,36 @@ body {
 
 
 .gallery {
-	width: 50%;
+	width: 10%;
 	float: left;
-	border: 2px solid green;
+	margin-left: 50px;
+	/*border: 2px solid green;*/
 }
+
+#big-image {
+	width: 400px;
+	border: 2px solid;
+	height: 400px;
+	border-radius: 50%;
+	position: relative;
+	top: 100px;
+	left: 400px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
