@@ -100,9 +100,9 @@
 // school1.addStudents(s1)
 // school1.addStudents(s2)
 
-// console.log(school1.listStudents())
+// 'console.log(school1.listStudents())
 
-// CreateElement()
+// CreateElement()'
 
 var wrapper = document.createElement("div")
 wrapper.style.width = "90%"
