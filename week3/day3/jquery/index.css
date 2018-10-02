@@ -35,7 +35,7 @@ background: lightgrey;
 
 .navbar ul li {
 	display: inline-block;	
-	/*border: 2px solid;*/
+	border: 2px solid;
 }
 
 .navbar ul li a {

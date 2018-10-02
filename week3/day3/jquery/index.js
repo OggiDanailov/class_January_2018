@@ -2,13 +2,12 @@
 
 
 $(".navbar div").click(function(){
-	console.log('asdfasdf')
 	$("ul").slideToggle();
 	$("ul ul").css("display", "none")
 })
 
-$(".navbar ul li").click(function(){
-	$(".navbar ul li ul").slideUp();
+$("ul li").click(function(){
+	$("ul ul").slideUp();
 	$(this).find("ul").slideToggle()
 })
 
