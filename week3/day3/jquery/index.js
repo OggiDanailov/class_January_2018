@@ -1,17 +1,21 @@
 // navbar menu functionality
 
 
-$(".navbar div").click(function(){
-	$("ul").slideToggle();
-	$("ul ul").css("display", "none")
-})
+$(".wrap-burger").click(function(){
+	$('ul').slideToggle()
+	$("ul ul").css('display', 'none')
+}) 
 
 $("ul li").click(function(){
 	$("ul ul").slideUp();
-	$(this).find("ul").slideToggle()
+	$(this).find("ul").slideToggle();
 })
 
 
+
+
+
+// jquery
 // $(".box").click(function(){
 // 	console.log('this is the Jquery version')
 // })
