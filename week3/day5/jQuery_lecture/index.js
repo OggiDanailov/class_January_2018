@@ -45,7 +45,7 @@ function naming(){
 
 // toggling = here I can use 'this' which will refer to box
 $("#box").click(function(){
-	$("#box2").toggleClass("green")
+	$("#box2").toggleClass("box2-toggle")
 	// $(this).css('background-color', 'yellow');
 	// $("h2").toggle()
 })
@@ -63,7 +63,7 @@ $("#box").click(function(){
 // var box = document.getElementById('box')
 
 // box.addEventListener("click", function(){
-// 	box.classList.toggle('green')
+// 	box.classList.toggle('box2-toggle')
 // })
 
 
