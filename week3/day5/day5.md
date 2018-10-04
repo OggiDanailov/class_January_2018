@@ -69,14 +69,33 @@ $(".my-element").animate(
  JSON - javascript object notation
  ex:  
  http://json.org/example.html  
- {"animals": ["zebra","ostrich","baboon"  ]}
+ '{ "name":"John", "age":30, "city":"New York"}'
  
- var parsing = JSON.parse('{"animals": ["zebra","ostrich","baboon"  ]}')  
+ var parsing = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')  
  parsing.animals[0]
+
+ JSON.stingify() - will convert object literal into JSON:
+
  
  Aplication Programming Interface
  
  AJAX - Asynchronous Javascript and XML
+example of asynchronous behavior:
+https://medium.com/front-end-hacking/ajax-async-callback-promise-e98f8074ebd7
+
+
+Example of asynchornous behaviour:
+
+function showSessionExpire(){
+   console.log("Your session expired");
+ }
+setTimeout(showSessionExpire, 1000);
+ console.log("showSessionExpire will execute after 1000 ms");
+
+
+ Here first we will print the second console log and then the first console log although it will come first.
+
+
  you send a request to a given page without reloading the page; 
  $.ajax({    
  type: "POST",      
