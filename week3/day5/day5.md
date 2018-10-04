@@ -69,10 +69,10 @@ $(".my-element").animate(
  JSON - javascript object notation
  ex:  
  http://json.org/example.html  
- '{ "name":"John", "age":30, "city":"New York"}'
+ '{ "name":"John", "age":30, "city":"New York", "gender":"male"}'
  
  var parsing = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')  
- parsing.animals[0]
+ 
 
  JSON.stingify() - will convert object literal into JSON:
 
