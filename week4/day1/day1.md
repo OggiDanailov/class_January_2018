@@ -30,7 +30,7 @@ function concatArray(namesArray) {
 
      // For example:
 
-     //  [["Dostoyevski", "Idiot"], ["Twain", "The price and the pauper"], ["Poe", "The raven"], ["Remark", "All quiet on the western front"], ["Kafka", "The trial"]];
+     //  [["Dostoyevski", "Idiot"], ["Twain", "The price and the pauper"], ["Poe", "The raven"], ["Remark", "All quiet on the western front"], ["Kafka", "The process"]];
 
      //  Would become: 
 
