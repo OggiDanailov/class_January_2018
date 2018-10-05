@@ -1,0 +1,25 @@
+.arrows {
+	width: 50%;
+	height: 100px;
+	margin: 0 auto;
+	/*border: 2px solid;*/
+}
+
+
+#left, #right {
+	display: inline-block;
+	/*border: 1px solid;*/
+	width: 100px;
+	height: 100px;		
+}
+
+#right {
+	float: right;
+	background-image: url("img/right.png");
+	background-size: 100% 100%;
+}
+
+#left {
+	background-image: url("img/left.png");
+	background-size: 100% 100%;
+}
