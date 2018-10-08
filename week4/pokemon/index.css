@@ -10,7 +10,8 @@
 	display: inline-block;
 	/*border: 1px solid;*/
 	width: 100px;
-	height: 100px;		
+	height: 100px;
+	cursor: pointer;		
 }
 
 #right {
