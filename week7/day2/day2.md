@@ -161,5 +161,29 @@ array = [2,5,4,6,4,9]
 
 }
 
+function sorting(array){
+      if(array[j] > array[j + 1]){
+                var temp = array[j]
+                array[j] = array[j+1]
+                array[j+1] =   temp
+      }
+  }console.log(array)
+}
+
+
+function fibo(arg){
+  var a  = 0;
+  var b = 1;
+  var temp;
+  var result = 0;
+  for(let i = 0;i<arg;i++){
+    temp = a + b;
+    a = b;
+    b = temp;
+    
+    
+  }
+console.log(temp)
+}
  
 
