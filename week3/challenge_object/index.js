@@ -18,7 +18,9 @@ bars: 50
 		Spas: 332,
 		George: 433,
 		John: 300,
-		Rad: 90
+		Rad: 90,
+		Vasil: 210,
+		Anatoli: 224
 	}
 
 }
