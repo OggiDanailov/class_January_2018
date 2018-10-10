@@ -1,0 +1,59 @@
+body {
+  margin: 0;
+  padding: 0; }
+
+nav {
+  border: 2px solid;
+  width: 95%;
+  height: 50px;
+  margin: 0 auto;
+  background-color: salmon;
+  box-shadow: 5px 5px 10px black; }
+
+nav ul {
+  text-align: center; }
+
+nav ul li {
+  display: inline-block; }
+
+nav ul li a {
+  margin: 0px 50px; }
+
+nav ul li:hover {
+  background-color: teal;
+  border: 1px solid;
+  box-shadow: 5px 5px 10px black; }
+
+.wrapper, .container {
+  border: 3px solid orange;
+  margin: 10px auto;
+  width: 90%;
+  overflow: hidden; }
+
+#box1, #box2, #box3 {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  border: 2px solid;
+  float: left;
+  background-color: lightgreen;
+  box-shadow: 5px 5px 10px black; }
+
+.gallery, .square {
+  width: 700px;
+  height: 300px;
+  border: 2px solid;
+  margin: 20px auto;
+  background-color: salmon;
+  text-align: center;
+  box-shadow: 5px 5px 10px black; }
+
+.square {
+  width: 100px;
+  height: 100px;
+  border: 2px solid;
+  margin: 5px;
+  display: inline-block;
+  background-color: teal; }
+
+/*# sourceMappingURL=main.css.map */

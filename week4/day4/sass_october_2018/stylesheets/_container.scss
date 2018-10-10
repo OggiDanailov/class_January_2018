@@ -1,0 +1,22 @@
+.container {
+	@extend .wrapper;
+}
+
+.gallery {
+	@include box-size(700px, 300px);
+	border: 2px solid;
+	margin: 20px auto;
+	background-color: $main-color;
+	text-align: center;
+	box-shadow: $main-box-shadow;
+}
+
+.square {
+	@extend .gallery;
+	@include box-size(100px, 100px);
+	border: 2px solid;
+	margin: 5px;
+	display: inline-block;
+	background-color: $hover-color;
+}
+

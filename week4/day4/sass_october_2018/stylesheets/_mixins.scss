@@ -1,0 +1,15 @@
+@mixin box {
+	width: 300px;
+	height: 300px;
+	margin: 10px;
+	border: 2px solid;
+	float: left;
+	background-color: $box-color;
+}
+
+
+@mixin box-size($width, $height){
+	width: $width;
+	height: $height;
+}
+
