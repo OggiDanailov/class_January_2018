@@ -1,5 +1,7 @@
 
-
+SC.initialize({
+	client_id: 'f665fc458615b821cdf1a26b6d1657f6'
+})
 
 // this should give you a given song by ID:
 
@@ -10,11 +12,11 @@
 
 // this gives you a song request:
 
-// SC.get("/tracks", 
-// 	{q: 'whatever'
-// }).then(function(response){
-// 	console.log(response[0])
-// })
+SC.get("/tracks", 
+	{q: 'whatever'
+}).then(function(response){
+	console.log(response[0])
+})
 
 // this will play a song:
 

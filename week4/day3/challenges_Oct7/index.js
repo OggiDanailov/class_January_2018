@@ -11,7 +11,7 @@
 // 2. Write a function that takes a string as an argument and returns all the vowels
 // from this string into another string
 // 'whatever happens in time' -> 'aeeaeiie'
-	// 2 and a half - write another method that counts all the instances of
+	//  - write another method that counts all the instances of
 	// the vowels
 
 
