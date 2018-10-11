@@ -1,0 +1,100 @@
+.container {
+	width: 70%;
+	margin: 0 auto;
+	// border: 2px solid;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 2fr 4fr;
+	grid-gap: 10px;
+	
+}
+
+.brews {
+	// border: $main-border;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	background-image: url("../img/our_brews.png");
+	background-size: 100% 100%;
+	height: 180px;
+}
+
+.main-gallery {
+	// border: $main-border;
+	grid-column-start: 1;
+	grid-column-end: 6;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	grid-template-rows: 1fr 1fr 1fr 1fr;
+	grid-gap: 10px;
+}
+
+.images {
+	// border: $main-border;
+}
+
+.one {
+	// border: 3px solid green;
+	grid-row-start: 1;
+	grid-row-end: 4;
+	// background-image: url("../img/fire.png");
+	// background-size: 100% 100%;
+	@include images-function(url("../img/1.png"))
+}
+
+.two {
+	grid-row-start: 1;
+	grid-row-end: 3;
+	@include images-function(url("../img/2.jpg"))
+
+}
+
+.three {
+	@extend .two;
+	@include images-function(url("../img/3.jpeg"))
+}
+
+.four {
+	@extend .two;
+	@include images-function(url("../img/4.jpg"))
+}
+
+.five {
+	grid-row-start: 1;
+	grid-row-end: 2;
+	@include images-function(url("../img/5.jpg"))
+}
+
+.six {
+	grid-row-start: 2;
+	grid-row-end: 4;
+	@include images-function(url("../img/6.jpg"))
+}
+
+.seven {
+	grid-row-start: 3;
+	grid-row-end: 5;
+	@include images-function(url("../img/7.jpg"))
+}
+
+.eight {
+	@extend .seven;
+	@include images-function(url("../img/8.jpg"))
+}
+
+.nine {
+	@extend .eight;
+	@include images-function(url("../img/9.jpg"))
+}
+
+.ten {
+	@include images-function(url("../img/10.jpg"))
+}
+
+.eleven {
+	@include images-function(url("../img/11.jpeg"))
+}
+
+
+
+
+

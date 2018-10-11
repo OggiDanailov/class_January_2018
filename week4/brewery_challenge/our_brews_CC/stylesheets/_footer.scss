@@ -1,0 +1,39 @@
+footer {
+	margin-top: 60px;
+	width: 100%;
+	background-color: #291305;
+}
+
+.footer-wrapper {
+	height: 150px;
+	width: 70%;
+	margin: 0 auto;
+	// border: 2px solid white;
+	display: grid;
+	grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+	font-size: 12px;
+	font-family: fantasy;
+	background-color: #291305;
+}
+
+.text-footer {
+	// border: 1px solid white;
+	text-align: left;
+	padding-left: 10px;
+}
+
+.text-footer p {
+	padding: 0;
+	margin: 0;
+	color: white;
+}
+
+.text-footer h4 {
+	padding: 0;
+	margin: 10px 0;
+	color: white;
+}
+
+.two-footer {
+	text-align: center;
+}

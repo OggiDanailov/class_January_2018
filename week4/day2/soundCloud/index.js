@@ -1,5 +1,5 @@
 SC.initialize({
-	client_id: 'f665fc458615b821cdf1a26b6d1657f6'
+	client_id: ENV.client_id
 })
 
 var playButton = document.getElementById('playButton')

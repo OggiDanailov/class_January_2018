@@ -1,0 +1,71 @@
+body, html {
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background-color: $main-background-color;
+}
+
+
+
+.navbar {
+	@include box-size(100%, 150px);
+	// border: 1px solid;
+	position: relative;
+	text-align: center;
+	background-color: $main-background-color;
+
+}
+
+.logo {
+	@include box-size(70px, 70px);
+	@include centerer;
+	// border: $main-border;
+	background-image: url("../img/ruby.png");
+	background-size: 100% 100%;	
+}
+
+
+.navbar ul {
+	// border: 1px solid blue;
+	width: 25%;
+	position: relative;
+	top: 110px;
+	left: 750px;
+}
+
+.navbar ul li {
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+.face {
+	@include box-size(30px, 30px);
+	// border: $main-border;
+	background-image: url("../img/face.png");
+	background-size: 100% 100%;
+	border-radius: 50%;
+
+}
+
+.insta {
+	@include box-size(30px, 30px);
+	// border: $main-border;
+	background-image: url("../img/instagram.jpg");
+	background-size: 100% 100%;
+	border-radius: 50%;
+}
+
+.twitter {
+	@include box-size(30px, 30px);
+	// border: $main-border;
+	background-image: url("../img/twitter.jpeg");
+	background-size: 100% 100%;
+	border-radius: 50%;
+
+}
+
+
+
+

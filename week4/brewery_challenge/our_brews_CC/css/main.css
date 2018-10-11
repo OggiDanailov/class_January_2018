@@ -1,0 +1,165 @@
+body, html {
+  padding: 0;
+  margin: 0; }
+
+body {
+  background-color: #280D12; }
+
+.navbar {
+  width: 100%;
+  height: 150px;
+  position: relative;
+  text-align: center;
+  background-color: #280D12; }
+
+.logo {
+  width: 70px;
+  height: 70px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-image: url("../img/ruby.png");
+  background-size: 100% 100%; }
+
+.navbar ul {
+  width: 25%;
+  position: relative;
+  top: 110px;
+  left: 750px; }
+
+.navbar ul li {
+  display: inline-block;
+  margin: 0px 10px; }
+
+.face {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/face.png");
+  background-size: 100% 100%;
+  border-radius: 50%; }
+
+.insta {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/instagram.jpg");
+  background-size: 100% 100%;
+  border-radius: 50%; }
+
+.twitter {
+  width: 30px;
+  height: 30px;
+  background-image: url("../img/twitter.jpeg");
+  background-size: 100% 100%;
+  border-radius: 50%; }
+
+.container {
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 2fr 4fr;
+  grid-gap: 10px; }
+
+.brews {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  background-image: url("../img/our_brews.png");
+  background-size: 100% 100%;
+  height: 180px; }
+
+.main-gallery {
+  grid-column-start: 1;
+  grid-column-end: 6;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px; }
+
+.one {
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-image: url("../img/1.png");
+  background-size: 100% 100%; }
+
+.two, .three, .four {
+  grid-row-start: 1;
+  grid-row-end: 3;
+  background-image: url("../img/2.jpg");
+  background-size: 100% 100%; }
+
+.three {
+  background-image: url("../img/3.jpeg");
+  background-size: 100% 100%; }
+
+.four {
+  background-image: url("../img/4.jpg");
+  background-size: 100% 100%; }
+
+.five {
+  grid-row-start: 1;
+  grid-row-end: 2;
+  background-image: url("../img/5.jpg");
+  background-size: 100% 100%; }
+
+.six {
+  grid-row-start: 2;
+  grid-row-end: 4;
+  background-image: url("../img/6.jpg");
+  background-size: 100% 100%; }
+
+.seven, .eight, .nine {
+  grid-row-start: 3;
+  grid-row-end: 5;
+  background-image: url("../img/7.jpg");
+  background-size: 100% 100%; }
+
+.eight, .nine {
+  background-image: url("../img/8.jpg");
+  background-size: 100% 100%; }
+
+.nine {
+  background-image: url("../img/9.jpg");
+  background-size: 100% 100%; }
+
+.ten {
+  background-image: url("../img/10.jpg");
+  background-size: 100% 100%; }
+
+.eleven {
+  background-image: url("../img/11.jpeg");
+  background-size: 100% 100%; }
+
+footer {
+  margin-top: 60px;
+  width: 100%;
+  background-color: #291305; }
+
+.footer-wrapper {
+  height: 150px;
+  width: 70%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 2fr 2fr 2fr 1fr;
+  font-size: 12px;
+  font-family: fantasy;
+  background-color: #291305; }
+
+.text-footer {
+  text-align: left;
+  padding-left: 10px; }
+
+.text-footer p {
+  padding: 0;
+  margin: 0;
+  color: white; }
+
+.text-footer h4 {
+  padding: 0;
+  margin: 10px 0;
+  color: white; }
+
+.two-footer {
+  text-align: center; }
+
+/*# sourceMappingURL=main.css.map */
