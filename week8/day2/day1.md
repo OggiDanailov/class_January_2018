@@ -10,6 +10,27 @@ function c(){
  return r;
 }console.log(c());
 
+function chess(){
+	var result = ""
+for(let j = 0;j<8;j++){
+	for(let i = 0;i<8;i++){
+        if(j%2 == 0){
+            if(i% 2 ==0){
+             result += "#"
+            }else {
+                 result += "-"
+            }
+        }else{
+            if(i%2 == 0){
+                 result += "-"
+            }else {
+                 result += "#"
+            }
+        }
+	} result += "\n"
+}return result;
+}
+
 
  
  
