@@ -1,4 +1,4 @@
-finances = {
+var finances = {
 	budget: [
 {car: 150,
 gas: 50
@@ -24,6 +24,7 @@ bars: 50
 	}
 
 }
+
 
 // write a method that takes the object and estimates how much each employee has spent on business trip given
 // that change is what the employee returned to the office and the budget was what it was the allowence. If an employee(s) spend
@@ -68,6 +69,50 @@ function promotion(expenses, obj){
 
 
 estimate(finances)
+
+
+
+
+
+
+
+
+
+// $.ajax("https://raw.githubusercontent.com/OggiDanailov/json/master/finances.json").then(function(response){
+// 	var a = JSON.parse(response)
+// 	console.log(a.budget[0])
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

@@ -1,21 +1,21 @@
 
 
-for(i = 0;i<8;i++){
-	var div = document.createElement('DIV')
-	div.style.width = '75px'
-	div.style.height = '75px'
-	div.style.display = 'inline-block'
-	div.style.border = '1px solid'
-	document.body.appendChild(div)
+// for(i = 0;i<8;i++){
+// 	var div = document.createElement('DIV')
+// 	div.style.width = '75px'
+// 	div.style.height = '75px'
+// 	div.style.display = 'inline-block'
+// 	div.style.border = '1px solid'
+// 	document.body.appendChild(div)
 
-	if(i % 2 === 0 && i%4 === 0){
-		div.style.backgroundColor = 'white'
-	}else if(i % 2 === 0){
-		div.style.backgroundColor = 'black'
-	} else {
-		div.style.backgroundColor = 'grey'
-	}
-}
+// 	if(i % 2 === 0 && i%4 === 0){
+// 		div.style.backgroundColor = 'white'
+// 	}else if(i % 2 === 0){
+// 		div.style.backgroundColor = 'black'
+// 	} else {
+// 		div.style.backgroundColor = 'grey'
+// 	}
+// }
 
 	
 
