@@ -671,7 +671,7 @@
 // 		}else {
 // 			result += joining[i]
 // 		}
-// 	} return result
+// 	} return result.split(",")
 // }
 
 // capit(array)
@@ -1187,8 +1187,74 @@
 //  }
 
 
+// 19. write a function that takes a sentence as an argument and checks if the word 'whatever' is there; If it is not there it returns -1; if it is there it subsitutes the word 'whatever' with dashes - like "_________" and returns the original sentence with ______ instead of whatever;
 
+// function whatever(string){
+	
+// 	var a = string.split(" ")
+// 	var result = "";
+// for(let i =0;i<a.length;i++){
+// 	if(a[i].includes("whatever")){
+// 	  dashes(a[i])
+// 	}	
+// } if(a.indexOf('whatever') == -1){
+// 		return -1;
+// 	}
 
+// }
+
+// function dashes(x){
+// 	console.log(x)
+// 	var result = ""
+// 	for(let i = 0;i<x.length;i++){
+// 		result += " _ "
+// 	}console.log(result);
+// }
+
+// jordan
+
+// function replaceString(String, Word) {
+// 	//Check if String contains the given Word
+// 	const result = String.includes(Word)
+	
+// 	//If it contains the word replace the word with dashes
+
+// 	if(result) {
+// 		//Replace the word in the string with a number of dashes being the words length
+// 		const len = Word.length;
+// 		let stringArr = String.split(' ')
+// 		const index = stringArr.indexOf(Word)
+// 		let dashes = ''
+
+// 		//Give dashes variable words length many _
+// 		for(let i = 0; i < len; i++) {
+// 			dashes += '_'
+// 		}
+
+// 		//Remove the word and insert dashes
+// 		stringArr.splice(index, 1, dashes)
+		
+// 		//Turn the array back into a string
+// 		let string = stringArr.join(' ')
+// 		console.log(string)
+// 	} else {
+// 		console.log('false')
+// 		return -1;
+// 	}
+// }
+
+// 20. write a function that takes an array of subarrays with numbers and, using random(), returns a random subarray of this array. Then using filter() remove all even numbers of the subarray and using reduce() return the sum of these numbers.
+// EX: var a = [[2,3,5],[5,7,6],[5,7,8],[7,9,8]] -> a[2] selected randomly and then return the sum of the odd numbers in this array
+
+// function randomizer(){
+// 	var b = a[ Math.floor(Math.random()*4)]
+// 	console.log(b)
+// 	b.filter(function(el){
+// 		return el % 2 !== 0;
+// 	}).reduce(function(a,b){
+// 		console.log(a + b);
+// 	})
+// }
 
 
 

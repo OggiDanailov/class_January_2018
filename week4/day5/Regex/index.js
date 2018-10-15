@@ -104,30 +104,30 @@
 // capitalze all vowels
 // you would use foreach here becuase forEach will return a string; you can apply toUpperCase() right away
 	
-	var a = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
-"q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+// 	var a = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+// "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
 
-function nextLetter(string){
-	var word = "";
-	var temp = string.split("");
-	for(let i =0;i<temp.length;i++){
-		for(let j = 0;j<a.length;j++){
-			if(temp[i] == a[j]){
-				if(temp[i] == 'z'){
-					word += "a"
-				}else {
-					word += a[j + 1]
-				}
-			}
-		}
-	}
-	capitalization(word)
-}
+// function nextLetter(string){
+// 	var word = "";
+// 	var temp = string.split("");
+// 	for(let i =0;i<temp.length;i++){
+// 		for(let j = 0;j<a.length;j++){
+// 			if(temp[i] == a[j]){
+// 				if(temp[i] == 'z'){
+// 					word += "a"
+// 				}else {
+// 					word += a[j + 1]
+// 				}
+// 			}
+// 		}
+// 	}
+// 	capitalization(word)
+// }
 
-function capitalization(arg){
-	var output ="";
-	var vowels = "aeiou"
-	var temp = arg.split('')
+// function capitalization(arg){
+// 	var output ="";
+// 	var vowels = "aeiou"
+// 	var temp = arg.split('')
 	// temp.forEach(function(letter){
 	// 	if(vowels.indexOf(letter) !== -1){
 	// 		output += letter.toUpperCase()
@@ -136,15 +136,15 @@ function capitalization(arg){
 	// 	}
 	// })
 
-	for(let i = 0;i<temp.length;i++){
-		if(vowels.indexOf(temp[i]) !== -1){
-			output += temp[i].toUpperCase()
-		}else {
-			output += temp[i]
-		}
-	}
-	console.log(output)
-}
+// 	for(let i = 0;i<temp.length;i++){
+// 		if(vowels.indexOf(temp[i]) !== -1){
+// 			output += temp[i].toUpperCase()
+// 		}else {
+// 			output += temp[i]
+// 		}
+// 	}
+// 	console.log(output)
+// }
 
 
 
@@ -238,11 +238,104 @@ function capitalization(arg){
 // For example: if the input string is "Hello World and Coders" then 
 // your program should return the string sredoC dna dlroW olleH. 
 
-function FirstReverse(str) {
-	var temp = str.split("").reverse().join("")
-	console.log(temp)
+// function FirstReverse(str) {
+// 	var temp = str.split("").reverse().join("")
+// 	console.log(temp)
 	
-}
+// }
+
+// Regex - October 15, 2018
+
+// var a = new Regex(123);
+// var b = /123/
+
+//  Some characters, such as
+// question marks and plus signs, have special meanings in regular expressions and
+// must be preceded by a backslash if they are meant to represent the character
+// itself.
+// let eighteenPlus = /eighteen\+/;
+
+// Regex methods:
+// test()
+// exec()
+
+// String:
+// match(); replace(); search(); split()
+
+/s/.test('string');
+/str/.test('string');
+
+console.log(/[0-9]/.test("when I arrived in the US in 2003"))
+// here we have a range of numbers.  In a regular expression, putting a set
+// of characters between square brackets makes that part of the expression match
+// any of the characters between the brackets.
+// Within square brackets, a hyphen (-) between two characters can be used
+// to indicate a range of characters, where the ordering is determined by the
+// character’s Unicode number. Characters 0 to 9 sit right next to each other in
+// this ordering (codes 48 to 57), so [0-9] covers all of them and matches any
+// digit.
+\d - any digit;
+\w - any word character;
+\s - any white space character (space, tab, newline)
+\D - any character that it is not a digit;
+\W - any character that it is not a word;
+\S - any character that it is not a white space;
+. - any character except for newline;
+
+
+var date = "01-feb-2018"
+(/\d\d-\w\w\w-\d\d\d\d/).test(date)
+
+^ - To invert a set of characters—that is, to express that you want to match any
+character except the ones in the set—you can write a caret (^) character after
+the opening bracket.
+
+
+// var a = /[^1-3]/
+
+// a.test(456)
+// true
+// (there is no 1,2,3 and therefore the expression will be true);
+
+// a.test(123)
+// will give you false
+
+\d+ - When you put a plus sign (+) after something in a regular expression, it
+indicates that the element may be repeated more than once. Thus, /\d+/
+matches one or more digit characters.
+
+
+{} - To indicate that a pattern should occur a precise number of times, use braces.
+Putting {4} after an element, for example, requires it to occur exactly four
+times
+var a = "1234 Morning 123"
+var t = /\d{4}\s\w{3,10}\s\d{3}/
+t.test(a)
+true
+
+var b = "123 Morning 123"
+b.test(a)
+false
+
+//i - insensitive
+
+// Regular expressions also have an exec (execute) method that will
+//  return null if no match was found and return an object with information 
+//  about the match otherwise.
+
+var a = /\d+/.exec('this is number 23')
+a
+["23", index: 15, input: "this is number 23", groups: undefined]
+
+try:
+var a = /is/.exec('this is number 23')
+var a = /[is]/.exec('this is number 23')
+var a = /[^is]/.exec('this is number 23')
+
+
+
+
+
 
 
 
