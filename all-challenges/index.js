@@ -676,6 +676,52 @@
 
 // capit(array)
 
+// 34. Using the JavaScript language, have the function FirstReverse(str) 
+// take the str parameter being passed and return the string in reversed order. 
+// For example: if the input string is "Hello World and Coders" then 
+// your program should return the string sredoC dna dlroW olleH. 
+
+// function FirstReverse(str) {
+// 	var temp = str.split("").reverse().join("")
+// 	console.log(temp)
+	
+// }
+
+// 35. Using the JavaScript language, have the function LongestWord(sen) take the sen
+//  parameter being passed and return the largest word in the string. 
+//  If there are two or more words that are the same length,
+//   return the first word from the string with that length. 
+//   Ignore punctuation and assume sen will not be empty. 
+
+// function longestWord(sen){
+// 	var splitting = sen.split(" ")
+// 	var max = splitting[0]
+// 	for(let i = 0;i<splitting.length;i++){
+// 		if(splitting[i].length > max.length){
+// 			max = splitting[i]
+// 		}
+			
+// 	}
+// 	console.log(max)
+// }
+
+// 36. Write a function that takes the nested array as an argument and converts it into an object literal.
+// Second array contains the keys and first array contains the values
+
+// array = [["oggi", "Danailov", 23, "Serbia"], ["first name", "last name", "age", "country"]]
+// function convertArray(array){
+// 		var obj = {}
+// 	for(let i = 0;i<array[0].length;i++){
+// 		obj[array[1][i]] = array[0][i]
+// 	}
+// 	return obj;	
+// }
+
+               
+
+
+
+
 
 // 3. Difficult:
 
@@ -1187,7 +1233,9 @@
 //  }
 
 
-// 19. write a function that takes a sentence as an argument and checks if the word 'whatever' is there; If it is not there it returns -1; if it is there it subsitutes the word 'whatever' with dashes - like "_________" and returns the original sentence with ______ instead of whatever;
+// 19. write a function that takes a sentence as an argument and checks if the word 'whatever' is there;
+ // If it is not there it returns -1; if it is there it subsitutes the word 'whatever' with dashes - like "_________" and
+ //  returns the original sentence with ______ instead of whatever;
 
 // function whatever(string){
 	
@@ -1254,6 +1302,107 @@
 // 	}).reduce(function(a,b){
 // 		console.log(a + b);
 // 	})
+// }
+
+
+
+// 21. write a function that lists all the prime numbers from 1 to 100
+
+// function prime(){
+// 	var array = []
+// 	for(let i = 1;i<100;i++){
+// 		if(i%2 == 0){
+// 			if(i == 2){
+// 				array.push(i)
+// 			}
+// 		}else if(i%3 == 0){
+// 			if(i == 3){
+// 				array.push(i)				
+// 			}	
+// 		}else if(i% 5 == 0){
+// 			if(i == 5){
+// 				array.push(i)
+// 			}
+// 		}else if(i%7 == 0){
+// 			if(i ==7){
+// 				array.push(i)
+// 			}
+// 		}else {
+// 			array.push(i)
+// 		}
+
+// 	}if(array[0] ==1){
+// 		array.shift()
+// 	}
+// 	return array	
+// }
+
+// function allPrimes(num){
+//   primes = [];
+//   for(let i=1; i<=num; i++){
+//     factors = [];
+//     for(let j=1; j<=i; j++){
+//       if(i%j===0){
+//         factors.push(j)
+//       }
+//     }
+//     if(factors.length===2){
+//       console.log(factors);
+//       primes.push(i);
+//     }
+//   }
+//   return primes.join(", ")
+// }
+
+// console.log(allPrimes(100))
+
+
+
+ //22. create method that takes a string and returns the corresponding next letter for each letter in this string
+// abc => bcd
+// capitalze all vowels
+// you would use foreach here becuase forEach will return a string; you can apply toUpperCase() right away
+	
+// 	var a = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
+// "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+
+// function nextLetter(string){
+// 	var word = "";
+// 	var temp = string.split("");
+// 	for(let i =0;i<temp.length;i++){
+// 		for(let j = 0;j<a.length;j++){
+// 			if(temp[i] == a[j]){
+// 				if(temp[i] == 'z'){
+// 					word += "a"
+// 				}else {
+// 					word += a[j + 1]
+// 				}
+// 			}
+// 		}
+// 	}
+// 	capitalization(word)
+// }
+
+// function capitalization(arg){
+// 	var output ="";
+// 	var vowels = "aeiou"
+// 	var temp = arg.split('')
+	// temp.forEach(function(letter){
+	// 	if(vowels.indexOf(letter) !== -1){
+	// 		output += letter.toUpperCase()
+	// 	}else {
+	// 		output += letter
+	// 	}
+	// })
+
+// 	for(let i = 0;i<temp.length;i++){
+// 		if(vowels.indexOf(temp[i]) !== -1){
+// 			output += temp[i].toUpperCase()
+// 		}else {
+// 			output += temp[i]
+// 		}
+// 	}
+// 	console.log(output)
 // }
 
 

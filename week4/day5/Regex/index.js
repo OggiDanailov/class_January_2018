@@ -7,6 +7,7 @@
 // https://regex101.com/
 // match, replace, search, and split methods of String.
 // sequence of characters that forms a search pattern
+
 // /\d/ - number - it will return the first number
 // \D - matches not a digit
 // (/\d/g) - numbers - it will return all the numbers
@@ -24,225 +25,8 @@
 // ? - matches either one or nothing Mr\.? will match MR with or without .
 
 
-// var submit = document.getElementById('submit')
-
-// submit.addEventListener('click', regexCheck)
-
-// function regexCheck(){
-// 	var result ='';
-// 	var input = document.getElementById('input').value
-// 	result =  input.match(/e+/g)
-// 	if(result){
-// 		alert(result)	
-// 	}else {
-// 		alert('no match')
-// 	}
-	
-// }
 
 
-// function chess(){
-// var element = "";
-// 	for(let i = 0;i < 8; i++){
-// 		for(let j=0;j<8;j++){
-// 			if(i%2 == 0){	
-// 				if(j%2 == 0){
-// 					element += "#" 
-// 				}else {
-// 					element += "-"
-// 				}	
-// 			}else {
-// 				if(j % 2 == 0){
-// 					element += "-" 
-// 				}else {
-// 					element += '#'
-// 				}
-// 			}
-// 		}
-// 		element += '\n'
-// 	}
-// 		console.log(element)	
-// }
-
-
-// var wrapper = document.createElement('div')
-// wrapper.style.border = "2px solid black"
-// wrapper.style.width = '800px'
-// wrapper.style.margin = '0 auto'
-// document.body.appendChild(wrapper)
-
-// 	for(let i = 0;i < 8; i++){
-// 		for(let j=0;j<8;j++){
-// 			var block = document.createElement('div')
-// 				block.style.width = '100px'
-// 				block.style.height='100px'
-// 				block.style.display = 'inline-block'
-// 				wrapper.appendChild(block)
-// 			if(i%2 == 0){
-// 				if(j%2 == 0){	
-// 					block.style.backgroundColor = 'black'
-					
-// 				}else {
-					
-// 					block.style.backgroundColor = 'grey'
-// 				}	
-// 			}else {
-// 				if(j % 2 == 0){
-					
-// 					block.style.backgroundColor = 'grey'
-// 				}else {
-					
-// 					block.style.backgroundColor = 'black'
-// 				}
-// 			}
-// 		}
-	
-
-// 	}
-// create method that takes a string and returns the corresponding next letter for each letter in thsi string
-// abc => bcd
-// capitalze all vowels
-// you would use foreach here becuase forEach will return a string; you can apply toUpperCase() right away
-	
-// 	var a = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p",
-// "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-
-// function nextLetter(string){
-// 	var word = "";
-// 	var temp = string.split("");
-// 	for(let i =0;i<temp.length;i++){
-// 		for(let j = 0;j<a.length;j++){
-// 			if(temp[i] == a[j]){
-// 				if(temp[i] == 'z'){
-// 					word += "a"
-// 				}else {
-// 					word += a[j + 1]
-// 				}
-// 			}
-// 		}
-// 	}
-// 	capitalization(word)
-// }
-
-// function capitalization(arg){
-// 	var output ="";
-// 	var vowels = "aeiou"
-// 	var temp = arg.split('')
-	// temp.forEach(function(letter){
-	// 	if(vowels.indexOf(letter) !== -1){
-	// 		output += letter.toUpperCase()
-	// 	}else {
-	// 		output += letter
-	// 	}
-	// })
-
-// 	for(let i = 0;i<temp.length;i++){
-// 		if(vowels.indexOf(temp[i]) !== -1){
-// 			output += temp[i].toUpperCase()
-// 		}else {
-// 			output += temp[i]
-// 		}
-// 	}
-// 	console.log(output)
-// }
-
-
-
-// 1. Write a method that lists all the numbers from 1 to 100 and adds together all the odd numbers
-
-// 2. Write a function that takes the nested array as an argument and converts it into an object literal.
-// Second array contains the keys and first array contains the values
-
-// array = [["oggi", "Danailov", 23, "Serbia"], ["first name", "last name", "age", "country"]]
-// function convertArray(array){
-// 		var obj = {}
-// 	for(let i = 0;i<array[0].length;i++){
-// 		obj[array[1][i]] = array[0][i]
-// 	}
-// 	return obj;	
-// }
-
-// 3. Write a function that finds the smallest number in an array; the array should work with 
-// negative numbers as well
-
-// 4. write a function that lists all the prime numbers from 1 to 100
-
-// function prime(){
-// 	var array = []
-// 	for(let i = 1;i<100;i++){
-// 		if(i%2 == 0){
-// 			if(i == 2){
-// 				array.push(i)
-// 			}
-// 		}else if(i%3 == 0){
-// 			if(i == 3){
-// 				array.push(i)				
-// 			}	
-// 		}else if(i% 5 == 0){
-// 			if(i == 5){
-// 				array.push(i)
-// 			}
-// 		}else if(i%7 == 0){
-// 			if(i ==7){
-// 				array.push(i)
-// 			}
-// 		}else {
-// 			array.push(i)
-// 		}
-
-// 	}if(array[0] ==1){
-// 		array.shift()
-// 	}
-// 	return array	
-// }
-
-// function allPrimes(num){
-//   primes = [];
-//   for(let i=1; i<=num; i++){
-//     factors = [];
-//     for(let j=1; j<=i; j++){
-//       if(i%j===0){
-//         factors.push(j)
-//       }
-//     }
-//     if(factors.length===2){
-//       console.log(factors);
-//       primes.push(i);
-//     }
-//   }
-//   return primes.join(", ")
-// }
-
-// console.log(allPrimes(100))               
-
-// 1. Using the JavaScript language, have the function LongestWord(sen) take the sen
-//  parameter being passed and return the largest word in the string. 
-//  If there are two or more words that are the same length,
-//   return the first word from the string with that length. 
-//   Ignore punctuation and assume sen will not be empty. 
-
-// function longestWord(sen){
-// 	var splitting = sen.split(" ")
-// 	var max = splitting[0]
-// 	for(let i = 0;i<splitting.length;i++){
-// 		if(splitting[i].length > max.length){
-// 			max = splitting[i]
-// 		}
-			
-// 	}
-// 	console.log(max)
-// }
-
-// 3. Using the JavaScript language, have the function FirstReverse(str) 
-// take the str parameter being passed and return the string in reversed order. 
-// For example: if the input string is "Hello World and Coders" then 
-// your program should return the string sredoC dna dlroW olleH. 
-
-// function FirstReverse(str) {
-// 	var temp = str.split("").reverse().join("")
-// 	console.log(temp)
-	
-// }
 
 // Regex - October 15, 2018
 
@@ -257,15 +41,22 @@
 
 // Regex methods:
 // test()
+
+// regexObject.test( String )
+
+// Executes the search for a match between a regular expression and a specified string. 
+// Returns true or false.
+// Use .test if you want a faster boolean check
+
 // exec()
 
 // String:
 // match(); replace(); search(); split()
 
-/s/.test('string');
-/str/.test('string');
+// /s/.test('string');
+// /str/.test('string');
 
-console.log(/[0-9]/.test("when I arrived in the US in 2003"))
+// console.log(/[0-9]/.test("when I arrived in the US in 2003"))
 // here we have a range of numbers.  In a regular expression, putting a set
 // of characters between square brackets makes that part of the expression match
 // any of the characters between the brackets.
@@ -274,21 +65,21 @@ console.log(/[0-9]/.test("when I arrived in the US in 2003"))
 // character’s Unicode number. Characters 0 to 9 sit right next to each other in
 // this ordering (codes 48 to 57), so [0-9] covers all of them and matches any
 // digit.
-\d - any digit;
-\w - any word character;
-\s - any white space character (space, tab, newline)
-\D - any character that it is not a digit;
-\W - any character that it is not a word;
-\S - any character that it is not a white space;
-. - any character except for newline;
+// \d - any digit;
+// \w - any word character;
+// \s - any white space character (space, tab, newline)
+// \D - any character that it is not a digit;
+// \W - any character that it is not a word;
+// \S - any character that it is not a white space;
+// . - any character except for newline;
 
 
-var date = "01-feb-2018"
-(/\d\d-\w\w\w-\d\d\d\d/).test(date)
+// var date = "01-feb-2018"
+// (/\d\d-\w\w\w-\d\d\d\d/).test(date)
 
-^ - To invert a set of characters—that is, to express that you want to match any
-character except the ones in the set—you can write a caret (^) character after
-the opening bracket.
+// ^ - To invert a set of characters—that is, to express that you want to match any
+// character except the ones in the set—you can write a caret (^) character after
+// the opening bracket.
 
 
 // var a = /[^1-3]/
@@ -300,22 +91,22 @@ the opening bracket.
 // a.test(123)
 // will give you false
 
-\d+ - When you put a plus sign (+) after something in a regular expression, it
-indicates that the element may be repeated more than once. Thus, /\d+/
-matches one or more digit characters.
+// \d+ - When you put a plus sign (+) after something in a regular expression, it
+// indicates that the element may be repeated more than once. Thus, /\d+/
+// matches one or more digit characters.
 
 
-{} - To indicate that a pattern should occur a precise number of times, use braces.
-Putting {4} after an element, for example, requires it to occur exactly four
-times
-var a = "1234 Morning 123"
-var t = /\d{4}\s\w{3,10}\s\d{3}/
-t.test(a)
-true
+// {} - To indicate that a pattern should occur a precise number of times, use braces.
+// Putting {4} after an element, for example, requires it to occur exactly four
+// times
+// var a = "1234 Morning 123"
+// var t = /\d{4}\s\w{3,10}\s\d{3}/
+// t.test(a)
+// true
 
-var b = "123 Morning 123"
-b.test(a)
-false
+// var b = "123 Morning 123"
+// b.test(a)
+// false
 
 //i - insensitive
 
@@ -323,20 +114,87 @@ false
 //  return null if no match was found and return an object with information 
 //  about the match otherwise.
 
-var a = /\d+/.exec('this is number 23')
-a
-["23", index: 15, input: "this is number 23", groups: undefined]
+// var a = /\d+/.exec('this is number 23')
+// a
+// ["23", index: 15, input: "this is number 23", groups: undefined]
 
-try:
-var a = /is/.exec('this is number 23')
-var a = /[is]/.exec('this is number 23')
-var a = /[^is]/.exec('this is number 23')
-
-
+// try:
+// var a = /is/.exec('this is number 23')
+// var a = /[is]/.exec('this is number 23')
+// var a = /[^is]/.exec('this is number 23')
 
 
+// Regex match()
+
+// string.match( RegExp )
+
+// Used to retrieve the matches when matching a string against a regular expression. 
+// Returns an array with the matches or null if there are none. You have to use g though for global
+
+var string = 'This is the one lesson I have no idea what I am talking about';
+var exp = /[A-Z]/;
+console.log(string.match(exp))
+// will return the first instance
+// var exp2 = /[A-Z]/g
+// will return all instances
+
+// var string = 'this is the year of 2018'
+// var exp = /[0-9]/g
+// console.log(string.match(exp))
 
 
+
+
+
+// Regex search()
+
+// var string = 'This is the one lesson I have no idea what I am talking about';
+// var exp = /[A-Z]/g;
+// console.log(string.search(exp))
+// // will return first position
+// str.search(reg)
+// We’ve seen this method already. It returns the position of the first match or -1 if none found:
+// let str = "A drop of ink may make a million think";
+// alert( str.search( /a/i ) ); // 0 (the first position)
+// The important limitation: search always looks for the first match.
+
+// We can’t find next positions using search, there’s just no syntax for that. 
+// But there are other methods that can.
+
+
+// Regex split()
+// str.split(regexp|substr, limit)
+// Splits the string using the regexp (or a substring) as a delimiter.
+
+// We already used split with strings, like this:
+
+// str.replace(str|reg, str|func)
+// The swiss army knife for search and replace in strings.
+
+// The simplest use – search and replace a substring, like this:
+
+//  // replace a dash by a colon
+// alert('12-34-56'.replace("-", ":")) // 12:34-56
+// When the first argument of replace is a string, it only looks for the first match.
+
+// To find all dashes, we need to use not the string "-", but a regexp /-/g, with an obligatory g flag:
+
+ 
+//                                // replace all dashes by a colon
+// alert( '12-34-56'.replace( /-/g, ":" ) )  // 12:34:56
+// The second argument is a replacement string.
+
+
+// var string = 'something 43'
+// var a = string.replace(/\d+/g, "fourty three")
+// console.log(a)
+
+// var beat = 'George'
+
+// var c = beat.replace(/[aeiou]/gi, function(beat){
+// 	return beat.toUpperCase()
+// } )
+// console.log(c)
 
 
 
