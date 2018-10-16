@@ -168,6 +168,9 @@ console.log(string.match(exp))
 
 // We already used split with strings, like this:
 
+
+// Regex replace()
+
 // str.replace(str|reg, str|func)
 // The swiss army knife for search and replace in strings.
 
@@ -180,7 +183,7 @@ console.log(string.match(exp))
 // To find all dashes, we need to use not the string "-", but a regexp /-/g, with an obligatory g flag:
 
  
-//                                // replace all dashes by a colon
+ // replace all dashes by a colon
 // alert( '12-34-56'.replace( /-/g, ":" ) )  // 12:34:56
 // The second argument is a replacement string.
 
