@@ -201,4 +201,83 @@ console.log(string.match(exp))
 
 
 
+// Coding challenges:
+
+// 1. write a method that takes a string and converts all instances of vowels capitalized;
+var beat = 'George Harrison'
+
+var c = beat.replace(/[aeiou]/gi, function(beat){
+	return beat.toUpperCase()
+} )
+console.log(c)
+
+2. write a method that takes the string below and changes all instances of "-" with forward slashes "/";
+var date = "January-13-2018"
+
+3. write a method that returns all instances of 'boy' and subistutes them with the word 'girl' using regular expression;
+var sentence = "this is a story of a boy who got a degree in CS and become a famous professor. The boy never expected such
+success in life. The boy's mother, however, always knew that this boy will succeed in life"
+
+
+4. write a method that finds all instances of numbers in a string, adds only the numbers higher than 10 together and returns the result.
+var string = "beach: 24; something I spent yesterday was around 4$ but the day before that I think I spent around 13. Tonight I will
+be going out so I should prepare at least 40; then the weekend I would say another 80; I wish the weekend could be 6-7"
+function estimation(string){
+	var result = 0;
+	var temp = string.match(/\d+/g)
+for(let i = 0;i<temp.length;i++){
+	if(temp[i] > 10){
+		result += parseInt(temp[i])
+	}
+}return result;
+}
+
+5. Using as much Regex as possible write a method that returns the number of each vowel in the sentence below:
+var sentence = "Towards the end of November, during a thaw, at nine o’clock one morning, a train on the Warsaw and Petersburg
+railway was approaching the latter city at full speed.The morning was so damp and misty that it was only with
+great difficulty that the day succeeded in breaking; and it was impossible to distinguish anything more than a few
+yards away from the carriage windows. Some of the passengers by this particular train were returning
+from abroad; but the third-class carriages were the best filled, chiefly with insignificant persons of various occupations
+and degrees, picked up at the different stations nearer town. All of them seemed weary, and most of them
+had sleepy eyes and a shivering expression, while their complexions generally appeared to have taken on the colour of
+the fog outside."
+
+function vow(arg){
+	var string = '';
+	var vowels = arg.match(/[aeiou]/gi);
+	for(let i = 0;i<vowels.length;i++){
+		string += vowels[i]
+	}
+	var a = string.match(/a/gi)
+	console.log("A is " + a.length);
+	var e = string.match(/e/gi)
+	console.log("E is " + e.length);
+	var i = string.match(/i/gi)
+	console.log("I is " + i.length);
+	var o = string.match(/o/gi)
+	console.log("O is " + o.length);
+	var u = string.match(/u/gi)
+	console.log("U is " + u.length)
+}
+
+6. write a test that checks if a certain password is correct. To be correct the password has to start with Capitalized letter,
+followed by minimum 4 to 10 letters,  followed by some numbers(the number of digits does not matter), followed by 
+2 or 3 letters.
+var p = /^[A-Z]\w{4,10}\d+\w{2,3}$/
+var a = "Something123abv"
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
