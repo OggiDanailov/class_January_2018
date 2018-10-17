@@ -204,7 +204,7 @@ console.log(string.match(exp))
 // Coding challenges:
 
 // 1. write a method that takes a string and converts all instances of vowels capitalized;
-var beat = 'George Harrison'
+var beat = 'George Harrison' => GEOrgE HArrIsOn
 
 var c = beat.replace(/[aeiou]/gi, function(beat){
 	return beat.toUpperCase()
@@ -217,7 +217,10 @@ var date = "January-13-2018"
 3. write a method that returns all instances of 'boy' and subistutes them with the word 'girl' using regular expression;
 var sentence = "this is a story of a boy who got a degree in CS and become a famous professor. The boy never expected such
 success in life. The boy's mother, however, always knew that this boy will succeed in life"
-
+function whatever(x){
+	var c = x.replace(/boy/g, 'girl')
+	console.log(c)
+}
 
 4. write a method that finds all instances of numbers in a string, adds only the numbers higher than 10 together and returns the result.
 var string = "beach: 24; something I spent yesterday was around 4$ but the day before that I think I spent around 13. Tonight I will
