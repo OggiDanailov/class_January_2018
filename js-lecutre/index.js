@@ -162,6 +162,13 @@ function input(first, last, callback, objScope){
 input("Dorian", "Grey", obj.setName, obj)
 
 
+Another way of composing functions:
+
+var body = "return Math.PI * radius * radius";
+var circle = new Function("radius", body);
+alert(circle(5));
+
+
 
 
 
