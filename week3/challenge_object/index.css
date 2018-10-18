@@ -1,0 +1,23 @@
+.employees {
+	width: 300px;
+	/*height: 300px;*/
+	border: 2px solid;
+
+}
+
+.budget {
+	margin: 10px;
+	border: 2px solid;
+	background-color: yellow;
+	width: 150px;
+}
+
+#resume {
+	border: 2px solid;
+	margin: 10px;
+	float: right;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -300px;
+}

@@ -1407,16 +1407,32 @@
 
 
 // 23. write a function that takes a word and a letter as an argument; it converts this word into an array and creates an additional array with dashes representing each letter from the first array (hint - they will always be the same length); then your function should check if the letter is in your word; if it is you should subistute the corresponding dash from the dash array with the corresponding letter.
-var dashes = [];
-function whatever(word, letter){
+// var dashes = [];
+// function whatever(word, letter){
 	
-	for(let i =0; i<word.length;i++){
-		dashes.push(" _ ");	
-	if(word[i] == letter){
-		dashes[i] = letter;
-	}
-	}return dashes;
-}
+// 	for(let i =0; i<word.length;i++){
+// 		dashes.push(" _ ");	
+// 	if(word[i] == letter){
+// 		dashes[i] = letter;
+// 	}
+// 	}return dashes;
+// }
 
+
+// 24. Write a method that takes a random item of an array but when you call it again
+// it makes sure that you do not call the last item of the array
+// var array = ['a', 'b', 'c', 'd']
+// var currentWord = "a";
+// function change(){
+// 	console.log('current status of CurrentWord ' + currentWord)
+// 	var temp = array[Math.floor(Math.random()* array.length)]
+// 	console.log("This is first temp " + temp)
+// 	if(temp == currentWord){
+// 		change();
+// 	}else {
+// 		currentWord = temp;
+// 	}
+// 	console.log(currentWord);
+// }
 
 
