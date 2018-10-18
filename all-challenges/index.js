@@ -1406,4 +1406,17 @@
 // }
 
 
+// 23. write a function that takes a word and a letter as an argument; it converts this word into an array and creates an additional array with dashes representing each letter from the first array (hint - they will always be the same length); then your function should check if the letter is in your word; if it is you should subistute the corresponding dash from the dash array with the corresponding letter.
+var dashes = [];
+function whatever(word, letter){
+	
+	for(let i =0; i<word.length;i++){
+		dashes.push(" _ ");	
+	if(word[i] == letter){
+		dashes[i] = letter;
+	}
+	}return dashes;
+}
+
+
 
