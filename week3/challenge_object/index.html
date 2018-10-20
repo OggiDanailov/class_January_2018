@@ -14,17 +14,35 @@
 	</div>
 
 	<div class='search'>
-		
-		Search for employee: <input type="text" id='worker' >
-		<input type="submit" id='search' />
+		<select id='list'>
+			<option value='fname'>Fname</option>
+			<option value='lname'>Lname</option>
+			<option value='experience'>Experience</option>
+			<option value='location'>Location</option>
+			
+		</select>
+		<br>
+		<br>
+
+			<input type="text" id='worker' >
+			<input type="submit" id='search' />
 	</div>
 
 	<div id='resume'>
-
 		Name of Employee: <div id='name-emp'></div>
 		Last Name of Employee: <div id='last-name'></div>
+		<hr>
 		Money that the Employee returned: <div id='money-spent'></div>
 		Percentage of the allowence: <div id='money-percentage'></div>
+	</div>
+
+	<div id='experience'>
+		<h2>Experience</h2>
+		<h4 id='years'></h4>
+	</div>
+
+	<div id='images-locations'>
+		<div id='img'></div>
 	</div>
 
 

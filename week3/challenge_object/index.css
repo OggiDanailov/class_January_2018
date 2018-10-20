@@ -1,7 +1,7 @@
 .employees {
-	width: 300px;
+	width: 800px;
 	/*height: 300px;*/
-	border: 2px solid;
+	border: 2px solid green;
 
 }
 
@@ -20,4 +20,21 @@
 	height: 200px;
 	position: relative;
 	top: -300px;
+}
+
+#experience{
+	border: 2px solid;
+	margin: 10px;
+	float: right;
+	width: 200px;
+	height: 200px;
+	position: relative;
+	top: -300px;
+}
+
+#images-locations {
+	border: 2px solid ;
+	margin: 10px;
+	width: 200px;
+	height: 200px;
 }

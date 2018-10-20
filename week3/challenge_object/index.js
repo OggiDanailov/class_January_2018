@@ -3,19 +3,25 @@
 //  - lists all the employees of the company;
 //  - lists the amount allowed for business trips;
 //  - selects each employee through a search function printing all details of him/her
-//  - upon request shows how much money he spent on a business trip given that change 		was what the empolyee brought to the office.
+//  - upon request shows how much money he spent on a business trip given that change was what the empolyee brought to the office.
 //  - if there is an employee that spent less than 70% of the allowence it prints that 
 //  he should be suggested for promotion; (use an array of these employees)
 	// - you can select employees through location (city)
+	// - you render the corresponding image of a city while you render the city's employees
 	// - you can select employees through experience (years)
 
 
 var employees = document.getElementsByClassName('employees')[0]
 var finances = {
+	images:[{Warsaw: 'https://static01.nyt.com/images/2015/12/27/travel/27WARSAW1/27WARSAW1-facebookJumbo.jpg'},
+			{NYC: 'https://therealdeal.com/wp-content/uploads/2017/10/new-york-city-skyline-1024x768.jpg'},
+			{Sofia: 'https://freesofiatour.com/wp-content/uploads/2012/06/Sofia-vitosha-kempinski.jpg'},
+			{Philadelphia: "https://assets.visitphilly.com/wp-content/uploads/2018/03/Philadelphia-Pass-Loews-Skyline-C.Smyth2200x1237-1024x576.jpg"}
+	],
 	employees: [
 	{fname: "Oggi", lname: "Danailov", experience: 5, city: "Philadelphia"},
 	{fname: "Boro", lname: "Ivanov", experience: 4, city: "Sofia"},
-	{fname: "Spas", lname: "Dmoaratski", experience: 3, city: "Warshaw"},
+	{fname: "Spas", lname: "Domaratski", experience: 3, city: "Warsaw"},
 	{fname: "George", lname: "Toshev", experience: 7, city: "Sofia"},
 	{fname: "John", lname: "Smith", experience: 7, city: "Philadelphia"},
 	{fname: "Rad", lname: "Burov", experience: 1, city: "Sofia"},
@@ -30,6 +36,8 @@ var finances = {
 	{fname: "Hilary", lname: "Larson", experience: 6, city: "Philadelphia"},
 	{fname: "Anna", lname: "Love", experience: 6, city: "NYC"},
 	{fname: "Michael", lname: "Jackson", experience: 4, city: "NYC"},
+	{fname: "Lucy", lname: "Zolova", experience: 4, city: "Sofia"},
+	{fname: "Anna", lname: "Towarek", experience: 2, city: "Warsaw"}
 	],
 	budget: [
 {car: 150,
@@ -61,7 +69,9 @@ bars: 50
 		Maria: 222,
 		Hilary: 154,
 		Anna: 231,
-		Michael: 333
+		Michael: 333,
+		Lucy: 233,
+		Ana: 222
 	}
 
 };
@@ -77,6 +87,7 @@ bars: 50
 		employee.style.backgroundColor = 'salmon'
 		employee.style.border = '2px solid'
 		employee.style.margin = '5px'
+		employee.style.display = 'inline-block'
 		employee.innerHTML = Object.keys(finances.change)[i]
 		employees.appendChild(employee) 
 	}
@@ -114,25 +125,61 @@ var search = document.getElementById('search')
 var resume = document.getElementById('resume')
 var nameEmpl = document.getElementById('name-emp')
 var lastName = document.getElementById("last-name")
-var moneySPent = document.getElementById("money-spent")
+var moneySpent = document.getElementById("money-spent")
 var moneyPercentage = document.getElementById("money-percentage")
+var experience = document.getElementById('experience')
+let years = document.getElementById('years')
 var heroes = []
+
+var list = document.getElementById('list')
+console.log()
+
 search.addEventListener('click', function(){
 	var result = 0;
-	for(let i = 0;i<Object.keys(finances.change).length; i++){
-		if(worker.value == Object.keys(finances.change)[i]){
-			nameEmpl.innerHTML = Object.keys(finances.change)[i]
-			lastName.innerHTML = finances.employees[i].lname; 
-			moneySPent.innerHTML = Object.values(finances.change)[i]
-			result = (Object.values(finances.change)[i]*100) / 810;
-			moneyPercentage.innerHTML = (100 - result.toFixed(1)) + "%"
-			if(result < 70){
-				heroes.push(Object.keys(finances.change)[i])
-			}
+	if(list.options[0].text == 'Fname'){
+		for(let i = 0;i<Object.keys(finances.change).length; i++){
+			if(worker.value == Object.keys(finances.change)[i]){
+				nameEmpl.innerHTML = Object.keys(finances.change)[i]
+				lastName.innerHTML = finances.employees[i].lname; 
+				moneySpent.innerHTML = Object.values(finances.change)[i]
+				result = (Object.values(finances.change)[i]*100) / 810;
+				moneyPercentage.innerHTML = (100 - result.toFixed(1)) + "%"
+				if(result < 70){
+					heroes.push(Object.keys(finances.change)[i])
+				}
+			}	
 		}
-		
+	}
+	if(list.options[1].text == 'Lname'){
+		for(let i = 0;i<finances.employees.length;i++){
+			if(worker.value == finances.employees[i].lname){
+				nameEmpl.innerHTML = finances.employees[i].fname;
+				lastName.innerHTML = finances.employees[i].lname;
+			}	
+		}	
 	}
 
+	if(list.options[2].text == 'Experience'){		
+		for(let i = 0;i<finances.employees.length;i++){
+			if(worker.value == finances.employees[i].experience){
+
+				experience.innerHTML += finances.employees[i].fname + " " + finances.employees[i].lname + " " +  finances.employees[i].city +" "+  worker.value + " of expreience"+ "<br />" ;
+			}	
+		}	
+	}
+
+	if(list.options[3].text == 'Location'){
+		var img = document.getElementById("img")
+
+		for(let i =0;i<finances.employees.length;i++){
+			if(worker.value == finances.employees[i].city){
+				
+					
+				// img.style.backgroundImage = "url(" + finances.images[i]  + ")";
+				// img.style.imageSize = "100% 100%"
+			}
+		}
+	}
 });
 
 
@@ -169,6 +216,7 @@ estimate(finances)
 // 	var a = JSON.parse(response)
 // 	console.log(a.budget[0])
 // })
+
 
 
 
