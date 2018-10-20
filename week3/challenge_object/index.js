@@ -170,13 +170,25 @@ search.addEventListener('click', function(){
 
 	if(list.options[3].text == 'Location'){
 		var img = document.getElementById("img")
-
+			var city = worker.value
 		for(let i =0;i<finances.employees.length;i++){
 			if(worker.value == finances.employees[i].city){
-				
+				for(let j = 0;j<finances.images.length;j++){
+
+					if(Object.keys(finances.images[j]) == city){
+						console.log(Object.values(finances.images[j])[0])
+						img.style.backgroundImage = "url(" + Object.values(finances.images[j])[0]  + ")";
+						img.style.backgroundSize = "100% 100%"	
+					}
 					
-				// img.style.backgroundImage = "url(" + finances.images[i]  + ")";
-				// img.style.imageSize = "100% 100%"
+				}
+					
+				
+				
+				console.log(finances.employees[i].fname)
+				console.log(finances.employees[i].lname)
+
+				
 			}
 		}
 	}
