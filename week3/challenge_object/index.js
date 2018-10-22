@@ -3,7 +3,7 @@
 //  - lists all the employees of the company;
 //  - lists the amount allowed for business trips;
 //  - selects each employee through a search function printing all details of him/her
-//  - upon request shows how much money he spent on a business trip given that change was what the empolyee brought to the office.
+//  - upon request shows how much money he/she spent on a business trip given that change was what the empolyee brought to the office.
 //  - if there is an employee that spent less than 70% of the allowence it prints that 
 //  he should be suggested for promotion; (use an array of these employees)
 	// - you can select employees through location (city)
@@ -16,7 +16,9 @@ var finances = {
 	images:[{Warsaw: 'https://static01.nyt.com/images/2015/12/27/travel/27WARSAW1/27WARSAW1-facebookJumbo.jpg'},
 			{NYC: 'https://therealdeal.com/wp-content/uploads/2017/10/new-york-city-skyline-1024x768.jpg'},
 			{Sofia: 'https://freesofiatour.com/wp-content/uploads/2012/06/Sofia-vitosha-kempinski.jpg'},
-			{Philadelphia: "https://assets.visitphilly.com/wp-content/uploads/2018/03/Philadelphia-Pass-Loews-Skyline-C.Smyth2200x1237-1024x576.jpg"}
+			{Philadelphia: "https://assets.visitphilly.com/wp-content/uploads/2018/03/Philadelphia-Pass-Loews-Skyline-C.Smyth2200x1237-1024x576.jpg"},
+			{Berlin: "http://www.slate.com/content/dam/slate/articles/news_and_politics/roads/2016/04/160414_RK_Berlin.jpg.CROP.promo-xlarge2.jpg"},
+			{Barcelona: "https://www.bcn-advisors.com/blog/wp-content/uploads/2018/06/barcelona-aerial-view.jpg"}
 	],
 	employees: [
 	{fname: "Oggi", lname: "Danailov", experience: 5, city: "Philadelphia"},
@@ -37,7 +39,21 @@ var finances = {
 	{fname: "Anna", lname: "Love", experience: 6, city: "NYC"},
 	{fname: "Michael", lname: "Jackson", experience: 4, city: "NYC"},
 	{fname: "Lucy", lname: "Zolova", experience: 4, city: "Sofia"},
-	{fname: "Anna", lname: "Towarek", experience: 2, city: "Warsaw"}
+	{fname: "Anna", lname: "Towarek", experience: 2, city: "Warsaw"},
+	{fname: "Suzanne", lname: "Pech", experience: 7, city: "Berlin"},
+	{fname: "Inga", lname: "Santos", experience: 6, city: "Barcelona"},
+	{fname: "Christina", lname: "Farelo", experience: 5, city: "Barcelona"},
+	{fname: "Paco", lname: "Alomdovar", experience: 4, city: "Barcelona"},
+	{fname: "Luca", lname: "Lewitscharoff", experience: 4, city: "Berlin"},
+
+	{fname: "Johannes", lname: "Braun", experience: 4, city: "Berlin"},
+	{fname: "Carlos", lname: "Martinez", experience: 3, city: "Barcelona"},
+	{fname: "Zoraida", lname: "Jimenez", experience: 2, city: "Barcelona"},
+	{fname: "Uros", lname: "Savicevic", experience: 1, city: "Barcelona"},
+	{fname: "Karolina", lname: "Blahutska", experience: 6, city: "Warsaw"},
+	{fname: "Amelie", lname: "Michel", experience: 5, city: "Barcelona"},
+	{fname: "Blanca", lname: "Gonzales", experience: 7, city: "Barcelona"},
+	{fname: "Gina", lname: "Davis", experience: 4, city: "Berlin"}
 	],
 	budget: [
 {car: 150,
@@ -71,12 +87,25 @@ bars: 50
 		Anna: 231,
 		Michael: 333,
 		Lucy: 233,
-		Ana: 222
+		Ana: 222, 
+		Suzanne: 260,
+		Inga: 145,
+		Christina: 180,
+		Paco: 95,
+		Luca: 120,
+		Johannes: 180,
+		Carlos: 190,
+		Zoraida: 245,
+		Uros: 230,
+		Karolina: 250,
+		Amelie: 200,
+		Blanca: 143,
+		Gina: 250
 	}
 
 };
 
-// list all the employees
+// // list all the employees
 
 
 
@@ -224,9 +253,13 @@ estimate(finances)
 
 
 
-// $.ajax("https://raw.githubusercontent.com/OggiDanailov/json/master/finances.json").then(function(response){
-// 	var a = JSON.parse(response)
-// 	console.log(a.budget[0])
+// $.ajax("https://bitbucket.org/OggiDanailov/firm/raw/2df585250847781831c5ab8ab4a7fdff8f5ef8fc/finances.json").then(function(response){
+
+// 	var answer = JSON.parse(response)
+// 	console.log(answer.images[0].Warsaw)
+
+
+
 // })
 
 
