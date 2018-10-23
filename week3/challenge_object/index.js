@@ -246,7 +246,7 @@ function promotion(expenses, obj){
 estimate(finances)
 
 
-var myCanvas = document.getElementById('myCanvas').getContext('2d')
+;
 var emplo = function(){
 	var empty = []
 	for(let i = 0;i<finances.employees.length;i++){
