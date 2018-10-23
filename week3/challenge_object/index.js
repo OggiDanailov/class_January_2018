@@ -246,6 +246,31 @@ function promotion(expenses, obj){
 estimate(finances)
 
 
+var myCanvas = document.getElementById('myCanvas').getContext('2d')
+var emplo = function(){
+	var empty = []
+	for(let i = 0;i<finances.employees.length;i++){
+		empty.push(finances.employees[i].fname);
+	}
+	return empty
+}
+
+var emploChange = function(){
+	var empty = [];
+		return Object.values(finances.change)
+}
+
+
+let myChart = new Chart(myCanvas,{
+	type: 'bar',
+	data: {
+		labels: emplo(),
+		datasets: [{
+			label: 'Money Spent on Business Trip',
+		data: emploChange()	
+		}]
+	}
+ })
 
 
 
