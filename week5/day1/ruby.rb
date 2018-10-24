@@ -230,7 +230,21 @@
 # naming()
 # whatever()
 
+# examples with the different variables:
+# $age = 23
+# class Person 
+# 	@@name = "Oggi"
+# 	def initialize(country)
+# 		@coutry = country
+# 	end
+# 	def naming
+# 		puts "#{@@name} is #{$age} and he is from #{@coutry}"
+# 	end
+# end
 
+# p = Person.new("Serbia")
+
+# p.naming()
 
 
 
