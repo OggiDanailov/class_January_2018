@@ -104,6 +104,8 @@
 
 # cat = Animal.new('kitty', 'black')
 # puts cat.say_color
+
+
 # -------------------------------------------------
 # ex. 5
 # JS
@@ -117,6 +119,7 @@
 
 
 # class Man
+# 	# attr_reader :age
 # 	def initialize(age)
 # 		@age = age
 # 	end
@@ -130,6 +133,7 @@
 # oggi = Man.new(44)
 
 # oggi.get_age()
+# puts oggi.age
 
 # -------------------------------------------------
 # ex. 6
