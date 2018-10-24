@@ -311,8 +311,8 @@
 
 
 
-
-
+# NB. difference between Procs and Lambdas:
+# Lambdas check the number of arguments, while procs do not
 
 
 
