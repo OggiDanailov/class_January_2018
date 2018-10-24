@@ -27,6 +27,14 @@
 # because they change state that someone else might have a reference to.
 #  Here's a simple example for strings:
 
+# foo = "WHATEVER"
+# puts foo.downcase
+# puts foo
+
+# moo = 'MOOEVER'
+# puts moo.downcase!
+# puts moo
+
 # foo = "A STRING"  # a string called foo
 # foo.downcase!     # modifies foo itself
 # puts foo          # prints modified foo
@@ -335,10 +343,10 @@
 # penultime(string)
 
 # 7. 
-text = "Today the boy woke up yearly; he left the house and went to school. There the boy studied math for couple of hours. The boy knew it will be hard but the boy didn't expect to be that hard. The boy felt that this field may not be promising. The boy decided to try a new career - a boyscout leader, lawyer, rapper or something similar."
+# text = "Today the boy woke up yearly; he left the house and went to school. There the boy studied math for couple of hours. The boy knew it will be hard but the boy didn't expect to be that hard. The boy felt that this field may not be promising. The boy decided to try a new career - a boyscout leader, lawyer, rapper or something similar."
 
 
-def replacing(arg)
+# def replacing(arg)
 	# array = arg.split(" ")
 	# array2 = ''
 	# array.each do |word|
@@ -347,10 +355,10 @@ def replacing(arg)
 			
 	# 	end
 	# end
-	puts arg.gsub('boy', 'girl')
-end
+# 	puts arg.gsub('boy', 'girl')
+# end
 
-replacing(text)
+# replacing(text)
 
 # 8.
 

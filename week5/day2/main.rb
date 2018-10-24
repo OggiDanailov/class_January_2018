@@ -104,6 +104,8 @@
 
 # cat = Animal.new('kitty', 'black')
 # puts cat.say_color
+
+
 # -------------------------------------------------
 # ex. 5
 # JS
@@ -117,6 +119,7 @@
 
 
 # class Man
+# 	# attr_reader :age
 # 	def initialize(age)
 # 		@age = age
 # 	end
@@ -130,6 +133,7 @@
 # oggi = Man.new(44)
 
 # oggi.get_age()
+# puts oggi.age
 
 # -------------------------------------------------
 # ex. 6
@@ -268,6 +272,50 @@
 
 # mu = Cat.new
 # p mu.roar
+
+
+
+# Ruby variables
+# last - is variable
+# will be available through the block
+# @ -instance variable - available for the instance of the object; it is available thorughout all the 
+# class methods
+# @@ - class variable - availalbe through all the class
+# $ - global variable - avaiable throughout the whole script from class to class
+
+# $zodiac = "animal"
+# class Whatever
+# 	@@age = 23
+# 	def initialize
+# 		@name = "Oggi"
+# 	end
+
+# 	def something
+# 		last = 'Danailov'
+# 		puts "#{@name} #{last} #{@@age}"	
+# 	end
+
+# 	def change
+# 		@@age += 1
+# 		@name = "Boro"
+# 		puts @@age
+# 		puts @name
+# 		puts $zodiac
+# 	end
+
+# end
+
+# w = Whatever.new
+
+# puts w.change()
+
+
+
+# NB. difference between Procs and Lambdas:
+# Lambdas check the number of arguments, while procs do not
+
+
+
 
 
 

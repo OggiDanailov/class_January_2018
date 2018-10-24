@@ -1,9 +1,9 @@
 # puts "what is your name?"
 # name = gets.chomp
 # name2 = name.to_i
-# if name == "oggi".capitalize || name == 'oggi'
-# 		puts 'welcome Oggi'
-# elsif  name2.class == Fixnum
+# if name.class == String
+# 		puts "welcome #{name}"
+# elsif name == Fixnum
 # 		puts 'can not be a number'
 # elsif name == " "
 # 		puts 'can not be a blank'
@@ -27,5 +27,8 @@
 
 
 # p h[:color]
+
+
+
 
 

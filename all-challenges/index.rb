@@ -1,3 +1,62 @@
+# Day 1 coding challenges:
+
+# 1. Create a function that takes a string as an argument and adds the phrase "Only in America!" to the end of it
+# 2. Create a function to find the maximum value in an array of numbers. For instance: [100,10,-1000] should return 100. Do not use Ruby's built-in .max function.
+
+# 3. Create a function that takes two arguments - both of them arrays. Inside of the function, combine the arrays using the items from the first array as keys and the second array as values. For example, when these two arrays are supplied as arguments:
+
+#     [:toyota, :tesla]
+#     ["Prius", "Model S"]
+# they should return a hash like so:
+
+#     {toyota: "Prius", tesla: "Model S"}
+# 4. Write a program that prints the numbers from 1 to 100, except:
+
+# for multiples of three print "Fizz" instead of the number
+# for multiples of five print "Buzz"
+# Print "FizzBuzz" for numbers that are multiples of both 3 and 5.
+# 5. Create a method that takes a string as an argument and checks if this string is a given name. The program should check if the argument is an empty string or it is a float/Integer too and tells the user that these are incorrect entries
+# New Challenges
+
+# 6.  write a function that takes a sentence as an argument and aways returns the penultimate word in it with 
+# // .jpg attached to it.
+# // Example:
+# // "This is another day of my lovely life" - > lovely.jpg
+# 7. Write a method that takes two arguments = a long string and a word and substitute all instances of a given word with the word you are passing. EX:
+# // var text = "Today the boy woke up yearly; he left the house and went to school. There the boy studied math for couple of hours. The boy knew it will be hard but the boy didn't expect to be that hard. The boy felt that this field may not be promising. The boy decided to try a new career - a boyscout leader, lawyer, rapper or something similar."
+
+# // you have to substitute all instances of 'boy' with 'girl'
+
+# 8. Create a function that takes an array of numbers as an argument
+# // and returns the sum of all of the Even and all of the Odd numbers
+# 9. Create a function that takes 2 numbers as arguments. 
+# // Return true if there is a digit that appears in both numbers.
+# // Example: // sameDigit(5, 65) -> true // sameDigit(23, 82) -> true 
+# // // sameDigit(85, 49) -> false
+# // 854
+# // '854'
+# // ['8','5','4']
+# 10. write a function that takes an array of names and returns a whole string of these names with comma and the word 'and' before the last name;
+# ["John", "George", "James", "Anna"] ---> "John, George, James, and Anna";
+
+# var names = ["Chris", "Oggi", "Emily"];
+
+# 11.  write a function named stringy that takes a size and returns a string of alternating '1s' and '0s'. 
+# // the string should start with a 1. a string with size 6 should return :'101010'. 
+# // with size 4 should return : '1010'. with size 12 should return : '101010101010'. 
+# // The size will always be positive and will only use whole numbers.
+# 13. Write recursive and non-recursive fibonacci sequence in Ruby
+
+
+
+
+
+
+
+
+
+
+
 #1. Write a function (try to use filter function in JS) that
  # fiters only the positive odd numbers from an array. For example,
 
