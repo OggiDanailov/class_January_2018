@@ -72,6 +72,16 @@
 
 # -------------------------------------------------
 
+# class W
+# 	def something
+# 		puts 'sdfasd'
+# 	end
+# end
+
+# w = W.new
+
+# w.something()
+
 # ex3.
 # Class in Ruby
 

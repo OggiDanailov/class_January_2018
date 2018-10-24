@@ -290,6 +290,7 @@
 # 	end
 # end
 
+
 # adding(array1, array2)
 
 # for i in 0..array1.length-1
@@ -311,6 +312,25 @@
 # 		else 
 # 			puts i
 # 		end	
+# 	end
+# end
+
+# fizzbuzz()
+
+
+# def fizzbuzz
+# 	i = 1
+# 	while i <= 100
+# 		if i % 5 == 0 && i % 3 == 0
+# 			puts "FizzBuzz"
+# 		elsif i % 3 == 0
+# 			puts 'Fizz'
+# 		elsif i % 5 == 0
+# 			puts 'Buzz'
+# 		else
+# 			puts i
+# 		end
+# 	i += 1	
 # 	end
 # end
 
@@ -345,17 +365,15 @@
 # 7. 
 # text = "Today the boy woke up yearly; he left the house and went to school. There the boy studied math for couple of hours. The boy knew it will be hard but the boy didn't expect to be that hard. The boy felt that this field may not be promising. The boy decided to try a new career - a boyscout leader, lawyer, rapper or something similar."
 
-
 # def replacing(arg)
-	# array = arg.split(" ")
-	# array2 = ''
-	# array.each do |word|
-	# 	if word == 'boy'
-			# array2 = array.join(" ")
-			
-	# 	end
-	# end
-# 	puts arg.gsub('boy', 'girl')
+# 	array = arg.split(" ")
+# 	array.each_with_index do |word, index|
+# 		if array[index] == 'boy'
+# 				array[index] = 'girl'		
+# 		end
+# 	end
+# 	puts array.join(" ")
+# 	# puts arg.gsub('boy', 'girl')
 # end
 
 # replacing(text)
@@ -376,6 +394,32 @@
 # end
 
 # array_comp([1,4,3,6,5,7,6,4,5])
+
+# alternatve way
+# def compare(x)
+# 	ar1_sum = 0
+# 	ar2_sum = 0
+# 	x.each do |item|
+# 		if item % 2 == 0
+# 			ar1_sum += item
+# 		else
+# 			ar2_sum += item
+# 		end
+# 	end
+# 	odd(ar2_sum)
+# 	even(ar1_sum)
+# end
+
+# def odd(x)
+# 	puts x
+# end
+
+# def even(x)
+# 	puts x
+# end	
+
+# compare([1,2,3,4,5,6,7,8,9])
+
 
 # 9. 
 
@@ -429,14 +473,14 @@
 # 13. Write recursive and non-recursive fibonacci sequence in Ruby
 
 # recursive
-# def fibo(n)
-# 	if(n <= 1)
-# 		return 1
-# 	end		
-# 	 fibo(n-1) + fibo(n-2)
-	
-# end
+def fibo(n)
+	if(n <= 1)
+		return 1
+	end		
+	 fibo(n-1) + fibo(n-2)
+end
 
+puts fibo(6)
 # puts fibo(9)
 # non-recursive
 
@@ -453,6 +497,7 @@
 # end
 
 # puts fibo(10)
+
 
 
 
