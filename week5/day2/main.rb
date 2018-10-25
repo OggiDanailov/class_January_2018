@@ -410,6 +410,66 @@
 # puts elevator.go_up
 # puts elevator.cheery_greeting
 
+# how to use next
+
+# def print(array, first)
+# 	array.each do |item|
+# 		puts "#{first}. #{item}"
+# 	first = first.next
+# 	end
+# end
+
+# print(['apple', 'pear', 'banana'], "A")
+
+
+# Block
+# Multi-line block 
+# array = [1,2,3,4,5]
+# array.each do |x|
+# 	puts x
+# end
+
+# inline block
+
+# array.each { |x| puts "Number #{x}" }
+
+# Yield
+
+# def something
+# 	puts 'something'
+# 	yield
+# 	puts 'nothing'
+# end
+
+
+# something do
+# 	puts 'this is the yield functionality'
+# end
+
+# do in RUby
+# do ... end (or alternatively { ... }) creates a so-called block, 
+# which is a type of anonymous function in Ruby. 
+# In your example that block is passed as an argument to group.
+
+
+# def myArrays(array)
+# 	array2 = []
+
+# 	for i in array
+# 		array2.push yield i
+# 	end
+
+# 	puts array2
+# end 
+
+# myArrays([2,3,4])  do |i|
+# 	i * 23
+# end 
+
+
+
+
+
 
 
 
