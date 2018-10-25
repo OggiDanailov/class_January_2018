@@ -473,14 +473,14 @@
 # 13. Write recursive and non-recursive fibonacci sequence in Ruby
 
 # recursive
-def fibo(n)
-	if(n <= 1)
-		return 1
-	end		
-	 fibo(n-1) + fibo(n-2)
-end
+# def fibo(n)
+# 	if(n <= 1)
+# 		return 1
+# 	end		
+# 	 fibo(n-1) + fibo(n-2)
+# end
 
-puts fibo(6)
+# puts fibo(6)
 # puts fibo(9)
 # non-recursive
 
