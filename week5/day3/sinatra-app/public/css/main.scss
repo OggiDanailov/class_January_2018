@@ -1,7 +1,19 @@
 @import 'navbar';
 
+#title {
+	text-align: center;
+	display: none;
+}
+
 #box {
 	width: 100px;
 	height: 100px;
 	background-color: red;
+	margin: 30px auto;
+}
+
+
+.search-form {
+	// border: 2px solid;
+	margin: 10px;
 }
