@@ -1,9 +1,21 @@
 .navbar {
-  border: 2px solid red; }
+  border: 6px solid teal;
+  width: 70%;
+  margin: 0 auto;
+  background-color: salmon;
+  box-shadow: 5px 5px 5px teal; }
+
+#title {
+  text-align: center;
+  display: none; }
 
 #box {
   width: 100px;
   height: 100px;
-  background-color: red; }
+  background-color: red;
+  margin: 30px auto; }
+
+.search-form {
+  margin: 10px; }
 
 /*# sourceMappingURL=main.css.map */
