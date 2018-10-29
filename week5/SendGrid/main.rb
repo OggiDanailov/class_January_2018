@@ -2,7 +2,7 @@ require 'sinatra'
 require 'sendgrid-ruby'
 require 'sinatra/activerecord'
 require './models'
-include SendGrid
+# include SendGrid
 
 set :database, "sqlite3:test.sqlite3"
 
@@ -64,11 +64,11 @@ end
 
 post '/thanks' do
 	p params
-from = Email.new(email: params['inputEmail'])
-subject = params['inputSubject']
-to = Email.new(email: 'ogidan@abv.bg')
-content = Content.new(type: 'text/plain', value: params['inputText'])
-mail = Mail.new(from, subject, to, content)
+from = SendGrid::Email.new(email: params[:inputEmail])
+subject = params[:inputSubject]
+to = SendGrid::Email.new(email: 'ogidan@abv.bg')
+content = SendGrid::Content.new(type: 'text/plain', value: params[:inputText])
+mail = SendGrid::Mail.new(from, subject, to, content)
 
 sg = SendGrid::API.new(api_key: ENV['SENDGRID_API_KEY'])
 response = sg.client.mail._('send').post(request_body: mail.to_json)
