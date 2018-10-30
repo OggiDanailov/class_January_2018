@@ -1,3 +1,5 @@
+
+
 # Day 1 coding challenges:
 
 # 1. Create a function that takes a string as an argument and adds the phrase "Only in America!" to the end of it
@@ -242,9 +244,55 @@
 
 
 
+ #20. write a method that takes a long string as argument and returns all the words that start with the letter 't' . Also, you should number the letters;
+# sentence =  'This is the first time that I decided to write something and thankfully I think it is going pretty well. Of course, there is tons of things that I am supposed to do but I will handle it somehow'
 
 
+# def tee(arg)
+# 	temp = arg.split(" ")
+# 	array = []
+# 	result = []
+# 	temp.each do |item|
+# 		if item[0] == 't' || item[0] == "T"
+# 			array.push(item)
+# 		end
+# 	end
+# 	for i in 1...array.length
+# 		result.push("#{i} #{array[i]}")
+# 	end
+# 	puts result
+# end
 
+# sentence =  'This is the first time that I decided to write something and thankfully I think it is going pretty well. Of course, there is tons of things that I am supposed to do but I will handle it somehow'
+
+# tee(sentence)
+
+
+# 21. Prime numbers 1 to 100
+# def prime()
+# 	primes = []
+# 	found = false
+# 	#Loop through all numbers in the range 2-100
+# 	for number in 2..100
+# 		#Inner loop to check all numbers from 2 to the outer loop number - 1
+# 		for current_num in 2..(number - 1)
+# 			#If a number is found that divides into that number evenly then it is not a prime
+# 			if number % current_num == 0
+# 				found = true
+# 				break
+# 			end
+# 		end
+# 		# If found which determines if num is a prime is false then push number to primes array
+# 		if found == false
+# 			primes.push(number)
+# 		elsif found == true
+# 			found = false
+# 		end
+# 	end
+# 	print primes
+# end
+
+# prime()
 
 
 

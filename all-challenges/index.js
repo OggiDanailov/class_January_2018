@@ -1436,3 +1436,83 @@
 // }
 
 
+// 25. write a method that takes a long string as argument and returns all the words that start with the letter 't' . Also, you should number the letters;
+// var sentence =  'This is the first time that I decided to write something and thankfully I think it is going pretty well. Of course, there is tons of things that I am supposed to do but I will handle it somehow'
+
+
+// function tee(sentence){
+// 	var temp = sentence.split(" ")
+// 	var array = [];
+// 	result = []
+// 	for(let i = 0;i<temp.length;i++){
+// 		if(temp[i][0] == 't' || temp[i][0] == "T"){
+// 			array.push(temp[i])
+// 		}
+// 	}
+// 	for(let i = 0;i<array.length;i++){
+// 		result.push((i+1) + ". " + array[i]  )
+// 	}
+// 		console.log(result)
+// }
+
+
+// 26. write a method that lists all the prime numbers from 1 to 100
+
+function prime(){
+	for(let i = 1;i<=100;i++){
+		if(i == 1){
+			console.log(i)
+		}else if(i == 3){
+			console.log(i)
+		}else if(i == 5){
+			console.log(i)
+		}else if(i == 7){
+			console.log(i)
+		}else if(i % 2 != 0 && i % 3 !== 0 && i % 5 != 0 && i % 7 != 0){
+			console.log(i)
+		}
+		
+	}
+}
+prime()
+
+// Rafiq
+
+// function getAllPrimes() {
+// 	let primes = []
+// 	let found = false
+// 	for(let i = 2; i <= 100; i++ ) {
+// 		for(let j = 2; j <= (i - 1); j++) {
+// console.log(i + ' this is i');
+// console.log(j + ' this is j')
+// 			if (i % j == 0) {
+
+// 				found = true
+// 				break
+// 			}
+// 		}
+// 		if (found == false) {
+// 			primes.push(i)
+// 		} else {
+// 			found = false
+// 		}
+// 	}
+// 	console.log(primes)
+// }
+
+// getAllPrimes()
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
