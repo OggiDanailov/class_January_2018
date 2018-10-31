@@ -6,30 +6,14 @@
 
 <hr>
 
-<h3 style='color: red'>All the blogs:</h3>
+<h3>All the blogs:</h3>
 
-<% @blogs.each do |b| %>
+	<% @blogs.each do |b| %>
 
-<div><%= b.name %></div>
-<div><%= b.content %></div>
-<div><%= b.category %></div>
-<hr>
-<% end %>
-
-
-<h3 style='color:red'>Create new Blog</h3>
-<div>
-	<form method='POST' action='/new_blog'>
-		<p>Title</p>
-		<input type='text' name='name' placeholder='title'>
-		<p>Category</p>
-		<input type='text' name='category' placeholder='category'>
-		<p>Content</p>
-		<input type='text' name='content' placeholder='content'>
-		<br>
-		<br>
-		<input type='submit' value='create Blog'>
-	</form>
+	<div><a href="/blogs/<%= b.id %>"><%= b.name %></a></div>
+	<div><%= b.content %></div>
+	<div><%= b.category %></div>
+	<hr>
+	<% end %>
 
 
-</div>

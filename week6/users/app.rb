@@ -60,6 +60,7 @@ end
 # create_blog
 
 get "/blogs/new" do
+	
 	erb:"blogs/new"
 end
 

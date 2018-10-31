@@ -1,0 +1,21 @@
+<div class='create-form'>
+<h3 style='color:red'>Update current Blog</h3>
+
+	<form method='POST' action='/update/<%= @blog.id %>'>
+		<p>Title</p>
+		<h6><%= @blog.name %></h6>
+		<input type='text' name='name' placeholder='title'>
+		<p>Category</p>
+		<h6><%= @blog.category %></h6>
+		<input type='text' name='category' placeholder='category'>
+		<p>Content</p>
+		<h6><%= @blog.content %></h6>
+		<input type='text' name='content' placeholder='content'>
+		<br>
+		<br>
+		<input type='submit' value='update Blog'>
+	</form>
+</div>
+
+
+

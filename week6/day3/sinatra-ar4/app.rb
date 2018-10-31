@@ -40,7 +40,7 @@ end
 
 # form for sign in
 get '/users/signin' do
-erb :'users/signin'
+	erb :'users/signin'
 end
 
 # signin action
@@ -59,8 +59,8 @@ end
 
 # list all users and list all blogs
 get '/users' do  
-@users = User.all
-erb :"users/index"
+	@users = User.all
+	erb :"users/index"
 end
 
 # user show route
@@ -85,14 +85,6 @@ post '/users/:id' do
 	@user.update(username: params[:username], password: params[:password])
 	redirect '/'
 end
-
-
-
-
-
-
-
-
 
 
 
@@ -126,6 +118,8 @@ get '/blog/:id' do
 
   erb :blog
 end
+
+
 
 
 

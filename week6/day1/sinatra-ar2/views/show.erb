@@ -1,0 +1,14 @@
+<h2>Singular Blog</h2>
+
+<div><%= @blog.name %></div>
+<div><%= @blog.category %></div>
+<div><%= @blog.content %></div>
+
+<hr>
+
+	<a href="/blogs/<%= @blog.id %>/edit"><input type='submit' value='update'></a>
+	<br>
+	<br>
+	<form method='post' action="/destroy/<%= @blog.id%>">
+		<input type='submit' value='destroy'>
+	</form>

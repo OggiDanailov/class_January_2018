@@ -39,7 +39,10 @@ SELECT * FROM movies;
 http://guides.rubyonrails.org/active_record_basics.html
 
 - Object-relational mapping - converting data between two different programs/languages  
-- Active Records - allows you to write sequel as Ruby objects. It represents Ruby objects converted from SQL
+The ORM is Object Relational Mapper. The ORM in Rails is a way to use SQL without using SQL statements. Essentially, an ORM allows you to use objects to connect to tables in a relational database. ActiveRecord is the most popular Rails ORM.
+
+- Active Records - allows you to write sequel as Ruby objects. It represents Ruby objects converted from SQL. Active Record, properly defined, is a design pattern where an object is represented as a record on a table in a relational database
+
 - CRUD
 - MVC
 - RESTful protocol - representational state transfer
