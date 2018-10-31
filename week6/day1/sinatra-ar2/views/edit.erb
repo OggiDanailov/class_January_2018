@@ -1,18 +1,17 @@
 <div class='create-form'>
 <h3 style='color:red'>Update current Blog</h3>
 
-	<form method='POST' action='/update/<%= @blog.id %>'>
+	<form method='POST' action='/update/<%= @blog.id %>' >
 		<p>Title</p>
-		<h6><%= @blog.name %></h6>
-		<input type='text' name='name' placeholder='title'>
+		<input type='text' name='name' value=<%= @blog.name %> >
+
 		<p>Category</p>
-		<h6><%= @blog.category %></h6>
-		<input type='text' name='category' placeholder='category'>
+		<input type='text' name='category' value=<%= @blog.category %> >
+
 		<p>Content</p>
-		<h6><%= @blog.content %></h6>
-		<input type='text' name='content' placeholder='content'>
+		<textarea  name='content' ><%= @blog.content %></textarea>
 		<br>
-		<br>
+		
 		<input type='submit' value='update Blog'>
 	</form>
 </div>
