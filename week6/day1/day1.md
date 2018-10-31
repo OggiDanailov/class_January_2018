@@ -1,22 +1,4 @@
-Coding challenge:
 
-Write a function (try to use filter function in JS) that fiters only the positive odd numbers from an array. For example,
-array = [1,2,3,-5,-6,-7,4] -> [1,3]
-
-answer:
-
-function odds(number){  
-	result = []  
-	number.filter(function(x){  
-		if(x>0 && x % 2 !== 0){  
-			result.push(x);  
-		}  
-
-	});  
-
-return result;  
-
-}  
 _______________
 - SQL - structured Query Language; relational database; stores data in tables, columns and rows
 - NoSQL (MongoDB) - stores data without using tables. 
