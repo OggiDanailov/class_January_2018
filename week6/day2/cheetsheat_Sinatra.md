@@ -1,4 +1,4 @@
-s
+
 CheatSheet
 - touch Gemfile Rakefile app.rb models.rb
 - mkdir views public
@@ -15,7 +15,7 @@ CheatSheet
 	- require 'sinatra'  
 	- require 'sinatra/activerecord'  
 	- set :database, 'sqlite3:whatever.sqlite3'  
-	- require './models'c  
+	- require './models' 
 4. Terminal
 	- bundle install  
 	- rake db:create_migration NAME=create_blogs_table

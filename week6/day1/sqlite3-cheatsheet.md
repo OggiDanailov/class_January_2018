@@ -28,6 +28,9 @@ sqlite>
 **Once you're in `sqlite3`, you can switch between databases:**
 - `sqlite> .open other-database.db`
 
+- if the database is first.sqlite3 you open it like that; you don't need semicolomn at the end:
+
+.open first.sqlite3
 
 **Note:** both of the above commands will create a database if none found with the name you supplied.
 

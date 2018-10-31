@@ -1,7 +1,7 @@
-# Write a function (try to use filter function in JS) that fiters only the positive odd numbers from an array. then 
-# it adds the sum of it
+# Write a function (try to use filter function in JS) that fiters only the negative odd numbers from an array. then 
+# it adds the sum of it and coverts it to a positive number
 
-# array = [1,2,3,-5,-6,-7,4] -> [1,3]
+
 
  array = [1,2,3,-5,-6,-7,4, 23,34,43,45,-12,-43,34,-545]
 
