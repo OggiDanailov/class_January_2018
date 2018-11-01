@@ -1,0 +1,12 @@
+<h2>User info</h2>
+
+<% if current_user %>
+	<div><%= @user.username %></div>
+	<h3>And the blogs of this user: </h3>
+
+
+	<% @user.blogs.each do |b| %>
+		<div><%= b.name %></div>
+		<div><%= b.content %></div>
+	<% end %>
+<% end %>

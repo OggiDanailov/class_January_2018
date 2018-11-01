@@ -25,7 +25,7 @@ end
 # form for sign up
 get '/users/new' do
   erb :"users/new"
-ends
+end
 
 # create (signup) user action
 post '/create_users' do

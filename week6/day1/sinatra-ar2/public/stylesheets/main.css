@@ -1,6 +1,46 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.index-body {
+	background-color: lightgrey;
+}
+
 .create-form {
 	border: 2px solid;
 	width: 40%;
 	margin: 0 auto;
 	text-align: center;
+
 }
+
+
+.signing-forms {
+	border: 5px solid grey;
+	width: 30%;
+	margin: 0 auto;
+	padding: 15px;
+	background-color: beige;
+}
+
+.signup {
+	/*width: 20%;*/
+	margin-top: 10px;
+	/*border: 2px solid green;*/
+}
+
+.user {
+	border: 2px solid grey;
+	width: 10%;
+	background-color: tan;
+	display: block;
+	margin: 10px auto;
+}
+
+
+
+
+
+
+

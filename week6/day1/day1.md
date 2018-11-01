@@ -36,6 +36,7 @@ The ORM is Object Relational Mapper. The ORM in Rails is a way to use SQL withou
 - foreign key
 
 - adding column to an exising table in Sinatra:
+add_column :blogs, :users, :integer
 - change_table :blogs do |t|
   		t.column :user_id, :integer
   	end

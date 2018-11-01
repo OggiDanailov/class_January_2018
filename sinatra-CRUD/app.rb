@@ -39,8 +39,6 @@ post "/destroy/:id" do
 end
 
 
-
-
 post "/login" do 
 	username = params[:username]
 	password = params[:password]

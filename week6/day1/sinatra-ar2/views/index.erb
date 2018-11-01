@@ -1,8 +1,33 @@
 <!-- Search form -->
+<body class='index-body'>
 <form action='/' method='get'>
 <input type='text' name='search' placeholder='Search here'>
 <input type='submit' value='Search term'>
 </form>
+
+<div class='signing-forms'>
+	<div class='signup'>
+		<h6>Create new user </h6>
+		<form method='post' action="/signup">
+			<input type='text' name='username' placeholder='username'>
+			<input type='text' name='password' placeholder='password'>
+			<input type='submit' >
+		</form>
+	</div>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<hr>
+	<div class='signup'>
+		<h6>Already User? Login here </h6>
+		<form method='post' action="/signin">
+			<input type='text' name='username' placeholder='username'>
+			<input type='text' name='password' placeholder='password'>
+			<input type='submit' >
+		</form>
+	</div>
+</div>
 
 <hr>
 
@@ -17,3 +42,4 @@
 	<% end %>
 
 
+</body>
