@@ -32,6 +32,9 @@ sqlite>
 
 .open first.sqlite3
 
+another way:
+sqlite3 second.sqlite3
+
 **Note:** both of the above commands will create a database if none found with the name you supplied.
 
 ---
