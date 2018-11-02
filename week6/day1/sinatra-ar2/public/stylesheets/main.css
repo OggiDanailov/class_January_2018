@@ -3,6 +3,12 @@
 	padding: 0;
 }
 
+.navbar {
+	width: 50%;
+	border: 2px solid green;
+	background-color: red;
+}
+
 .index-body {
 	background-color: lightgrey;
 }
