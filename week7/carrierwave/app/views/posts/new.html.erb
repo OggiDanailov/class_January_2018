@@ -5,6 +5,7 @@
 <%= form_for @post do |f| %>
 <%= f.text_field :content %>
 <div class="field">
+	
     <%= f.label :avatar %><br>
     <%= f.file_field :avatar %>
     <% if f.object.avatar? %>
