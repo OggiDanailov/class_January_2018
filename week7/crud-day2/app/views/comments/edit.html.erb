@@ -1,0 +1,12 @@
+<h1 class='main-title'>Edit me here</h1>
+
+
+<div class="create-comment-form">
+<h2>Create Comment here:</h2>
+
+
+<%= form_for [@blog, @comment] do |f| %>
+	<%= f.text_area :content %>
+	<%= f.submit %>
+<% end %> 
+</div>

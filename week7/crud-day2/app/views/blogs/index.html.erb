@@ -1,0 +1,9 @@
+<h1 class="main-title">Welcome to my Blog; everyone is a writer here</h1>
+
+<div class='main-form'>
+<% @blogs.each do |b| %>
+<div class='fields'> <a href="/blogs/<%= b.id %>">Title: <%= b.title %></a></div>
+<div class='fields field-down'>Content: <%= b.content %></div>
+	<% end %>
+
+</div>

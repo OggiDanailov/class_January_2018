@@ -1,0 +1,70 @@
+$main-border-color: 2px solid black;
+$main-background-color: beige;
+$secondary-background-color: tan;
+$thrid-color: #f4a460;
+$main-border-radius: 10px;
+$main-border-shadow: 5px 5px 5px salmon;
+$main-padding: 10px;
+
+
+
+.main-title, .main-form, .comment-form {
+	width: 60%;
+	margin: 20px auto;
+	border: $main-border-color;
+	background-color: $main-background-color;
+	padding: $main-padding;
+	text-align: center;
+}
+
+.comment-form {
+	background-color: $secondary-background-color;
+}
+
+.fields {
+	width: 60%;
+	margin: 20px auto;
+	background-color: $secondary-background-color;
+	padding: $main-padding;
+	border-radius: $main-border-radius;
+	box-shadow: $main-border-shadow;
+	text-align: center;
+}
+
+.field-down {
+	margin-bottom: 60px;
+}
+
+.field-comments {
+	background-color: $main-background-color;
+	text-align: right;
+}
+
+.create-comment-form {
+	width: 60%;
+	margin: 20px;
+	border: $main-border-color;
+	background-color: $thrid-color;
+	padding: $main-padding;
+}
+
+.update {
+	margin: 20px auto;
+}
+
+.button {
+	border: $main-border-color;
+	background-color: $main-background-color;
+	padding: $main-padding;
+	text-align: center;
+	width: 10%;
+	margin: 10px auto;
+	border-radius: $main-border-radius; 
+}
+
+
+
+
+
+
+

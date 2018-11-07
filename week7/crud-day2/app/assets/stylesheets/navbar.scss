@@ -1,0 +1,23 @@
+$main-border-color: 2px solid black;
+$main-background-color: beige;
+$secondary-background-color: tan;
+$thrid-color: #f4a460;
+$main-border-radius: 10px;
+$main-border-shadow: 5px 5px 5px salmon;
+$main-padding: 10px;
+
+* {
+	margin: 0;
+	padding: 0;
+}
+.navbar {
+	width: 100%;
+	background-color: $secondary-background-color;
+	height: 100px;
+	line-height: 100px;
+}
+
+.navbar li {
+	display: inline-block;
+	margin: 0 50px;
+}

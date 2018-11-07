@@ -1,9 +1,6 @@
 <h2>Create a new Blog</h2>
 
-<%= form_for @blog do |f| %>
-
-
-
+<%= form_for Blog.new do |f| %>
   <%= f.label :title %><br>
   <%= f.text_field :title%> <br>
 

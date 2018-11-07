@@ -1,0 +1,13 @@
+<h1 class='main-title'>Edit form for Blog</h1>
+
+<div class="create-comment-form update">
+<%= form_for @blog do |f| %>
+<div class='fields'>Title: <%= f.text_field :title %></div>
+<div class='fields'>Content: <%= f.text_area :content %></div>
+	<%= f.submit %>
+<% end %>
+</div>
+
+<div class='button'>
+	<%= link_to 'Destroy', blog_path, method: :delete %>
+</div>

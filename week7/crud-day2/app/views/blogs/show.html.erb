@@ -1,0 +1,27 @@
+<h1 class='main-title'>Hello to this Blog</h1>
+
+<div class='main-form'>
+	<div class='fields'>Title:<a href="/blogs/<%=@blog.id %>/edit"> <%= @blog.title %></a></div>
+	<div class='fields field-down'>Content: <%= @blog.content %></div>
+</div>
+
+
+<div class='comment-form'>
+<% @blog.comments.each do |c| %>
+	<div class='fields field-comments'><a href="/blogs/<%= @blog.id%>/comments/<%= c.id %>"> <%= c.content %></a></div>
+	<% end %>
+</div>
+
+<div class="create-comment-form">
+<h2>Create Comment here:</h2>
+
+
+<%= form_for [@blog, @blog.comments.build] do |f| %>
+	<%= f.text_area :content %>
+	<%= f.submit %>
+<% end %> 
+</div>
+
+<!-- [@post, @post.comments.build]
+Is referring to the Comment model. But its saying that the comment's parent is @post. So that the comment model you're specifically referring to is the child of @post, and is going to be built on or appended to your array of comments that is associated with that @post. -->
+
