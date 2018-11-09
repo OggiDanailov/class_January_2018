@@ -14,7 +14,7 @@
 <div class="tag-dropdown">
 	<select class="tags" name="">
 		<% Tag.all.each do |tag| %>
-			<option value="<%=tag.name%>"><%= tag.name %></option>
+			<option value="<%= tag.name %>"><%= tag.name %></option>
 		<% end %>
 	</select>
 </div>
