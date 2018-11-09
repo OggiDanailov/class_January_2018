@@ -40,7 +40,10 @@ class PostsController < ApplicationController
   def destroy
   	post = Post.find(params[:id])
   	post.destroy
-  		redirect_to "/"
+  		respond_to do |format|
+        format.html
+        format.js
+      end
   end
 
 

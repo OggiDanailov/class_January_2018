@@ -4,5 +4,7 @@
 <div><%= @post.content %></div>
 
 <%= link_to "edit", edit_post_path %>
-<%= link_to "destroy", post_path, method: :delete %>
+<%= link_to "destroy", post_path, method: :delete, :remote => true, :class => "destroy_post" %>
+    <%#= link_to 'Destroy', pony, method: :delete, data: { confirm: 'Are you sure?' }, :remote => true, :class => 'delete_pony' %> 
+
 
