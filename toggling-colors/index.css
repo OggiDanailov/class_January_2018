@@ -1,0 +1,48 @@
+.productslist{
+  padding:10px;
+}
+ul li{
+  display: inline-block;
+  padding: 5px;
+  border: 1px solid #ddd;
+  text-align: center;
+  width: 15%;
+  cursor: pointer;
+}
+.selected{
+  background-color: #7CFEF0;
+  color: #333;
+}
+.cartdiv{
+  position: relative;
+  padding: 5px;
+  display: inline-block;
+  box-sizing: border-box;
+  border: 1px solid #f1f1f1;
+}
+
+
+
+
+
+
+* {
+	font-family: helvetica;
+}
+
+.wrapper {
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+@media all and (max-width: 768px){
+	.wrapper {
+		grid-template-columns: 1fr 1fr;
+	}
+}
+
+
+@media all and (max-width: 480px){
+	.wrapper {
+		grid-template-columns: 1fr;
+	}
+}

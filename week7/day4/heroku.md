@@ -44,7 +44,7 @@ end
 
 ——
 
-1. heroku run rails db:migrate (you migrate the database)
+1. heroku run rake db:migrate (you migrate the database)
 
 2. for renaming the name of your app run:
 
