@@ -3,8 +3,6 @@ class UsersController < ApplicationController
   	@users = User.all
   end
 
-
-
   def new
   	@user = User.new
   end
@@ -14,7 +12,8 @@ class UsersController < ApplicationController
   	u = User.new(user_params)
   	if u.save
   		redirect_to "/"
-  	else render "/users/new"
+  	else 
+      render "/users/new"
   	end
   end
 
