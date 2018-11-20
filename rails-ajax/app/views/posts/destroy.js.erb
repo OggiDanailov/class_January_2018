@@ -1,9 +1,14 @@
 
-	$('.destroy_post').bind('ajax:success', function() {
-		console.log('wahtever')  
-	        $(this).closest('tr').fadeOut();
-	});
+	
 
 var destroy = document.getElementsByClassName("destroy_post")[0]
 
-destroy.addEventListener("click",)
+destroy.addEventListener("click", function(){
+	$.ajax({
+    url: '/posts/50',
+    type: 'DELETE',
+    success: function(result) {
+        console.log(result)
+    }
+});
+})

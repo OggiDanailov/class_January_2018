@@ -1,0 +1,35 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+.container {
+	width: 100%;  
+	border: 2px solid orange;
+}
+
+.form {
+	border: 2px solid purple;
+	margin: 20px auto;
+	background-color: red;
+	height: 50px;
+	width: 90%;
+	margin: 0 auto;
+	text-align: center;
+}
+
+#input {
+	margin-top: 10px;
+	width: 200px;
+	height: 20px;
+	border: 2px solid green;
+	
+}
+
+.list-area {
+	border: 2px solid;
+	width: 70%;
+	margin: 20px auto;
+	display: grid;
+	grid-template-columns: 0.1fr auto 0.1fr;
+}
