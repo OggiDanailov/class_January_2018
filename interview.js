@@ -42,13 +42,14 @@
 // a(2222)
 // ~> 7222
 
-4. clear fix in 
+// 4. clear fix in 
 
 // 5. Promises - Promises provide a simpler alternative for executing, 
 // composing, and managing asynchronous operations when compared to 
-// traditional callback-based approaches. Promises are actually JS objects and they have  states:
-// pending, fulfilled and rejected. They represent the eventual completion or failure of 
-// of an asynchronous operation. 
+// traditional callback-based approaches. Promises are actually JS 
+// objects and they have  states: pending, fulfilled and rejected.
+ // They represent the eventual completion or failure of 
+  // an asynchronous operation. 
 
 // var a = function(num){
 // 	return new Promise(function(resolve, reject){
@@ -82,12 +83,41 @@
 
 // 7. Execution context and JS Interpreter
 // Javascript is a scripting language which means that there is no
-//  compilation step in code execution.Execution context is the environment where the js code is 
-//  executed. First it creates Global execution context - this is global object with all functionality
-//  that it is available for use (built-in methods); then sets the keyword 'this' and it will refer
-//  to the global object. Functional execution context is created each time when function is involved;
+//  compilation step in code execution.Execution context is 
+// the environment where the js code is executed. First it 
+// creates Global execution context - this is global object with
+//  all functionality that it is available for use (built-in methods);
+//   then sets the keyword 'this' and it will refer to the global object.
+//    Functional execution context is created each time when function
+//     is involved;
+// - Javascript Engine:
+// 	it contains of Memory heap and Call stack;
+// 	The Call Stack is a data structure which records basically where in the program we are. If we step into a function, we put it on the top of the stack. If we return from a function, we pop off the top of the stack.
+// 	Heap is a much larger region storing everything allocated dynamically.
+
+
+ - Event Loop
+
+
+ - Callback queue
+
+
 
 8. callback function
+
+
+// 9. What is an API Endpoint?
+// Simply put, an endpoint is one end of a communication channel.
+//  When an API interacts with another system, the touchpoints
+//   of this communication are considered endpoints. 
+//   For APIs, an endpoint can include a URL of a server or service.
+//    Each endpoint is the location from which APIs can access the
+// resources they need to carry out their function. APIs work using ‘requests’ and ‘responses.’ When an API requests information from a web application or web server, it will receive a response. The place that APIs send requests and where the resource lives, is called an endpoint.
+// Why Are API Endpoints Important?
+// All over the world, companies leverage APIs to transfer vital information, processes, transactions, and more. API usage will only increase as time goes on, and making sure that each touchpoint in API communication is intact is vital to the success of each API. Endpoints specify where resources can be accessed by APIs and play a key role in guaranteeing the correct functioning of the software that interacts with it.  In short, API performance relies on its ability to communicate effectively with API Endpoints.
+// Do I Need to Monitor API Endpoints?
+// YES. Understanding how each API is performing can drastically change the way you’re able to capture the value APIs add to your business. Proactively Monitoring APIs can ensure that you’re able to find issues before real users experience them.
+
 
 
 

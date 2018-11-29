@@ -1507,6 +1507,38 @@ prime()
 
 
 
+var word = 'fizzbuzz'
+
+// function whatever(word){
+//   var hash = {};
+//   var array = word.split("");
+//   array.forEach(function(item){
+//     hash[item] = (hash[item] || 0)+1
+//   })
+// console.log(hash)
+// };
+
+// 27.  Write a function that, given a string, return an object that contains each key as a letter
+// and the number of times it appears in the string as the value.
+// examples:
+// "start" --> { s: 1, t: 2, a: 1, r: 1 }
+// "fuzzlewuzzle" --> { f: 1, u: 2, z: 4, l: 2, e: 2, w: 1 }
+
+// function whatever(arg){
+//   var hash = {};
+//   var array = arg.split("");
+//   for(let i = 0;i<array.length;i++){
+//     hash[array[i]] = (hash[array[i]] || 0) + 1
+//   }
+  
+// console.log(hash)
+// }
+
+
+
+
+
+whatever(word)
 
 
 
