@@ -64,7 +64,7 @@ class Name extends React.Component{
 
 
 ReactDOM.render(
-	<Message text="whatever I found to me and my people" />,
+	<Message  />,
 	document.getElementById('react')
 	)
 
