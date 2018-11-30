@@ -150,11 +150,14 @@ function input(first,last, callback){
 	callback(first, last)
 }
 
-// If we pass for the callback obj.setName, we won't pass the first and last to the 
-// scope of the object. If we console.log(obj.fullName) it will be still empty;
-// If we console.log(window.fullName) we will see that we attached it to the Global object
+// If we pass for the callback obj.setName, we won't pass the first and
+ // last to the scope of the object. If we console.log(obj.fullName)
+ //  it will be still empty; If we console.log(window.fullName) 
+ //  we will see that we attached it to the Global object
 
-In order to fix this problem we  have to pass obj scope somehow. So we can use apply:
+// In order to fix this problem we  have to pass obj scope somehow. 
+// So we can use apply:
+
 function input(first, last, callback, objScope){
 	callback.apply(objScope, [first, last])
 }
