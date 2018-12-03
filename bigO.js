@@ -8,7 +8,10 @@
 // x^y = n    			=>  Log(x)n = y;
 // 2^ 3 = 8   			=>  Log(2)8 = 3
 
-// This relates to Big O because if ‘n’ is fairly large and increases, our result ‘y’ becomes marginally higher, increasing by a constant amount. Which means that as our input ‘n’ increases, the time for the algorithm to run will increase at a constant amount rather than at the rate of the input. For example:
+// This relates to Big O because if ‘n’ is fairly large and increases,
+ // our result ‘y’ becomes marginally higher, increasing by a constant amount.
+ //  Which means that as our input ‘n’ increases, the time for the algorithm to run 
+ //  will increase at a constant amount rather than at the rate of the input. For example:
 
 // Log(2)128 = 7;  if we double the input:
 // Log(2)256 = 8
@@ -25,7 +28,9 @@
 // }
 
 // 2. O(n)
-// O(N) describes an algorithm whose performance will grow linearly and in direct proportion to the size of the input data set. In this order, the worst case time (iterations) grows on par with the number of items.
+// O(N) describes an algorithm whose performance will grow linearly and
+ // in direct proportion to the size of the input data set. In this order,
+ //  the worst case time (iterations) grows on par with the number of items.
 
 // var array = [1,4,3,5,7,6,9]
 // function finding(array, element){
@@ -38,8 +43,11 @@
 // 	}
 // }
 
-// 3. O(n^2) - “Order N squared”
-// As the input increases, the time to run the algorithm grows at the rate of it’s square. This is frequently seen with nested ‘for loops’ because the inner loop will run ’n’ times for each time the outer loop runs. Which makes the resulting time complexity n*n or n².
+// 3. O( n²) - “Order N squared”
+// As the input increases, the time to run the algorithm grows at the rate of it’s square.
+ // This is frequently seen with nested ‘for loops’ because the inner loop will run ’n’ times 
+ // for each time the outer loop runs. Which makes the resulting time complexity n*n or n².
+
 // function findMatch(array){
 // 	for(let i  = 0; i<array.length;i++){
 // 		for(let j = i+1;j<array.length;j++){
@@ -51,7 +59,11 @@
 // }
 
 // 4. O(2^n)
-// For each additional input, the time to run the algorithm doubles. O(2^N) denotes an algorithm whose growth doubles with each additon to the input data set. The growth curve of an O(2^N) function is exponential - starting off very shallow, then rising meteorically. An example of an O(2^N) function is the recursive calculation of Fibonacci numbers:
+// For each additional input, the time to run the algorithm doubles. O(2^N) denotes
+ // an algorithm whose growth doubles with each additon to the input data set.
+ //  The growth curve of an O(2^N) function is exponential - starting off very shallow,
+ //   then rising meteorically. An example of an O(2^N) function is the recursive calculation
+ //    of Fibonacci numbers:
 
 // function fibo(n){
 // 	if(n <= 1){
@@ -62,7 +74,13 @@
 // }
 
 // // 5. O(log N)
-// Binary search -  a data set containing 100 items takes two seconds, and a data set containing 1000 items will take three seconds. Doubling the size of the input data set has little effect on its growth as after a single iteration of the algorithm the data set will be halved and therefore on a par with an input data set half the size. This makes algorithms like binary search extremely efficient when dealing with large data sets.
+// Binary search -  a data set containing 100 items takes two seconds,
+ // and a data set containing 1000 items will take three seconds.
+ //  Doubling the size of the input data set has little effect on
+ //   its growth as after a single iteration of the algorithm the data
+ //    set will be halved and therefore on a par with an input data set half the size.
+ //     This makes algorithms like binary search extremely efficient when dealing with
+ //      large data sets.
 
 // function search(array, target){
 // 	var left = 0;

@@ -177,6 +177,8 @@ console.log(array)
 // YES. Understanding how each API is performing can drastically change the way you’re able to capture the value APIs add to your business. Proactively Monitoring APIs can ensure that you’re able to find issues before real users experience them.
 
 
+// Scalable application
+// Creating applications that are both resilient and scalable is an essential part of any application architecture. A well-designed application should be able to scale seamlessly as demand increases and decreases, and be resilient enough to withstand the loss of one or more compute resources.
 
 
 
