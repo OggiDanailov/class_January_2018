@@ -1,8 +1,17 @@
 // The big O
 
-// Big O notation is used in Computer Science to describe the performance or complexity of an algorithm. Big O specifically describes the worst-case scenario, and can be used to describe the execution time required or the space used (e.g. in memory or on disk) by an algorithm.
-// The “O “in Big O stands for “order of”. And refers to the rate at which the function is growing.
-// The ’n’ is a variable that represents the size of the input. The letter ’n’ is a commonly used variable in Big O, but you can also see other variables being used, like ‘m’ in O(n*m). Using a second variable like ‘m’ means that there is another input in the function that is separate from ’n’. An example of an input in JavaScript would be an array where ’n’ references the number of elements in the array.
+// Big O notation is used in Computer Science to describe the performance or complexity
+ // of an algorithm. Big O specifically describes the worst-case scenario, and can be used to
+ //  describe the execution time required or the space used (e.g. in memory or on disk) by an
+ //   algorithm.
+// The “O “in Big O stands for “order of”. And refers to the rate at which the function is
+ // growing.
+// The ’n’ is a variable that represents the size of the input.
+// The letter ’n’ is a commonly used variable in Big O, but you can also see other
+// variables being used, like ‘m’ in O(n*m). Using a second variable like ‘m’ means
+// that there is another input in the function that is separate from ’n’.
+// An example of an input in JavaScript would be an array where ’n’ references the
+// number of elements in the array.
 
 // Logarithm
 // x^y = n    			=>  Log(x)n = y;
@@ -19,7 +28,9 @@
 
 
 // 1. O(1)
-// O(1) describes an algorithm that will always execute in the same time (or space) regardless of the size of the input data set. This means that regardless of the amount or size of input, it will always take 1 unit of time to perform the algorithm.
+// O(1) describes an algorithm that will always execute in the same time (or space) regardless
+ // of the size of the input data set. This means that regardless of the amount 
+ // or size of input, it will always take 1 unit of time to perform the algorithm.
 
 // var array = [1,2,3,4,5,6,7,8]
 // var empty = []

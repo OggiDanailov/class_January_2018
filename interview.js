@@ -47,13 +47,18 @@
 // 5. Promises - Promises provide a simpler alternative for executing, 
 // composing, and managing asynchronous operations when compared to 
 // // traditional callback-based approaches.
-// A promise is an object that wraps an asynchronous operation and notifies when it’s done. This sounds exactly like callbacks, but the important differences are in the usage of Promises. Instead of providing a callback, a promise has its own methods which you call to tell the promise what will happen when it is successful or when it fails. The methods a promise provides are “then(…)” for when a successful result is available and “catch(…)” for when something went wrong.
- Promises are actually JS 
-// objects and they have  states: pending, fulfilled and rejected.
+// A promise is an object that wraps an asynchronous operation and notifies when it’s done.
+ // This sounds exactly like callbacks, but the important differences are in the usage of
+ //  Promises. Instead of providing a callback, a promise has its own methods which you
+ //   call to tell the promise what will happen when it is successful or when it fails. 
+ //   The methods a promise provides are “then(…)” for when a successful result is available
+ //    and “catch(…)” for when something went wrong.
+ // Promises are actually JS objects and they have  states: pending, fulfilled and rejected.
  // They represent the eventual completion or failure of 
   // an asynchronous operation. 
   // promises are great alternative to fix the so called callback hell - 
   // when you have callback functions within callback functions
+
 var p = new Promise(function(resolve, reject){
 	var a = 10;
 	if(a > 0){
@@ -145,13 +150,28 @@ console.log(array)
 //     is involved;
 // - Javascript Engine:
 // 	it contains of Memory heap and Call stack;
-// 	The Call Stack is a data structure which records basically where in the program we are. If we step into a function, we put it on the top of the stack. If we return from a function, we pop off the top of the stack. 
- // a call stack is a data structure that uses the Last In, First Out (LIFO) principle to temporarily store and manage function invocation (call).
+// 	The Call Stack is a data structure which records basically where in the program we are.
+ // If we step into a function, we put it on the top of the stack. If we return from a function, 
+ // we pop off the top of the stack. 
+ // a call stack is a data structure that uses the Last In, First Out (LIFO) principle
+  // to temporarily store and manage function invocation (call).
 // 	Heap is a much larger region storing everything allocated dynamically.
 
+// - Message queue
+// A JavaScript runtime uses a message queue, which is a list of messages to be processed.
+//  Each message has an associated function which gets called in order to handle the message.
 
- - Event Loop-
- The event loop is the term given to the process of the waiting for the queue to receive a message synchronously. The increment that the event loop moves in is called a ‘tick’, and every time it ‘ticks’ it checks if the call stack is empty, if so , it adds the top function in the event queue to the call stack and executes it. Once it is finished processing this function it starts ticking again. This diagram is simple and great.
+//  - Event Loop-
+//  The event loop is the term given to the process of the waiting for the queue
+//   to receive a message synchronously. The increment that the event loop moves
+//    in is called a ‘tick’, and every time it ‘ticks’ it checks if the call stack is empty,
+//     if so , it adds the top function in the event queue to the call stack and executes it.
+// Once it is finished processing this function it starts ticking again. 
+
+// Event loop checks if the execution stack is empty and checks the message queue; If the stack is
+// empty (meaning all the synchronous functionality has been executed) the event loop will push
+// the callback function in the execution stack (call stack) and the function will be run.
+
 
 
  - Callback queue
@@ -159,9 +179,28 @@ console.log(array)
 
 
 // 8. callback function
-// // A callback function, also known as a higher-order function, is a      function that is passed to another function (let’s call this other function “otherFunction”) as a parameter, and the callback function is called (or executed) inside the otherFunction. 
-// Not every callback function has asynchronous behavior; for example, forEach() does take a callback but it is not asynchronous behavior.
-// Hooking to any asynchronous event in Javascript always requires a callback but that doesn't mean calling functions or passing them around is always asynchronous.
+// // A callback function, also known as a higher-order function, is a
+      // function that is passed to another function
+      //  (let’s call this other function “otherFunction”) as a parameter,
+      //   and the callback function is called (or executed) inside the otherFunction. 
+// Not every callback function has asynchronous behavior; for example, forEach() does
+ // take a callback but it is not asynchronous behavior.
+// Hooking to any asynchronous event in Javascript always requires
+ // a callback but that doesn't mean calling functions or passing them around
+ //  is always asynchronous.
+
+ let add = function(a,b){
+ 	return a + b;
+ };
+
+  let subtract = function(a,b){
+ 	return a - b;
+ }
+
+ let calc = function(num1, num2, callback){
+ 	return callback()
+ }
+
 
 
 // 9. What is an API Endpoint?
@@ -170,16 +209,48 @@ console.log(array)
 //   of this communication are considered endpoints. 
 //   For APIs, an endpoint can include a URL of a server or service.
 //    Each endpoint is the location from which APIs can access the
-// resources they need to carry out their function. APIs work using ‘requests’ and ‘responses.’ When an API requests information from a web application or web server, it will receive a response. The place that APIs send requests and where the resource lives, is called an endpoint.
+// resources they need to carry out their function. APIs work using ‘requests’ and ‘responses.’
+ // When an API requests information from a web application or web server, 
+ // it will receive a response. The place that APIs send requests and where the resource lives,
+ //  is called an endpoint.
 // Why Are API Endpoints Important?
-// All over the world, companies leverage APIs to transfer vital information, processes, transactions, and more. API usage will only increase as time goes on, and making sure that each touchpoint in API communication is intact is vital to the success of each API. Endpoints specify where resources can be accessed by APIs and play a key role in guaranteeing the correct functioning of the software that interacts with it.  In short, API performance relies on its ability to communicate effectively with API Endpoints.
+// All over the world, companies leverage APIs to transfer vital information, processes,
+ // transactions, and more. API usage will only increase as time goes on, and making sure
+ //  that each touchpoint in API communication is intact is vital to the success of each API.
+ //   Endpoints specify where resources can be accessed by APIs and play a key role in
+ //    guaranteeing the correct functioning of the software that interacts with it.
+ //      In short, API performance relies on its ability to communicate effectively 
+ //      with API Endpoints.
 // Do I Need to Monitor API Endpoints?
-// YES. Understanding how each API is performing can drastically change the way you’re able to capture the value APIs add to your business. Proactively Monitoring APIs can ensure that you’re able to find issues before real users experience them.
+// YES. Understanding how each API is performing can drastically change the way you’re
+ // able to capture the value APIs add to your business. Proactively Monitoring APIs can
+ //  ensure that you’re able to find issues before real users experience them.
 
 
 // Scalable application
-// Creating applications that are both resilient and scalable is an essential part of any application architecture. A well-designed application should be able to scale seamlessly as demand increases and decreases, and be resilient enough to withstand the loss of one or more compute resources.
+// Creating applications that are both resilient and scalable is an essential part of any
+ // application architecture. A well-designed application should be able to scale seamlessly
+ //  as demand increases and decreases, and be resilient enough to withstand the loss of one
+ //   or more compute resources.
 
 
+// Arrow function:
+
+const profile = {
+	fname : "",
+	lname: "",
+	setname: function(name){
+		let splitName = function(n){
+			let nameArray = n.split();
+			this.fname = nameArray[0];
+			this.lname = nameArray[1]
+		}
+		splitName(name)
+	}
+}
+
+profile(setname("Oggi danailov"))
+// this won't work since the function has it own scope
+// if we convert spltName into an arrow function this should work
 
 
