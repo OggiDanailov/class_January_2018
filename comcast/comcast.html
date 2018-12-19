@@ -1,0 +1,154 @@
+<h1>Question 1:</h1>
+              <div>This HTML isn't perfect. Go through the markup and list your top 5 issues in the div below,
+                provide more for bonus points (non-redeemable).
+              </div>
+<p>
+ - The HTML file contains all of its css and js. I find this quite awkward to work with. There should be separation of files for html, css and js. It is quite inconvenient to constantly scroll up and down between the elements down on the file and the actual styling up in the top.</p>
+ <p>- No declaration of <!DOCTYPE html></p>
+
+ <p>- The file appears to be set for HTML 4.0.1 which is not the latest version of HTML. </p>
+  - The charset is set to Windows-1252; this encoder does not read non-Latin characters (for example, the Cyrillic alphabet - a crucial feature for me). I would change it to UTF-8;<br>
+
+ - There is no title in the head;<br>
+
+ - The second header in the file (Thank you for completing this questionnaire...... etc.) should actually be a footer;<br>
+
+ - This is not an issue that will have an impact on the page's performance, but there are a lot of tags written in one line:
+ <html><head><meta http-equiv="Content-Type" content="text/html; charset=windows-1252"> which I would personally put on separate lines with clear indentation.<br>
+ - I don't think semantically it makes sense to have multiple h1 tags. I think the first h1 tag should be the only one.<br>
+
+
+
+ <h1>Question 3:</h1>
+              <div>The below content has some web accessibility issues. Rewrite the content and markup
+                in the div#accessibility as you see fit to make it more accessible. Please explain your decisions below.</div>
+
+
+
+<h1>Question 4:</h1>
+              <div >
+                  <div class="box1">This box should be on the left side of the page</div>
+                  <div class="box2">This box should be on the right side of the page</div>
+                  <div class="box3">This box should be at the center of the page and should disappear if the page is less than 800px.</div>
+                  <br>
+              </div>
+This challenge does not make it clear whether I can target the parental div or I have to use the existing structure and adjust them accordingly. Also, it is not clear if I can substitute the positions of elements 2 and 3.  One solution would be to float first and third elements left and then to float second element right. This isn't perfect since I can't center the middle element easily. However, the elements are spread as it was asked. The middle element will disappear because of the media query. This part is currently commented out; you have to uncomment it and comment out the second solution in order to test how it works.
+Second solution - I gave to the parental div display grid. Since I don't know if I can move the order of the divs I declared manually where div 2 and div 3 start in terms of rows and columns (using grid-coulmn-start and grid-row-start) so now the grid elements are aligned. Further they are centered and finally the div 2 (the grey one) is given position absolute which allows me to move it to the furthest right position within the grid. 
+Finally, once again through media query I change the visibility of the middle div to hidden. 
+
+
+<h1>JS: Question 1:</h1>
+              <div>
+                  <span class="blue">This text should be dark blue.</span><br>
+                  1. Explain why the JavaScript code in the &lt;head&gt; element is failing to achieve this.<br>
+                  2. Edit the JavaScript code to achieve this, leaving it in the &lt;head&gt;.
+              </div>
+  The code is wrong in many different ways. The most obvious error is the .text-color property. Apart that there is no such property, dashes in js are not sytactically correct so they will always give you an error.
+  The "text-color" property is actually just 'color'.
+  Secondly, getElementsByClassName will return an array - even if there is one item you still have to stipulate [0] after it.
+  Finally, even if we fix the syntax:
+   document.getElementsByClassName("blue")[0].style.color = "darkblue";
+   class blue is not defined since the span with class blue is way down the file (JS executes here as single-threaded). 
+   In order to fix the code, we can wrap the code into an event listener function that will get executed on load. Now through Javascript's hoisting (adding functions and variable declarations to the memory first prior to executing the actual code) class blue will be available.
+
+
+   <h1>Question 2:</h1>
+              <script>
+                  var x = [];
+                  x[0] = 'a';
+                  x[1] = 'b';
+                  x[2] = 'c';
+                  var y = x.pop();
+              </script>
+              <div>
+                  1. Explain why the above throws an error.<br>
+                  2. Fix the code so the last line works.
+              </div>
+var x is declared as object literal. Next three lines you assign keys of 0,1,2 and corresponding values of 'a', 'b' and 'c'. 
+Finally, and this is where the error comes, you assign a new var y to x.pop() which should give you an error. The problem is that pop() method works only with arrays and removes last item of an array. 
+The easiest way to fix the code so the last line works is just to declar x = [] instead of {}.
+Alternatively, if we want to keep x as an object literal we can use delete property which will delete the whole key-value pair from the object. However, we won't be able to assign the deleted line to var y; 
+y returns true in this case and we removed the last key-value pair.
+var x = {};
+                  x[0] = 'a';
+                  x[1] = 'b';
+                  x[2] = 'c';
+                  var y = delete x[3];
+
+
+
+All the prime numbers:
+
+function primes(){
+  var array = [];
+  for(let i  = 2;i<= 100;i++){
+    if(i == 2){
+    array.push(i)
+  }else if(i == 3){
+    array.push(i)
+  }else if(i == 5){
+    array.push(i)
+  }else if(i == 7){
+    array.push(i)
+  }else if(i % 2 != 0 && i%3 != 0 && i % 5 != 0 && i % 7 != 0){
+    array.push(i)
+  }
+}
+  return array
+}
+
+
+<h1>Question 5:</h1>
+              <div>Create a function that takes an array and returns a new array
+                   with numbers that are multiples of X removed</div>
+              <script>
+                var myArray = [1,2,3,5,9,15,16,21,23,25];
+
+                function removeMultiples(ary, num) {
+                  var array = [];
+                  for(let i = 0;i<ary.length;i++){
+                    if(ary[i] % num != 0){
+                      array.push(ary[i])
+                    }
+                  }console.log(array)
+                }
+
+                //removeMultiples(myArray, 3) => [1,2,5,16,23,25]
+                //removeMultiples(myArray, 5) => [1,2,3,9,16,21,23]
+              </script>
+
+
+Extra challenge:
+
+var addToFive = function(x){
+  function addTwoNumbers(num1, num2){
+    return num1 + num2;
+  }
+    return addTwoNumbers(5, x)
+}
+
+
+
+As a web engineer, describe three performance concerns you need to deal with and how you address them.
+
+1. Whether the HTML use of tags is correct. For SEO purposes, it is very important that someone uses the correct html tags even if they don't make anything visibly different on the page (for example, footer tag easily can be substituted by normal div, but from a semantic point of view, one should always use footer tag).
+Not having title in the head (as it is the case with this document) does affect directly the SEO performance.
+2. Avoid using embedded code in the HTML files: The extra code will increase the amount of HTML that has to be read each time on reload.
+3. Minification of javascript might be another step; also, compression of images in case your app has a lot of high-resolution images (these can significantly slow down the loading time of your site).
+
+
+Question:
+How do you use source control to manage releases? How would you handle an emergency release?
+
+
+One way to address this issue is to not use Master branch for anything. Instead, all phases (test, development, production) work on separated branches. Production branches have versions - v1, v2, v3 etc. so you can always revert to an older version while you are trying to fix a problem/add something to the newest version. 
+If there is an emergency release latest version can be pushed to quickfix branch and when done, merged to a new version of production branch. 
+
+
+
+
+
+
+
+
+

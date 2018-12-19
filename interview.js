@@ -150,8 +150,10 @@ console.log(array)
 //     is involved;
 // - Javascript Engine:
 // 	it contains of Memory heap and Call stack;
-// 	The Call Stack is a data structure which records basically where in the program we are.
- // If we step into a function, we put it on the top of the stack. If we return from a function, 
+// 	The Call Stack is a data structure which records basically where
+ // in the program we are.
+ // If we step into a function, we put it on the top of the stack.
+  // If we return from a function, 
  // we pop off the top of the stack. 
  // a call stack is a data structure that uses the Last In, First Out (LIFO) principle
   // to temporarily store and manage function invocation (call).
@@ -252,5 +254,33 @@ const profile = {
 profile(setname("Oggi danailov"))
 // this won't work since the function has it own scope
 // if we convert spltName into an arrow function this should work
+
+
+// Imperative programming
+	// program that approaches with "how" something should happen. imperative
+	// programming changes the progam's state
+// 	function double (arr) {
+//   let results = []
+//   for (let i = 0; i < arr.length; i++){
+//     results.push(arr[i] * 2)
+//   }
+//   return results
+// }
+
+
+// Declarative
+// 	program that approaches with 'what' something should happen. You don't
+// mutate the state
+// 	SQL and HTML are declarative; React is kind of declarative
+// function double (arr) {
+//   return arr.map((item) => item * 2)
+// }
+
+
+// State in programming
+// The current status of the variables stored in a given program
+
+
+
 
 

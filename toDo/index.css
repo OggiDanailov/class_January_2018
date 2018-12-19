@@ -1,0 +1,50 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+
+.list {
+	width: 90%;
+	margin: 0 auto;
+	border-radius: 10px;
+}
+
+
+
+
+.form {
+	width: 90%;
+	height: 70px;
+	margin: 0 auto;
+	background-color: salmon;
+	border-radius: 10px;
+	border: 2px solid purple;
+}
+
+#input, #submit {
+	margin: 10px;
+	border-radius: 10px;
+	padding: 5px;
+	border: 2px solid purple;
+}
+
+#input {
+	height: 20px;
+}
+
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+

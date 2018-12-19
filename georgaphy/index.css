@@ -1,0 +1,24 @@
+.container {
+	width: 90%;
+	border: 2px solid orange;
+	margin: 0 auto;
+	display: grid;
+	grid-template-columns: 12 * 1fr;
+}
+
+.all-countries {
+	width: 100%;
+	/*border:2px solid;*/
+}
+
+.countries:hover {
+	color: red;
+	cursor: pointer;
+	font-style: italic;
+}
+
+.country {
+	width: 80%;
+	margin: 20px auto;
+	/*border: 2px solid;*/
+}
