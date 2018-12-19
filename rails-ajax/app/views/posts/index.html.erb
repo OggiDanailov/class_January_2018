@@ -1,12 +1,40 @@
 <h1>Posts#index</h1>
 <p>Find me in app/views/posts/index.html.erb</p>
 
+
+
 <div class='container-post'>
 	<% @posts.each_with_index do |p, index| %>
-	<div><%=  index + 1 %> <a href='/posts/<%= p.id %>'><%= p.title %></a></div>
+	<div> <a href='/posts/<%= p.id %>'><%= p.title %></a></div>
 	<div><%= p.content %></div>
-
+	<div class='destroy' id='<%= p.id %>' ><%= link_to "Delete Post", post_path(p.id), remote: true, method: :delete,
+											confirm: 'Item delted'
+		 %></div>
+	<hr>
 	<% end %>
+
+	<div class='whatever'>Whatever</div>
+
+
 
 
 </div>
+
+<hr>
+<hr>
+<%= form_tag({:method => 'post', :id => 'filter_form', :action => "whatever", :remote => true}) do %>
+	Title: <%= text_field_tag(:t)  %>
+	Content: <%= text_field_tag(:c) %>
+	<%= submit_tag "whatever", :id => 'commit' %>
+<% end %>
+<br>
+
+
+
+
+
+
+
+
+
+

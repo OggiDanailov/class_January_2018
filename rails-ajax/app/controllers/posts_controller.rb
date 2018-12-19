@@ -40,10 +40,23 @@ class PostsController < ApplicationController
   def destroy
   	post = Post.find(params[:id])
   	post.destroy
-  		respond_to do |format|
-        format.html
-        format.js
+  		respond_to do |format| 
+        format.js 
       end
+  end
+
+
+  def whatever 
+    t = params[:t]
+    c = params[:c]
+    @p = Post.new(title: t, content: c)
+    respond_to do |format|
+      if @p.save
+          format.html { redirect_to "/", notice: 'Home was successfully created.' }
+          format.js
+      end
+    
+    end
   end
 
 
