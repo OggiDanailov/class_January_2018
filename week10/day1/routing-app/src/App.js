@@ -16,10 +16,10 @@ class App extends Component {
         <BrowserRouter> 
         <div>  
            <ul>
-          <li><Link to='/'>Home</Link></li>
-          <li><Link to='/about'>About</Link></li>
-          <li><Link to='/destinations'>Destinations</Link></li>
-          <li><Link to='/destination'>Create Destinations</Link></li>
+            <li><Link to='/'>Home</Link></li>
+            <li><Link to='/about'>About</Link></li>
+            <li><Link to='/destinations'>Destinations</Link></li>
+            <li><Link to='/destination'>Create Destinations</Link></li>
           </ul> 
 
             <Route exact path='/' component={Home} />

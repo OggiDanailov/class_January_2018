@@ -5,8 +5,13 @@ var add = document.getElementById("add")
 var divide = document.getElementById("divide")
 var multiply = document.getElementById("multiply")
 var subtract = document.getElementById("subtract")
+var clear = document.getElementById('clear')
 
 var result = document.getElementById('result')
+clear.addEventListener("click", function() {
+	num1.value = "0"
+	num2.value = "0"
+})
 
 add.addEventListener("click", function(){
 	var answer = parseInt(num1.value) + parseInt(num2.value)

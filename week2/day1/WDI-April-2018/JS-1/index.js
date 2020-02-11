@@ -95,7 +95,7 @@
 // var array = ["a", "b", "c", "d", "e", "f"]
 // var array2 = [1,2,3,4,5]
 // var array3 = ["!", "%", "@"]
-// Nested looping
+// // Nested looping
 // for(var i = 0;i<array.length;i++){	
 // 	for(var j=0;j<array2.length; j++){
 // 		for(var x =0;x<array3.length;x++){
@@ -127,13 +127,13 @@
 // on the wall, 98 bottles of root beer...take one down, pass it around ......
 // 97 bottles of root beer on the wall," etc., all the way to 0 bottles.
 
-for(i=99;i>0;i--){
-  if(i === 1){
-    console.log("since there is one bottle left we need to make this is singular")
-  }else {
-  console.log(i + " bottles of root beer on the wall," + i + " bottles of root beer...take one down to " + (i-1) + ", pass it around.......")
-  }
-}
+// for(i=99;i>0;i--){
+//   if(i === 1){
+//     console.log("since there is one bottle left we need to make this is singular")
+//   }else {
+//   console.log(i + " bottles of root beer on the wall," + i + " bottles of root beer...take one down to " + (i-1) + ", pass it around.......")
+//   }
+// }
 
 
 
