@@ -95,8 +95,6 @@ Terminal Commands
 
 Workshop in class:
 
-Navigate to your Desktop folder. Create a new directory called project-one. Change into this directory and create a new file called index.html. Verify what directory you are currently in. Delete the file. Create it again. List the files in the directory. Create a hidden file (starting with a dot). List all files in the directory including the hidden file.  ls
-
 Create a new folder inside of your Desktop folder. Rename the folder. Change directory to be inside of the folder. Create two new files. Delete one of these files, rename the other one. Create a new file that starts with a dot (a hidden file). Verify what directory you are currently in. Show all files in this directory including the hidden file. Rename the hidden file.  
 
 Prepare a new website:

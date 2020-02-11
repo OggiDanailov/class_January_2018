@@ -5,8 +5,7 @@ class DestinationsController < ApplicationController
 	end
 
 	def create	
-		Destination.create(destination_params)
-		
+		Destination.create(destination_params)	
 	end
 
 

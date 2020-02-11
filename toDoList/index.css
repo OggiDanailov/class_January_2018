@@ -27,8 +27,9 @@
 }
 
 .list-area {
-	border: 2px solid;
+	border: 10px solid;
 	width: 70%;
+	min-height: 100px;
 	margin: 20px auto;
 	display: grid;
 	grid-template-columns: 0.1fr auto 0.1fr;
