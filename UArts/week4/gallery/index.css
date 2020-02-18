@@ -1,0 +1,32 @@
+.wrapper {
+	padding: 5px;
+}
+
+
+.image {
+	width: 400px;
+	height: 200px;
+	background-size: 100% 100%;
+	margin: 0 auto;
+
+
+}
+
+.buttons {
+	margin: 20px auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.buttons button {
+	margin: 0 100px;
+}
+
+#text {
+	margin: 20px auto;
+	text-align: center;
+}
+
+
+
+
