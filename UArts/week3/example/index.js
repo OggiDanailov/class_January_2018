@@ -42,6 +42,10 @@ function checkAge() {
 	})
 }
 
+var eleven = document.getElementsByClassName('eleven')[0]
 
+eleven.addEventListener("click", function(e) {
+	console.log(e.target.innerText)
+})
 
 
