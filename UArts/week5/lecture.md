@@ -2,8 +2,7 @@ Codung challenge:
 
 1. Write a function that takes two integers as parameters, adds them together and checks if the result is even or odd number.
 
-2. Write a function that takes a word (string) as parameter and checks if this word is a palindrome; For example -> kayak, racecar are palindromes;
-99.9% of the English words are not;
+
 
 
 ##Git

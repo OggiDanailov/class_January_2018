@@ -42,6 +42,9 @@ Exercise -
 2. write a function that takes an array of numbers as an argument and returns only the even numbers from this array;
 
 
+
+
+
 - global scope vs. local scope
 
  - examples of global scope; vars declared out of the scope of something  
@@ -50,9 +53,11 @@ Exercise -
  - var s = 1;
 
   function whatever(){  
-	var s= 14;  
+	var s = 14;  
 	console.log(s)  
- }  
+ } 
+ whatever()
+ console.log(s) 
  
  Here we will print 14 since s is within the scope of the function whatever() and it will overwrite the global one;
  however, if I don't use the keyword var in the function whatever() then the global var s will be reassigned and it will have the value of 14 from now on; The importance of using var keyword;
@@ -84,6 +89,39 @@ for(let i = 0;i< 3;i++){
 }
 
 however, if we change the let to var then everything breaks; i is 0 originally, then it gets two the second loop, reassigns i to 111 then to 112 and when it gets back to the original for look it is 112 and it doesn't take action at all.
+
+
+Callback function
+
+- callback function;
+    A callback is a function that is to be executed after another function has finished executing — hence the name ‘call back’. They are passed as arguments to another function;
+
+        function hello(){
+          console.log('hello')
+        }
+        function world(){
+          console.log('world')
+        }
+        hello()
+        world()
+
+      Written in this way, you will print 'hello' and 'world' one after another on the screen.
+      However, if you wrap console.log('hello') in a settimeout it won't print it in the same order.
+        function hello(arg){
+          setTimeout(function(){
+            console.log(arg)
+          }, 3000)
+
+        }
+
+        function world(){
+          console.log('this is the world')
+        }
+      
+      JavaScript didn’t wait for a response from hello() before moving on to execute world(). JavaScript is an event driven language. This means that instead of waiting for a response before moving on, JavaScript will keep executing while listening for other events.
+
+
+
 
 
 
