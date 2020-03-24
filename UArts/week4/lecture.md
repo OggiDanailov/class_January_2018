@@ -121,6 +121,44 @@ Callback function
       JavaScript didn’t wait for a response from hello() before moving on to execute world(). JavaScript is an event driven language. This means that instead of waiting for a response before moving on, JavaScript will keep executing while listening for other events.
 
 
+      Homework: write a small program that prints the actual time in real time on the screen.
+      the project should have:
+      printing the clock in am/pm;
+      the background-color of the screen changes dynamically;
+      the whole project is styled 
+
+
+      CH:
+
+      // write a method that grabs the array below and returns all the content without "/static"
+// ex.  "/static/image1.jpg" => "image1.jpg"
+
+
+
+function whatever (array) {
+     var empty = []
+     var result = []
+     for(let i = 0;i<array.length;i++) {
+         empty.push(array[i].split("/"))
+         result.push(empty[i][empty[i].length-1])
+     }
+     console.log(result)
+ }
+
+ var empty = []
+var result = []
+for(let i = 0;i<images.length;i++) {
+    empty.push(images[i].split("/static"))
+    result.push(empty[i][1])
+}
+
+
+ let images = [
+ "/static/image1.jpg", "/static/image2.jpg", "/static/image3.jpg", "/static/image4.jpg",
+ "/static/image5.jpg", "/static/image6.jpg", "/static/image7.jpg", "/static/image8.jpg",
+ "/static/image9.jpg", "/static/image10.jpg", "/static/image11.jpg", "/static/image12.jpg"
+ ]
+
 
 
 
