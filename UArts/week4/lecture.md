@@ -161,6 +161,17 @@ for(let i = 0;i<images.length;i++) {
 
 
 
+ Final project:
+
+  - create an individual website about you; you should think of it as your portfolio;
+  - the website should have: About me section, section where someone can see your projects/github repo links; contact me section; feel free to add anything else you would like to;
+  - the website should have a modal - a div that appears a sec or two after you launch the page; this modal can appear on any of the pages (could be your contact info for example);
+  - the website should have a image carousel where you can press buttons and go left or right and see different photos; 
+   
+
+
+
+
 
 
 
