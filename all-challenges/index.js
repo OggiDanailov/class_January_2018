@@ -74,7 +74,7 @@
 // 14. Create an array and show how to log each element to the console recursively.
 
 // 15. Create an array. Using the .forEach() method on the array, print each element to
-//  the console. If you are unsure on how to use .forEach(), Google.
+//  the console. If you are unsure on how to use .forEach(), Google it.
 
 // 16. Create an array. Create a function that takes an array as an argument and logs only the first element and last element to the console. Example:
 // lastFirst(["dogs", "cats", "hamburger", "dinosaur"]) // dogs // dinosaur

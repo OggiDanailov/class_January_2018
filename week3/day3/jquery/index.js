@@ -1,15 +1,15 @@
 // navbar menu functionality
 
 
-// $(".wrap-burger").click(function(){
-// 	$('ul').slideToggle()
-// 	$("ul ul").css('display', 'none')
-// }) 
+$(".wrap-burger").click(function(){
+	$('ul').slideToggle()
+	$("ul ul").css('display', 'none')
+}) 
 
-// $("ul li").click(function(){
-// 	$("ul ul").slideUp();
-// 	$(this).find("ul").slideToggle();
-// })
+$("ul li").click(function(){
+	$("ul ul").slideUp();
+	$(this).find("ul").slideToggle();
+})
 
 
 

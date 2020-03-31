@@ -23,9 +23,17 @@ Null is used to define something programmatically empty. Undefined is meant to s
   
   - var s = 1;  
     function whatever(){  
-    var s= 14;  
+      var s = 14;  
     console.log(s)  
     }  
+
+    var s = 1;  
+    function whatever(){  
+      s = 14;  
+    console.log(s)  
+    }
+whatever()
+console.log(s)
   
   Here we will print 14 since s is within the scope of the function whatever() and it will overwrite the global one;
   however, if I don't use the keyword var in the function whatever() then the global var s will be reassigned and it will have the value of 14 from now on; The importance of using var keyword;
