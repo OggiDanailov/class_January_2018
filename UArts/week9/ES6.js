@@ -119,74 +119,14 @@
 
 // var a = 5;
 // var b = 10;
-// console.log('Fifteen is ' + (a + b) + ' and\not ' + (2 * a + b) + '.');
+// console.log('Fifteen is ' + (a + b) + ' and\nnot ' + (2 * a + b) + '.');
 
 // With template literal you can write the same expression like that:
 
-var a = 5;
-var b = 10;
-console.log(`Fifteen is ${a + b} and
-not ${2 * a + b}.`);
-
-
-//8. **spread operator:**
-// allows you to expand.It is mostly used in variable array where there is more than 1 values are expected
-
-var array = [1,2,3,4,5]
-
-var arrayb = [array, 10, 20, 30]
-
-console.log(arrayb)
-
-var obj = {
-	name: 'a',
-	location: 'b'
-}
-
-var obj2 = {...obj, age: 23}
-console.log(obj2)
-
-
-//9.  **deconstruction in JS**
- // With the destructuring syntax, you can extract smaller fragments from arrays and objects.
-
-// let person = {
-// 	name: 'George',
-// 	loca: "London",
-// 	nationality: "Australian"
-// }
-
-// let {name, loca, nationality} = person;
-
-
-// let numbers = [2,3,5,6,7]
-
-// var [first, second, third, fourth, fifth]= numbers;
-
-// in the next example we have data that it is nested; deconstruction will be make it easier for us to assign 
-// data
-
-// var wes = {
-//   first: 'Wes',
-//   last: 'Bos',
-//   links: {
-//     social: {
-//       twitter: 'https://twitter.com/wesbos',
-//       facebook: 'https://facebook.com/wesbos.developer',
-//     },
-//     web: {
-//       blog: 'https://wesbos.com'
-//     }
-//   }
-// };
-
-// const { twitter, facebook } = wes.links.social;
-// console.log(twitter, facebook);
-
-
-// methods:
-
-// includes(), indexOf(), slice(), splice() 
+// var a = 5;
+// var b = 10;
+// console.log(`Fifteen is ${a + b} and
+// not ${2 * a + b}.`);
 
 // 8. **IIFE - immediately ivoking function expression**
 
