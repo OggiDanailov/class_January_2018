@@ -43,27 +43,28 @@
 // 	return highest;
 // }
 
-4. compare two arrays
+// 4. compare two arrays
 
-var array1 = [1,2, 4, 5]
-var array2 =  [1, 2, 3, 6]
+// var array1 = [1,2, 4, 5]
+// var array2 =  [1, 2, 3, 6]
 
 
-function compareNumbers (ar1, ar2) {
-	var uniqueArray = []
-	for(let i = 0;i < ar1.length; i++) {
-		var status = false;
-		for(let j = 0; j < ar2.length; j++){
-			if (ar1[i] === ar2[j]) {
-				status = true
-			}
-		}
-		if(status == false) {
-			uniqueArray.push(ar1[i])
-		}
-	}
-	return uniqueArray
-}
+// function compareNumbers (ar1, ar2) {
+// 	var uniqueArray = []
+// 	for(let i = 0;i < ar1.length; i++) {
+// 		var status = false;
+// 		for(let j = 0; j < ar2.length; j++){
+// 			if (ar1[i] === ar2[j]) {
+// 				status = true
+// 				console.log(status)	
+// 			}
+// 		}
+// 		if(status == false) {
+// 			uniqueArray.push(ar1[i])
+// 		}
+// 	}
+// 	return uniqueArray
+// }
 
 
 

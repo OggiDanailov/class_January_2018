@@ -1,9 +1,10 @@
 // 1. Coding challenge - object;
 // 2. Engel question
 // 3. Lecture
-// 4. Lecture - exercise
-// 5. Finding highest number
-// 6. Comparing two arrays
+// 4. briefly going over return once again
+// 5. Lecture - exercise
+// 6. Finding highest number
+// 7. Comparing two arrays
 
 // constructor function
 
@@ -29,6 +30,17 @@ function Developer (fname, lname, gender, specialty) {
 			console.log(this.greeting() + " , " + "you awesome " + this.specialty + " developer")
 		}
 }
+
+//talking briefly about return  - it stops executing once return statement has been processed
+// var a = [1,2,3,4,5,6,7,8,9]
+// function whatever() {
+// for(let i = 0; i< a.length; i++) {
+//     if(a[i] === 5) {
+//         return a[i]
+//     }
+//     console.log(a[i])
+// }
+// }
 
 
 // class in javascript
