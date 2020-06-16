@@ -52,6 +52,21 @@
 
 
 
+// JSON - javascript object notation
+//  ex:  
+//  http://json.org/example.html  
+//  '{ "name":"John", "age":30, "city":"New York", "gender":"male"}'
+ 
+//  var parsing = JSON.parse('{ "name":"John", "age":30, "city":"New York"}')  
+ 
+
+//  JSON.stingify() - will convert object literal into JSON:
+
+ 
+//  Aplication Programming Interface. 
+
+
+
 
 
 
