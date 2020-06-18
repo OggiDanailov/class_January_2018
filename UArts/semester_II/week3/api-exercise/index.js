@@ -21,9 +21,12 @@ $(document).ready(function() {
 		console.log(movies)
 		for(let i = 0; i< movies.Search.length; i++) {
 				let poster = document.createElement("div")
+				let title = document.createElement("h2")
 				poster.classList.add("poster")
 				poster.style.backgroundImage = "url(" + movies.Search[i].Poster  + ")"
+				title.innerHTML = movies.Search[i].Title
 				document.body.appendChild(poster)
+				document.body.appendChild(title)
 		}
 
 	}
