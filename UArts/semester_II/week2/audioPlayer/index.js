@@ -7,7 +7,9 @@ var song2 = "audio/b.mp3"
 var song3 = "audio/c.mp3"
 
 let myAudio = new Audio();
+
 songs = [song1, song2, song3]
+
 let currentSong = 0;
 
 
