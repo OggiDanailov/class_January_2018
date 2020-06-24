@@ -1,0 +1,15 @@
+#poster {
+	width: 200px;
+	height: 200px;
+	border: 2px solid;
+	display: block;
+}
+
+
+.result img{
+	width: 100px;
+	height: 100px;
+	border: 2px solid;
+	margin: 5px;
+
+}

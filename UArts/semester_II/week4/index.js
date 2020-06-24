@@ -16,6 +16,7 @@
 // DOM text manipulation
 
 
+$(document).ready(function() {
 $(".text").html("this is whatever")
 
 // style manipulation
@@ -31,6 +32,10 @@ function changeLook () {
 	boxShadow: "3px 3px 3px black"
 	})
 }
+
+$(".text").click(function() {
+	$("#circle").toggle()
+})
 
 function doAnimation () {
 	$("#animation-element").css({
@@ -49,10 +54,12 @@ function doAnimation () {
 		opacity: "0.4"
 	}, 4000, function () {
 		$(".text").css({backgroundColor: 'blue'})
+		
 	})
 }
 
 
+})
 
 
 
