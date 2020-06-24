@@ -31,3 +31,43 @@ let countries = [
 // 1. display the name of the country, and itse capital;
 // 2. display the images of the cities;
 // 3. print the name of the cities on the images
+let wrapper = document.getElementById('wrapper')
+
+for(let i = 0; i < countries.length; i++) {
+	let block = document.createElement("div")
+	block.style.width = "90%"
+	block.style.margin = "10px auto 50px"
+	block.style.textAlign = 'center'
+	wrapper.appendChild(block)
+	 let title = document.createElement('h2')
+	 let capital = document.createElement("h3")
+	 title.innerHTML = "Country: " + countries[i].name
+	 capital.innerHTML= "capital city: " + countries[i].capital
+	 block.appendChild(title)
+	 block.appendChild(capital)
+	 for(let j = 0; j < countries[i].cities.length; j++) {
+	 	let images = document.createElement("div")
+	 	images.style.height = "200px"
+	 	images.style.width = " 200px"
+	 	images.style.display = 'inline-block'
+	 	images.style.marginRight = '10px'
+	 	images.style.backgroundImage = "url(" + countries[i].cities[j] + ")"
+	 	images.style.backgroundSize = "100% 100%"
+	 	images.innerHTML = countries[i].cityNames[j]
+	 	block.appendChild(images)
+	 }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
