@@ -32,7 +32,7 @@ function allCountries(countries){
 }
 
 function clickCountry(name){
-	$.ajax({url: "https://restcountries.eu/rest/v2/name/" + name + "?fullText=true",
+	$.ajax({url: "http://restcountries.eu/rest/v2/name/" + name + "?fullText=true",
 		success: function(response){
 			console.log(response)
 			var wrapper = document.createElement('div')
