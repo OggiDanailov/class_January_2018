@@ -1,5 +1,6 @@
 // Pairs:
-// (Amber/Emily/Engel)
+// (Amber/Holly)
+//Emily/Engel)
 // (Rosie/Alison)
 // (Tom/Jessica)
 
@@ -30,21 +31,11 @@ $(document).ready(function() {
 submit1.addEventListener("click", function() {
 	firstAjaxCall("https://restcountries.eu/rest/v2/name/", firstResult, country1.value)
 })
-submit2.addEventListener("click", function() {
-	firstAjaxCall("https://restcountries.eu/rest/v2/name/", secondResult, country2.value)
-})
+
 gdpButton.addEventListener("click", function() {
 	returnGDP ("https://raw.githubusercontent.com/OggiDanailov/gdp-data/master/data.json")
 })
 
-// function one(arg) {
-//     console.log(arg)
-// }
-// function two(var1, callback) {
-//     callback(var1)
-// }
-
-// two(34, one)
 
 
 	function firstAjaxCall(urladdress, callback, value) {
@@ -83,20 +74,6 @@ gdpButton.addEventListener("click", function() {
 				}
 			})
 		}
-	}
-
-	function secondResult(response) {
-		console.log(response)
-		$(".flag2").css({
-			"background-image": "url(" + response[0].flag + ")",
-			"background-size": "100% 100%",
-			border: "1px solid"
-		})
-		$(".country-name2").html("Country: " + response[0].name)
-		$(".country-capital2").html("Capital: " + response[0].capital)
-		$(".country-population2").html("population: " + printPopulation(response[0].population))
-		$(".spellings2").html(spellings("Various names: " + response[0].altSpellings))
-		
 	}
 
 // https://stackoverflow.com/questions/6784894/add-commas-or-spaces-to-group-every-three-digits
