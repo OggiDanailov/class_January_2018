@@ -20,6 +20,10 @@
 // 3. Use this address to retrieve data about gdp per country:
 // "https://raw.githubusercontent.com/OggiDanailov/gdp-data/master/data.json"
 		// a) figure out a way of printing the gdp of the country that you called;
+			// b) go to this library (or any other js statistic library):
+			// https://plotly.com/javascript/getting-started/
+			// and try to create a chart using the gdp data that will show how 
+			// the gdp of a given country developed through the years
 	// 4. expand the app that allows you to compare two different countries (ex. Mexico vs. Colombia)
 	// a) you should be able to compare their gdp based on their population;
 	// b) draw conclusion who's richer and who's poorer
@@ -34,6 +38,7 @@ $(document).ready(function() {
 	let languages = document.getElementsByClassName("languages")
 	let gdpButton = document.getElementsByClassName("gdp-button")[0]
 	let currentCountry;
+	let TESTER = document.getElementById('tester');
 
 submit1.addEventListener("click", function() {
 	firstAjaxCall("https://restcountries.eu/rest/v2/name/", firstResult, country1.value)
@@ -106,18 +111,30 @@ gdpButton.addEventListener("click", function() {
 
 
 	function returnGDP(urladdress){
+		let gdpArrayValues = [];
+		let gdpArrayYears = [];
 		$.ajax({url: urladdress,
 		type: "GET",
 			success: function(res){
 				var parsed = JSON.parse(res)
-				console.log(parsed + 'thsi is whatever')
 				parsed.forEach(function(country) {
 					if(country["Country Name"] === currentCountry) {
-						console.log(country["2017"])
-						$(".country-gdp").html("GDP for year 2017 is $" + printPopulation(country["2017"]))
-					}
-
-				})
+						$(".country-gdp").html("GDP in $ for 2017:  " + printPopulation(country["2017"]))
+						var a = Object.values(country)
+						var b = Object.keys(country)
+						for( let i = 0; i < a.length; i++) {
+							if(a[i] !== "" && typeof a[i] === 'number') {
+								gdpArrayValues.push(a[i])
+								gdpArrayYears.push(b[i])
+							}
+						}
+						
+						Plotly.newPlot( TESTER, [{
+							x: gdpArrayYears,
+							y: gdpArrayValues }], {
+							margin: { t: 0 } } );
+							}
+						})
 
 			}
 		})
