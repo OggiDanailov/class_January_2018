@@ -7,6 +7,7 @@
 	<script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
 </head>
 <body>
+	<h1 style='text-align: center'>Compare two countries</h1>
 <div id='wrapper'>
 	<div class='left-side'>
 		<h2>Country 1:</h2>
@@ -24,10 +25,32 @@
 			<button class='languages'>de</button>
 			<div class='translations'></div>
 		</div>
-		<button class='gdp-button'>GDP</button>
-		<div id="tester" style="width: 100%; height:350px; border: 1px solid black"></div>
+		<button class='gdp-button1'>GDP</button>
+		<div id="gdp-map">
+		</div>
+	</div>
+	<div class='right-side'>
+		<h2>Country 2:</h2>
+		<input type="text" id='country2'>
+		<input type="submit" id="submit2">
+		<div class='flag2'></div>
+		<h3 class='country-name2'></h3>
+		<p class='country-capital2'></p>
+		<p class='country-population2'></p>
+		<p class='country-gdp2'></p>
+		<p class='spellings2'></p>
+		<div>Translate:
+			<button class='languages'>fr</button>
+			<button class='languages'>ja</button>
+			<button class='languages'>de</button>
+			<div class='translations2'></div>
+		</div>
+		<button class='gdp-button2'>GDP</button>
+		<div id="gdp-map2"></div>
+	</div>
 	</div>
 </div>
+<button id='compare'>Compare</button>
 
 <script type="text/javascript" src='index.js'></script>
 </body>

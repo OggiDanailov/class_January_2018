@@ -36,16 +36,32 @@ $(document).ready(function() {
 	let submit1 = document.getElementById("submit1")
 	let submit2 = document.getElementById("submit2")
 	let languages = document.getElementsByClassName("languages")
-	let gdpButton = document.getElementsByClassName("gdp-button")[0]
-	let currentCountry;
-	let TESTER = document.getElementById('tester');
+	let gdpButton1 = document.getElementsByClassName("gdp-button1")[0]
+	let gdpButton2 = document.getElementsByClassName("gdp-button2")[0]
+	let currentCountry1;
+	let currentCountry2;
+	let TESTER = document.getElementById('gdp-map');
+	let TESTER2 = document.getElementById('gdp-map2');
+	let compare = document.getElementById("compare");
+	let countryPopulation1;
+	let countryPopulation2;
+	let countryGdp1;
+	let countryGdp2;
 
 submit1.addEventListener("click", function() {
 	firstAjaxCall("https://restcountries.eu/rest/v2/name/", firstResult, country1.value)
 })
 
-gdpButton.addEventListener("click", function() {
+submit2.addEventListener("click", function() {
+	firstAjaxCall("https://restcountries.eu/rest/v2/name/", secondResult, country2.value)
+})
+
+gdpButton1.addEventListener("click", function() {
 	returnGDP ("https://raw.githubusercontent.com/OggiDanailov/gdp-data/master/data.json")
+})
+
+gdpButton2.addEventListener("click", function() {
+	returnGDP2 ("https://raw.githubusercontent.com/OggiDanailov/gdp-data/master/data.json")
 })
 
 
@@ -64,15 +80,15 @@ gdpButton.addEventListener("click", function() {
 
 
 	function firstResult(response) {	
-		currentCountry = response[0].name	
+		currentCountry1 = response[0].name	
 		$(".flag1").css({
 			"background-image": "url(" + response[0].flag + ")",
-			"background-size": "100% 100%",
-			border: "1px solid"
+			"background-size": "100% 100%"
 		})
 		$(".country-name1").html("Country: " + response[0].name)
 		$(".country-capital1").html("Capital: " + response[0].capital)
 		$(".country-population1").html("Population: " + printPopulation(response[0].population))
+		countryPopulation1 = response[0].population
 		$(".spellings1").html(spellings("Various  names: " + response[0].altSpellings))
 		
 		for(let i = 0; i < languages.length; i++) {
@@ -83,6 +99,31 @@ gdpButton.addEventListener("click", function() {
 					$(".translations").html(response[0].translations.de)	
 				} else if(e.target.innerHTML === 'ja') {
 					$(".translations").html(response[0].translations.ja)	
+				}
+			})
+		}
+	}
+
+	function secondResult(response) {	
+		currentCountry2 = response[0].name	
+		$(".flag2").css({
+			"background-image": "url(" + response[0].flag + ")",
+			"background-size": "100% 100%"
+		})
+		$(".country-name2").html("Country: " + response[0].name)
+		$(".country-capital2").html("Capital: " + response[0].capital)
+		$(".country-population2").html("Population: " + printPopulation(response[0].population))
+		countryPopulation2 = response[0].population
+		$(".spellings2").html(spellings("Various  names: " + response[0].altSpellings))
+		
+		for(let i = 0; i < languages.length; i++) {
+			languages[i].addEventListener("click", function(e){
+				if(e.target.innerHTML === 'fr') {
+					$(".translations2").html(response[0].translations.fr)
+				} else if (e.target.innerHTML === "de") {
+					$(".translations2").html(response[0].translations.de)	
+				} else if(e.target.innerHTML === 'ja') {
+					$(".translations2").html(response[0].translations.ja)	
 				}
 			})
 		}
@@ -118,8 +159,9 @@ gdpButton.addEventListener("click", function() {
 			success: function(res){
 				var parsed = JSON.parse(res)
 				parsed.forEach(function(country) {
-					if(country["Country Name"] === currentCountry) {
+					if(country["Country Name"] === currentCountry1) {
 						$(".country-gdp").html("GDP in $ for 2017:  " + printPopulation(country["2017"]))
+						countryGdp1 = country["2017"]
 						var a = Object.values(country)
 						var b = Object.keys(country)
 						for( let i = 0; i < a.length; i++) {
@@ -140,6 +182,55 @@ gdpButton.addEventListener("click", function() {
 		})
 	}
 
+	function returnGDP2(urladdress){
+		let gdpArrayValues = [];
+		let gdpArrayYears = [];
+		$.ajax({url: urladdress,
+		type: "GET",
+			success: function(res){
+				var parsed = JSON.parse(res)
+				parsed.forEach(function(country) {
+					if(country["Country Name"] === currentCountry2) {
+						$(".country-gdp2").html("GDP in $ for 2017:  " + printPopulation(country["2017"]))
+						countryGdp2 = country["2017"]
+						var a = Object.values(country)
+						var b = Object.keys(country)
+						for( let i = 0; i < a.length; i++) {
+							if(a[i] !== "" && typeof a[i] === 'number') {
+								gdpArrayValues.push(a[i])
+								gdpArrayYears.push(b[i])
+							}
+						}
+						
+						Plotly.newPlot( TESTER2, [{
+							x: gdpArrayYears,
+							y: gdpArrayValues }], {
+							margin: { t: 0 } } );
+							}
+						})
+
+			}
+		})
+	}
+
+	compare.addEventListener("click", function() {
+		gdpPerPerson1 = countryGdp1/countryPopulation1;
+		gdpPerPerson2 = countryGdp2/countryPopulation2;
+		console.log(gdpPerPerson1)
+		console.log(gdpPerPerson2)
+		if(gdpPerPerson1 < gdpPerPerson2) {
+			estimate(gdpPerPerson1, gdpPerPerson2, currentCountry1, currentCountry2)
+		} else {
+			estimate(gdpPerPerson2, gdpPerPerson1, currentCountry2, currentCountry1)
+		}
+
+	})
+
+	function estimate(gdp1, gdp2, country1, country2) {
+		var percantage = (gdp1/gdp2) * 100
+		console.log(country1 + "'s gdp per person is " + gdp1 + "; " + country2 + "'s gdp per person is " + gdp2 +";")
+		console.log("in order for " + country1 + "  to catch up with " + country2 +", " + country1 + " has to increase its gdp with " + (100-percantage) + "%")
+	}
 
 
 })
